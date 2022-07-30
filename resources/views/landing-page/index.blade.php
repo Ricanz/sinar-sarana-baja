@@ -134,6 +134,7 @@
             </div>
         </div>
 
+        {{-- Services  --}}
         <div class="section-4">
             <div class="service-desc mb-80">
                 <div class="col-6">
@@ -182,6 +183,49 @@
                 </div>
             </div>
         </div>
+
+        <div class="section-5">
+            <div class="news-content">
+                <h6>blog</h6>
+                <div class="news-header">
+                    <div class="col-5">
+                        <h2>Artikel</h2>
+                        <p>The Company has concern on maintaining a healthy and green environment. Therefore, the Company together with the sub-contractors have conducted the waste management and disposal</p>
+                    </div>
+                    <div class="col-7">
+                        <a href="">View All</a>
+                    </div>
+                </div>
+                <div class="news">
+                    <div class="col-6 primary-news">
+                        <img src="{{ asset('custom/landing-page/images/news/2.png') }}" alt="">
+                        <div class="time">
+                            <p>24 Juli 2022 | 8 menit yang lalu</p>
+                        </div>
+                        <div class="news-title">
+                            <p><strong>Training Pemadan Kebakaran Program ISO 45001:2018</strong></p>
+                        </div>
+                        <div class="news-detail">
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
+                        </div>
+                    </div>
+                    <div class="col-6 primary-news">
+                        <img src="{{ asset('custom/landing-page/images/news/2.png') }}" alt="">
+                        <div class="time">
+                            <p>24 Juli 2022 | 8 menit yang lalu</p>
+                        </div>
+                        <div class="news-title">
+                            <p><strong>Training Pemadan Kebakaran Program ISO 45001:2018</strong></p>
+                        </div>
+                        <div class="news-detail">
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </div>
 
 

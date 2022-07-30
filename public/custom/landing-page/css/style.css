@@ -331,3 +331,73 @@ nav .search-box .lang {
     color: #212B36;
     padding: 10px;
 }
+
+.container .section-5 {
+    padding: 60px 0;
+    background-image: url('../images/project.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.container .section-5 .news-content {
+    width: 80%;
+}
+
+.container .section-5 .news-content .news-header {
+    display: flex;
+    align-items: center;
+}
+
+.container .section-5 .news-header p {
+    color: #212B36;
+    font-size: 16px;
+}
+
+.container .section-5 .news-header a {
+    text-align: right;
+}
+
+.container .section-5 .news-content .news {
+    display: flex;
+    align-items: center;
+}
+
+.container .section-5 .news-content .news .primary-news {
+    margin: 0 10px;
+}
+
+.container .section-5 .news-content .news .primary-news img {
+    width: 100%;
+}
+
+.container .section-5 .news-content .news .primary-news .time {
+    margin-top: -270px;
+    padding: 0 20px;
+}
+
+.container .section-5 .news-content .news .primary-news .news-title {
+    padding: 0 20px;
+}
+
+.container .section-5 .news-content .news .primary-news .news-detail {
+    padding: 0 20px;
+}
+
+.container .section-5 .news-content .news .primary-news .time p {
+    color: white;
+    font-size: 12px;
+}
+
+.container .section-5 .news-content .news .primary-news .news-title p {
+    color: white;
+    font-size: 36px;
+}
+
+.container .section-5 .news-content .news .primary-news .news-detail p {
+    color: white;
+    font-size: 1ss6px;
+}
