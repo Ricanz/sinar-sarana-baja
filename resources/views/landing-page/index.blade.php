@@ -61,13 +61,50 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-9 image">
+                    <div class="col-8 image">
                         <img src="{{ asset('custom/landing-page/images/slide-1.png') }}" alt="">
                     </div>
                 </div>
             </div>
         </div>
+        
+        <div class="section-2">
+            <div class="sub-title">
+                <h6>description</h6>
+            </div>
+            <div class="about">
+                <div class="row">
+                    <div class="col-5 about-image">
+                        <img src="{{ asset('custom/landing-page/images/about.png') }}" alt="">
+                    </div>
+                    <div class="col-7 about-desc">
+                        <h2 class="mb-20">Offshore Maintenance and Service</h2>
+                        <div class="med-text-desc">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                        </div>
+                        <div class="spc-50"></div>
+                        <div class="row">
+                            <div class="col-6 box-desc mr-20">
+                                <img class="mb-20" src="{{ asset('custom/landing-page/images/hr.png') }}" alt="" width="24px" height="3px">
+                                <div class="sml-text-desc">
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicab</p>
+                                </div>
+                            </div>
+                            <div class="col-6 box-desc pl-20 mr-20">
+                                <img class="mb-20" src="{{ asset('custom/landing-page/images/hr.png') }}" alt="" width="24px" height="3px">
+                                <div class="sml-text-desc">
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicab</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+    {{-- <div class="container">
+    </div> --}}
 
 
     <!-- Optional JavaScript -->
