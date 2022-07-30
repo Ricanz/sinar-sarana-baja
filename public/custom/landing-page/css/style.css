@@ -352,6 +352,11 @@ nav .search-box .lang {
     align-items: center;
 }
 
+.container .section-5 .news-header h2 {
+    color: #212B36;
+    font-size: 48px;
+}
+
 .container .section-5 .news-header p {
     color: #212B36;
     font-size: 16px;
@@ -363,7 +368,7 @@ nav .search-box .lang {
 
 .container .section-5 .news-content .news {
     display: flex;
-    align-items: center;
+    margin-top: 40px;
 }
 
 .container .section-5 .news-content .news .primary-news {
@@ -375,7 +380,7 @@ nav .search-box .lang {
 }
 
 .container .section-5 .news-content .news .primary-news .time {
-    margin-top: -270px;
+    margin-top: -300px;
     padding: 0 20px;
 }
 
@@ -399,5 +404,30 @@ nav .search-box .lang {
 
 .container .section-5 .news-content .news .primary-news .news-detail p {
     color: white;
-    font-size: 1ss6px;
+    font-size: 16px;
+}
+
+.container .section-5 .news-content .news .support-news {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.container .section-5 .news-content .news .support-news .news-1 {
+    margin-bottom: 15px;
+    margin-right: 20px;
+}
+
+.container .section-5 .news-content .news .support-news .news-1 img {
+    width: 100%;
+}
+
+.container .section-5 .news-content .news .support-news .news-1 .time p {
+    color: #212B36;
+    font-size: 12px;
+}
+
+.container .section-5 .news-content .news .support-news .news-1 .news-title p {
+    color: #212B36;
+    font-size: 18px;
 }

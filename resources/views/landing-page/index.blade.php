@@ -186,10 +186,10 @@
 
         <div class="section-5">
             <div class="news-content">
-                <h6>blog</h6>
+                <h6 class="mb-50">blog</h6>
                 <div class="news-header">
                     <div class="col-5">
-                        <h2>Artikel</h2>
+                        <h2 class="mb-20">Latest New</h2>
                         <p>The Company has concern on maintaining a healthy and green environment. Therefore, the Company together with the sub-contractors have conducted the waste management and disposal</p>
                     </div>
                     <div class="col-7">
@@ -199,26 +199,56 @@
                 <div class="news">
                     <div class="col-6 primary-news">
                         <img src="{{ asset('custom/landing-page/images/news/2.png') }}" alt="">
-                        <div class="time">
+                        <div class="time mb-10">
                             <p>24 Juli 2022 | 8 menit yang lalu</p>
                         </div>
-                        <div class="news-title">
+                        <div class="news-title mb-10">
                             <p><strong>Training Pemadan Kebakaran Program ISO 45001:2018</strong></p>
                         </div>
                         <div class="news-detail">
                             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
                         </div>
                     </div>
-                    <div class="col-6 primary-news">
-                        <img src="{{ asset('custom/landing-page/images/news/2.png') }}" alt="">
-                        <div class="time">
-                            <p>24 Juli 2022 | 8 menit yang lalu</p>
+                    <div class="col-6 support-news">
+                        <div class="col-6">
+                            <div class="news-1">
+                                <img src="{{ asset('custom/landing-page/images/news/artikel-1.png') }}" alt="">
+                                <div class="time mb-10">
+                                    <p>24 Juli 2022 | 8 menit yang lalu</p>
+                                </div>
+                                <div class="news-title mb-10">
+                                    <p><strong>Training Pemadan Kebakaran Program ISO 45001:2018</strong></p>
+                                </div>
+                            </div>
+                            <div class="news-1">
+                                <img src="{{ asset('custom/landing-page/images/news/artikel-3.png') }}" alt="">
+                                <div class="time mb-10">
+                                    <p>24 Juli 2022 | 8 menit yang lalu</p>
+                                </div>
+                                <div class="news-title mb-10">
+                                    <p><strong>Training Pemadan Kebakaran Program ISO 45001:2018</strong></p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="news-title">
-                            <p><strong>Training Pemadan Kebakaran Program ISO 45001:2018</strong></p>
-                        </div>
-                        <div class="news-detail">
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
+                        <div class="col-6">
+                            <div class="news-1">
+                                <img src="{{ asset('custom/landing-page/images/news/artikel-2.png') }}" alt="">
+                                <div class="time mb-10">
+                                    <p>24 Juli 2022 | 8 menit yang lalu</p>
+                                </div>
+                                <div class="news-title mb-10">
+                                    <p><strong>Training Pemadan Kebakaran Program ISO 45001:2018</strong></p>
+                                </div>
+                            </div>
+                            <div class="news-1">
+                                <img src="{{ asset('custom/landing-page/images/news/artikel-4.png') }}" alt="">
+                                <div class="time mb-10">
+                                    <p>24 Juli 2022 | 8 menit yang lalu</p>
+                                </div>
+                                <div class="news-title mb-10">
+                                    <p><strong>Training Pemadan Kebakaran Program ISO 45001:2018</strong></p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
