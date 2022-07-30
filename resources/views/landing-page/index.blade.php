@@ -68,6 +68,7 @@
             </div>
         </div>
         
+        {{-- Description --}}
         <div class="section-2">
             <div class="sub-title">
                 <h6>description</h6>
@@ -100,6 +101,36 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="section-3">
+                <div class="card-title">
+                    <h2>Refrensi Project</h2>
+                    <a href="">View All</a>
+                </div>
+                <div class="projects">
+                    <div class="col-4 card-project">
+                        <img src="{{ asset('custom/landing-page/images/projects/1.png') }}" alt="">
+                        <div class="card-desc">
+                            <h6 class="mb-10">guardrail</h6>
+                            <p>Pagar Pengaman Jalan adalah alat keselamatan jalan yang terbuat dari baja lembaran.</p>
+                        </div>
+                    </div>
+                    <div class="col-4 card-project">
+                        <img src="{{ asset('custom/landing-page/images/projects/1.png') }}" alt="">
+                        <div class="card-desc">
+                            <h6 class="mb-10">delineator</h6>
+                            <p>Pagar Pengaman Jalan adalah alat keselamatan jalan yang terbuat dari baja lembaran.</p>
+                        </div>
+                    </div>
+                    <div class="col-4 card-project">
+                        <img src="{{ asset('custom/landing-page/images/projects/1.png') }}" alt="">
+                        <div class="card-desc">
+                            <h6 class="mb-10">delineator</h6>
+                            <p>Pagar Pengaman Jalan adalah alat keselamatan jalan yang terbuat dari baja lembaran.</p>
+                        </div>
+                    </div>
+                </div>
         </div>
     </div>
 

@@ -78,6 +78,10 @@ h6 {
     margin: 0 10px !important;
 }
 
+.mb-10 {
+    margin-bottom: 10px !important;
+}
+
 .mb-20 {
     margin-bottom: 20px !important;
 }
@@ -249,4 +253,43 @@ nav .search-box .lang {
     padding-left: 10%;
     align-content: center;
     align-items: center;
+}
+
+.container .section-3 {
+    background-image: url('../images/project.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.container .section-3 .card-title {
+    display: flex;
+    align-items: center;
+}
+
+.container .section-3 .projects {
+    width: 80%;
+    display: flex;
+    padding-top: 30px;
+}
+.container .section-3 .card-project {
+    background-color: white;
+    border-radius: 20px;
+    margin: 0 16px;
+}
+
+.container .section-3 .card-project img{
+    width: 100%;
+}
+
+.container .section-3 .card-project p{
+    color: #212B36;
+    font-size: 20px;
+}
+
+.container .section-3 .card-desc {
+    padding: 15px;
 }
