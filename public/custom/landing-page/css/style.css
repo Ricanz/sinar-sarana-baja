@@ -68,6 +68,11 @@ h2 {
     color: #015291;
 }
 
+h3 {
+    font-size: 48px;
+    color: #212B36;
+}
+
 h6 {
     text-transform: uppercase;
     color: #015291;
@@ -127,6 +132,11 @@ h6 {
 .sml-text-desc p{
     font-size: 14px;
     color: #637381;
+}
+
+.bold-med-text p{
+    color: #212B36;
+    font-size: 20px;
 }
 
 header {
@@ -292,4 +302,32 @@ nav .search-box .lang {
 
 .container .section-3 .card-desc {
     padding: 15px;
+}
+
+.container .section-4 {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    width: 80%;
+}
+
+.container .section-4 .service-desc {
+    display: flex;
+    align-items: center;
+}
+
+.container .section-4 .services {
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.container .section-4 .services .service-box img {
+    width: 48px;
+    height: 48px;
+}
+
+.container .section-4 .service-box p {
+    font-size: 16px;
+    color: #212B36;
+    padding: 10px;
 }

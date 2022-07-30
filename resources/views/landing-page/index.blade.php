@@ -103,39 +103,86 @@
             </div>
         </div>
 
+        {{-- Projects --}}
         <div class="section-3">
-                <div class="card-title">
-                    <h2>Refrensi Project</h2>
-                    <a href="">View All</a>
-                </div>
-                <div class="projects">
-                    <div class="col-4 card-project">
-                        <img src="{{ asset('custom/landing-page/images/projects/1.png') }}" alt="">
-                        <div class="card-desc">
-                            <h6 class="mb-10">guardrail</h6>
-                            <p>Pagar Pengaman Jalan adalah alat keselamatan jalan yang terbuat dari baja lembaran.</p>
-                        </div>
-                    </div>
-                    <div class="col-4 card-project">
-                        <img src="{{ asset('custom/landing-page/images/projects/1.png') }}" alt="">
-                        <div class="card-desc">
-                            <h6 class="mb-10">delineator</h6>
-                            <p>Pagar Pengaman Jalan adalah alat keselamatan jalan yang terbuat dari baja lembaran.</p>
-                        </div>
-                    </div>
-                    <div class="col-4 card-project">
-                        <img src="{{ asset('custom/landing-page/images/projects/1.png') }}" alt="">
-                        <div class="card-desc">
-                            <h6 class="mb-10">delineator</h6>
-                            <p>Pagar Pengaman Jalan adalah alat keselamatan jalan yang terbuat dari baja lembaran.</p>
-                        </div>
+            <div class="card-title">
+                <h2>Refrensi Project</h2>
+                <a href="">View All</a>
+            </div>
+            <div class="projects">
+                <div class="col-4 card-project">
+                    <img src="{{ asset('custom/landing-page/images/projects/1.png') }}" alt="">
+                    <div class="card-desc">
+                        <h6 class="mb-10">guardrail</h6>
+                        <p>Pagar Pengaman Jalan adalah alat keselamatan jalan yang terbuat dari baja lembaran.</p>
                     </div>
                 </div>
+                <div class="col-4 card-project">
+                    <img src="{{ asset('custom/landing-page/images/projects/2.png') }}" alt="">
+                    <div class="card-desc">
+                        <h6 class="mb-10">delineator</h6>
+                        <p>Pagar Pengaman Jalan adalah alat keselamatan jalan yang terbuat dari baja lembaran.</p>
+                    </div>
+                </div>
+                <div class="col-4 card-project">
+                    <img src="{{ asset('custom/landing-page/images/projects/3.png') }}" alt="">
+                    <div class="card-desc">
+                        <h6 class="mb-10">delineator</h6>
+                        <p>Pagar Pengaman Jalan adalah alat keselamatan jalan yang terbuat dari baja lembaran.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-4">
+            <div class="service-desc mb-80">
+                <div class="col-6">
+                    <h3>Jasa</h3>
+                </div>
+                <div class="col-6 med-text-desc">
+                    <p>Indonesian citizen, 70 years old. Appointed as Commissioner of the Company since May 2011, based on the Deed of GMS No. 12 dated May 7, 2011, which was ratified by Notary H. Fedris, S.H.</p>
+                </div>
+            </div>
+            <div class="services">
+                <div class="col-4 service-box">
+                    <img src="{{ asset('custom/landing-page/images/services/ic_3D_curve_auto_colon.png') }}" alt="">
+                    <div class="bold-med-text">
+                        <p><strong>Structured Approach</strong></p>
+                    </div>
+                    <div class="med-text-desc">
+                        <p>Prior to joining the Company as one of the Board of Commissioners’member</p>
+                    </div>
+                </div>
+                <div class="col-4 service-box">
+                    <img src="{{ asset('custom/landing-page/images/services/ic_chat_bot.png') }}" alt="">
+                    <div class="bold-med-text">
+                        <p><strong>Professional Feedbacks</strong></p>
+                    </div>
+                    <div class="med-text-desc">
+                        <p>Prior to joining the Company as one of the Board of Commissioners’member</p>
+                    </div>
+                </div>
+                <div class="col-4 service-box">
+                    <img src="{{ asset('custom/landing-page/images/services/ic_airport_location.png') }}" alt="">
+                    <div class="bold-med-text">
+                        <p><strong>Efficiency</strong></p>
+                    </div>
+                    <div class="med-text-desc">
+                        <p>Prior to joining the Company as one of the Board of Commissioners’member</p>
+                    </div>
+                </div>
+                <div class="col-4 service-box">
+                    <img src="{{ asset('custom/landing-page/images/services/ic_event.png') }}" alt="">
+                    <div class="bold-med-text">
+                        <p><strong>Flexible Schedule</strong></p>
+                    </div>
+                    <div class="med-text-desc">
+                        <p>Prior to joining the Company as one of the Board of Commissioners’member</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
-    {{-- <div class="container">
-    </div> --}}
 
 
     <!-- Optional JavaScript -->
