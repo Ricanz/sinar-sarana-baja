@@ -7,6 +7,7 @@
     <title>Sinar Sarana Baja</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <link rel="stylesheet" href="{{ asset('custom/landing-page/css/style.css') }}">
+    <script src="https://kit.fontawesome.com/25812ebfb2.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -106,7 +107,7 @@
         <div class="section-3">
             <div class="card-title">
                 <h2 class="item">Refrensi Project</h2>
-                <a class="item" href="">View All</a>
+                <a class="btn btn-primary-outline" href="#">View All<i class="ml-10 fa-solid fa-arrow-right"></i></a>
             </div>
             <div class="projects">
                 <div class="col-4 card-project">
@@ -192,8 +193,8 @@
                         <h2 class="mb-20">Latest New</h2>
                         <p>The Company has concern on maintaining a healthy and green environment. Therefore, the Company together with the sub-contractors have conducted the waste management and disposal</p>
                     </div>
-                    <div class="col-7">
-                        <a href="">View All</a>
+                    <div class="col-7 item">
+                        <a class="btn btn-primary-outline" href="#">View All<i class="ml-10 fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="news">
@@ -333,15 +334,6 @@
                                 <p class="item"><strong>Address</strong></p>    
                             </div>
                             <span>DKI Jakarta</span>
-                        </div>
-                    </div>
-                    <div class="social">
-                        <h5>Social</h5>
-                        <div class="medias">
-                            <img src="{{ asset('custom/landing-page/images/icons/fb-blk.png') }}" alt="">
-                            <img src="{{ asset('custom/landing-page/images/icons/ig-blk.png') }}" alt="">
-                            <img src="{{ asset('custom/landing-page/images/icons/li-blk.png') }}" alt="">
-                            <img src="{{ asset('custom/landing-page/images/icons/twt-blk.png') }}" alt="">
                         </div>
                     </div>
                 </div>
