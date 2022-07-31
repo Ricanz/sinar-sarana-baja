@@ -219,7 +219,6 @@ nav .search-box {
     width: 20%;
     display: flex;
     align-items: center;
-    vertical-align: middle;
 }
 
 nav .search-box .search {
@@ -235,9 +234,38 @@ nav .search-box .search input.field-header {
     border-radius: 8px;
 }
 
+nav .search input[type=text] {
+    padding-left: 40px;
+}
+
+nav .search-box .search i {
+    position: absolute;
+    color: #919EAB;
+}
+  
+nav .search-box .search {
+    width: 100%;
+    margin-bottom: 10px;
+}
+  
+nav .search-box .search .icon {
+    padding: 10px;
+    min-width: 40px;
+}
+
+nav .search-box .search span {
+    position: absolute;
+    color: #919EAB;
+}
+
 nav .search-box .lang {
     width: 30%;
-    background-color: antiquewhite;
+    margin-left: 5%;
+}
+
+nav .search-box .lang img {
+    width: 70%;
+    /* height: 36px; */
 }
 
 .container {

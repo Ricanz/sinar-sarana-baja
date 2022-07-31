@@ -29,9 +29,11 @@
             </div>
             <div class="search-box">
                 <div class="search">
-                    <input type="text" class="field-header" placeholder="">
+                    <i class="fa-solid fa-magnifying-glass icon"></i>
+                    <input type="text" class="field-header" placeholder="Pencarian">
                 </div>
                 <div class="lang">
+                    <img src="{{ asset('custom/landing-page/images/icons/lang.png') }}" alt="">
                 </div>
             </div>
         </nav>
