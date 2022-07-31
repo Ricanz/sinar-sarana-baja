@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sinar Sarana Baja</title>
-    {{-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow"> --}}
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-    {{-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> --}}
     <link rel="stylesheet" href="{{ asset('custom/landing-page/css/style.css') }}">
 </head>
 <body>
@@ -15,7 +13,7 @@
         <nav>
             <div class="logo-ssb">
                 <center>
-                    <img src="{{ asset('custom/landing-page/images/logo-ssb.png') }}" alt="">
+                    <img src="{{ asset('custom/landing-page/images/ssb-logo.png') }}" alt="">
                 </center>
             </div>
             <div class="nav-items">
@@ -107,8 +105,8 @@
         {{-- Projects --}}
         <div class="section-3">
             <div class="card-title">
-                <h2>Refrensi Project</h2>
-                <a href="">View All</a>
+                <h2 class="item">Refrensi Project</h2>
+                <a class="item" href="">View All</a>
             </div>
             <div class="projects">
                 <div class="col-4 card-project">
@@ -318,23 +316,32 @@
                         <div class="contact">
                             <div class="contact-head mb-10">
                                 <img src="{{ asset('custom/landing-page/images/icons/ic_email.png') }}" alt="">
-                                <p><strong>Email</strong></p>    
+                                <p class="item"><strong>Email</strong></p>    
                             </div>
                             <span>riyanti@sinergybaja.com</span>
                         </div>
                         <div class="contact">
                             <div class="contact-head mb-10">
                                 <img src="{{ asset('custom/landing-page/images/icons/ic_mobile.png') }}" alt="">
-                                <p><strong>Phone</strong></p>    
+                                <p class="item"><strong>Phone</strong></p>    
                             </div>
                             <span>(62) 85-0101</span>
                         </div>
                         <div class="contact">
                             <div class="contact-head mb-10">
                                 <img src="{{ asset('custom/landing-page/images/icons/ic_pin.png') }}" alt="">
-                                <p><strong>Address</strong></p>    
+                                <p class="item"><strong>Address</strong></p>    
                             </div>
                             <span>DKI Jakarta</span>
+                        </div>
+                    </div>
+                    <div class="social">
+                        <h5>Social</h5>
+                        <div class="medias">
+                            <img src="{{ asset('custom/landing-page/images/icons/fb-blk.png') }}" alt="">
+                            <img src="{{ asset('custom/landing-page/images/icons/ig-blk.png') }}" alt="">
+                            <img src="{{ asset('custom/landing-page/images/icons/li-blk.png') }}" alt="">
+                            <img src="{{ asset('custom/landing-page/images/icons/twt-blk.png') }}" alt="">
                         </div>
                     </div>
                 </div>
@@ -343,9 +350,110 @@
                 </div>
             </div>
         </div>
-
-
     </div>
+
+    <footer>
+        <div class="content">
+            <div class="row">
+                <div class="col-4 footer-desc">
+                    <img class="mb-20" src="{{ asset('custom/landing-page/images/logo-ssb.png') }}" alt="">
+                    <div class="sml-text-desc mb-35">
+                        <p>Seiring dengan meningkatnya Proyek Infrastruktur sebagai penunjang pertumbuhan ekonomi nasional disamping meningkatnya permintaan pasar</p>
+                    </div>
+                    {{-- <h5>Let’s stay in touch</h5>
+                    <div class="sml-text-desc">
+                        <p>Berlangganan buletin kami untuk menerima artikel terbaru ke kotak masuk Anda setiap minggu.</p>
+                    </div> --}}
+                    <div class="social">
+                        <h5>Social</h5>
+                        <div class="medias">
+                            <img src="{{ asset('custom/landing-page/images/icons/fb-wht.png') }}" alt="">
+                            <img src="{{ asset('custom/landing-page/images/icons/ig-wht.png') }}" alt="">
+                            <img src="{{ asset('custom/landing-page/images/icons/li-wht.png') }}" alt="">
+                            <img src="{{ asset('custom/landing-page/images/icons/twt-wht.png') }}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 footer-menu">
+                    <div class="col-4">
+                        <div class="menu">
+                            <h5 class="mb-10">About</h5>
+                            <ul>
+                                <li>Profile</li>
+                                <li>Vision, Missiion & Values</li>
+                            </ul>
+                        </div>
+                        <div class="menu">
+                            <h5 class="mb-10">Brosur</h5>
+                            <ul>
+                                <li>Company Profile</li>
+                                <li>Katalog Produk CSP</li>
+                                <li>Katalog Produk 
+                                    Steel Bridge</li>
+                                <li>Katalog Produk 
+                                    Perlengkapan Jalan</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="menu">
+                            <h5 class="mb-10">Produk</h5>
+                            <ul>
+                                <li>Nestable Flange E-100</li>
+                                <li>Multi Plate (sub lagi 13 tipe)</li>
+                                <li>Flex Beam Guardrail & Railing</li>
+                                <li>Tiang PJU</li>
+                                <li>Steel Bridge</li>
+                                <li>Steel Pipe</li>
+                                <li>Bronjong</li>
+                            </ul>
+                        </div>
+                        <div class="menu">
+                            <h5 class="mb-10">Jasa</h5>
+                            <ul>
+                                <li>Landing</li>
+                                <li>Course List</li>
+                                <li>Course Details</li>
+                                <li>Blog</li>
+                                <li>Blog Post</li>
+                                <li>About</li>
+                                <li>Contact</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="menu">
+                            <h5 class="mb-10">Kontak</h5>
+                            <ul>
+                                <li>Lokasi</li>
+                                <li>Hunting : nomor marketing</li>
+                            </ul>
+                        </div>
+                        <div class="menu">
+                            <h5 class="mb-10">Klien</h5>
+                            <ul>
+                                <li>Nama Klien</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="mb-35">
+        <div class="legal">
+            <div class="box">
+                <div class="sml-text-desc item">
+                    <p>© 2022. All rights reserved</p>
+                </div>
+                <div class="sml-text-desc">
+                    <ul>
+                        <li>Help Center</li>
+                        <li>Terms of Service</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
     <!-- Optional JavaScript -->

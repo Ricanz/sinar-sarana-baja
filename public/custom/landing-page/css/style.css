@@ -73,6 +73,11 @@ h3 {
     color: #212B36;
 }
 
+h5 {
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
 h6 {
     text-transform: uppercase;
     color: #015291;
@@ -153,6 +158,10 @@ header {
     display: flex;
     align-items: center;
     z-index: 10;
+}
+
+header nav .logo-ssb img {
+    width: 50%;
 }
 
 nav {
@@ -308,8 +317,18 @@ nav .search-box .lang {
 }
 
 .container .section-3 .card-title {
+    width: 80%;
     display: flex;
     align-items: center;
+
+}
+  
+.container .section-3 .card-title .item {
+    flex-grow: 1;
+}
+
+.container .section-3 .card-title a {
+    text-align: end;
 }
 
 .container .section-3 .projects {
@@ -479,7 +498,7 @@ nav .search-box .lang {
 }
 
 .container .section-6 .clients .client-detail {
-    border: 1px solid #EFD497;
+    /* border: 1px solid #EFD497; */
     border-radius: 16px;
     margin-right: 20px;
     margin-top: 30px;
@@ -523,6 +542,16 @@ nav .search-box .lang {
     padding: 60px 0;
 }
 
+.container .section-8 .social h5 {
+    font-size: 18px;
+    color: #212B36;
+}
+
+.container .section-8 .social .medias img {
+    width: 36px;
+    height: 36px;
+}
+
 .container .section-8 .contact-desc .contact-detail {
     margin: 60px 0;
 }
@@ -534,6 +563,11 @@ nav .search-box .lang {
 .container .section-8 .contact-desc .contact-detail .contact .contact-head {
     display: flex;
     align-items: center;
+}
+  
+.container .section-8 .contact-desc .contact-detail .contact .contact-head .item {
+    flex-grow: 1;
+    margin-left: 10px;
 }
 
 .container .section-8 .contact-desc .contact-detail .contact .contact-head img{
@@ -548,4 +582,73 @@ nav .search-box .lang {
 
 .container .section-8 .contact-map {
     margin-left: 20%;
+}
+
+footer {
+    background-color: #015291;
+}
+
+footer .content {
+    width: 80%;
+    padding: 60px 0;
+}
+
+footer .content .social .medias {
+    margin-top: 20px;
+}
+
+footer .content .social .medias img {
+    width: 36px;
+    height: 36px;
+}
+
+footer .footer-menu {
+    display: flex;
+    align-items:flex-start ;
+    margin-left: 20%;
+}
+
+footer .footer-menu .menu {
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+footer ul{
+    list-style-type: none;
+    justify-content: left;
+}
+
+footer ul li {
+    text-align: left;
+    color: #919EAB;
+    font-size: 13px;
+}
+
+footer .legal {
+    width: 80%;
+    padding-bottom: 20px;
+}
+
+footer .box {
+    display: flex;
+    justify-content: stretch;
+    
+}
+  
+footer .item {
+    flex-grow: 1;
+}
+
+footer .legal .box ul {
+    display: flex;
+}
+
+footer .legal .box ul li {
+    margin-right: 30px;
+}
+
+hr {
+    height: 1px;
+    border: none;
+    background: #919EAB;
 }
