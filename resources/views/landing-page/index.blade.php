@@ -38,8 +38,9 @@
         </nav>
     </header>
 
-    {{-- Banner Slide --}}
     <div class="container">
+
+        {{-- Banner Slide --}}
         <div class="section-1">
             <div class="row">
                 <div class="slide-carousel">
@@ -184,6 +185,7 @@
             </div>
         </div>
 
+        {{-- News --}}
         <div class="section-5">
             <div class="news-content">
                 <h6 class="mb-50">blog</h6>
@@ -250,6 +252,59 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {{-- Clients --}}
+        <div class="section-6">
+            <div class="card-title">
+                <h2 class="mb-20">Our Clients</h2>
+                <div class="med-text-desc mb-20">
+                    <p>Klien kami sudah memilih kami</p>
+                </div>
+            </div>
+            <div class="clients">
+                <div class="row">
+                    <div class="client-detail">
+                        <img src="{{ asset('custom/landing-page/images/clients/client-1.png') }}" alt="">
+                    </div>
+                    <div class="client-detail">
+                        <img src="{{ asset('custom/landing-page/images/clients/client-2.png') }}" alt="">
+                    </div>
+                    <div class="client-detail">
+                        <img src="{{ asset('custom/landing-page/images/clients/client-3.png') }}" alt="">
+                    </div>
+                    <div class="client-detail">
+                        <img src="{{ asset('custom/landing-page/images/clients/client-4.png') }}" alt="">
+                    </div>
+                    <div class="client-detail">
+                        <img src="{{ asset('custom/landing-page/images/clients/client-5.png') }}" alt="">
+                    </div>
+                    <div class="client-detail">
+                        <img src="{{ asset('custom/landing-page/images/clients/client-6.png') }}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-7">
+            <div class="message-content">
+                <div class="col-4 message-image">
+                    <img src="{{ asset('custom/landing-page/images/illustration_contact.png') }}" alt="">
+                </div>
+                <div class="col-8 messages">
+                    <h2 class="mb-10"><strong>Drop us a line</strong></h2>
+                    <div class="sml-text-desc mb-35">
+                        <p>We normally respond within 2 business days</p>
+                    </div>
+                    <div class="message-form">
+                        <input type="email" name="email" id="email" placeholder="Your Name...">
+                        <input type="text" name="name" id="name" placeholder="Your Email...">
+                        <input type="text" name="subject" id="subject" placeholder="Your Subject...">
+                        <textarea name="message" id="message" cols="30" rows="10">Message</textarea>
+                        <button class="btn-primary">Send Message</button>
                     </div>
                 </div>
             </div>
