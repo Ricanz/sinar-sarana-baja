@@ -83,6 +83,10 @@ h6 {
     margin: 0 10px !important;
 }
 
+.mt-20 {
+    margin-top: 20px !important;
+}
+
 .mb-10 {
     margin-bottom: 10px !important;
 }
@@ -484,4 +488,28 @@ nav .search-box .lang {
 .container .section-7 .message-content .messages h2 {
     color: #212B36;
     font-size: 36px;
+}
+
+.container .form-input input[type=text], input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 8px;
+    border: none;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.32);
+    /* border-radius: 8px; */
+}
+
+.container .form-input button {
+    background-color: #015291; /* Green */
+    border: none;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    padding: 11px 22px;
 }
