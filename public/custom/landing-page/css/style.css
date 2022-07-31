@@ -87,6 +87,10 @@ h6 {
     margin-top: 20px !important;
 }
 
+.mt-35 {
+    margin-top: 35px !important;
+}
+
 .mb-10 {
     margin-bottom: 10px !important;
 }
@@ -210,6 +214,30 @@ nav .search-box .lang {
 
 .container {
     position: relative;
+}
+
+
+.container .form-input input[type=text], input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 8px;
+    border: none;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.32);
+}
+
+.container .form-input button {
+    background-color: #015291; /* Green */
+    border: none;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    padding: 11px 22px;
 }
 
 .container .section-1 {
@@ -490,26 +518,34 @@ nav .search-box .lang {
     font-size: 36px;
 }
 
-.container .form-input input[type=text], input[type=email], select, textarea {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border-radius: 8px;
-    border: none;
-    box-sizing: border-box;
-    background: rgba(255, 255, 255, 0.32);
-    /* border-radius: 8px; */
+.container .section-8 {
+    width: 80%;
+    padding: 60px 0;
 }
 
-.container .form-input button {
-    background-color: #015291; /* Green */
-    border: none;
-    border-radius: 8px;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    padding: 11px 22px;
+.container .section-8 .contact-desc .contact-detail {
+    margin: 60px 0;
+}
+
+.container .section-8 .contact-desc .contact-detail .contact {
+    margin-bottom: 20px;
+}
+
+.container .section-8 .contact-desc .contact-detail .contact .contact-head {
+    display: flex;
+    align-items: center;
+}
+
+.container .section-8 .contact-desc .contact-detail .contact .contact-head img{
+    width: 24px;
+    height: 24px;
+}
+
+.container .section-8 .contact-desc .contact-detail .contact .contact-head span{
+    font-size: 14px;
+    color: #212B36;
+}
+
+.container .section-8 .contact-map {
+    margin-left: 20%;
 }
