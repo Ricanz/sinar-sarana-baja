@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sinar Sarana Baja</title>
+    <link rel="icon" type="image/x-icon" href="{{ asset('custom/landing-page/images/favicon.png') }}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <link rel="stylesheet" href="{{ asset('custom/landing-page/css/style.css') }}">
     <script src="https://kit.fontawesome.com/25812ebfb2.js" crossorigin="anonymous"></script>
@@ -18,14 +19,62 @@
                 </center>
             </div>
             <div class="nav-items">
-                <ul>
-                    <li class="active">Home</li>
-                    <li>About</li>
-                    <li>Jasa</li>
-                    <li>Brosur</li>
-                    <li>Klien</li>
-                    <li>Kontak</li>
-                </ul>
+                <div class="dropdown">
+                    <a class="nav-menu active" href="#">Home</a>
+                </div>
+                <div class="dropdown about">
+                    <a class="nav-menu" href="#">About</a>
+                    <div class="dropdown-content menu-about">
+                      <a href="#">Profile</a>
+                      <a href="#">Vision, Missiion & Values</a>
+                      <a href="#">Sertifikat/Legalitas</a>
+                    </div>
+                </div>
+                <div class="dropdown product">
+                    <a class="nav-menu" href="#">Product</a>
+                    <div class="dropdown-content menu-product">
+                      <a href="#">Nestable Flange E-100</a>
+                      <a href="#">Multi Plate (sub lagi 13 tipe)</a>
+                      <a href="#">Flex Beam Guardrail & Railing</a>
+                      <a href="#">Tiang PJU</a>
+                      <a href="#">Steel Bridge</a>
+                      <a href="#">Steel Pipe</a>
+                      <a href="#">Bronjong</a>
+                    </div>
+                </div>
+                <div class="dropdown service">
+                    <a class="nav-menu" href="#">Jasa</a>
+                    <div class="dropdown-content menu-service">
+                      <a href="#">Jasa Perakitan</a>
+                      <a href="#">Jasa Pekerjaan Sipil</a>
+                      <a href="#">Jasa Rancang Bangun</a>
+                    </div>
+                </div>
+                <div class="dropdown brosur">
+                    <a class="nav-menu" href="#">Brosur</a>
+                    <div class="dropdown-content menu-brosur">
+                      <a href="#">Company Profile</a>
+                      <a href="#">Katalog Produk CSP</a>
+                      <a href="#">Katalog Produk Steel Bridge</a>
+                      <a href="#">Katalog Produk Perlengkapan Jalan</a>
+                      <a href="#">Katalog Steel Pipe</a>
+                      <a href="#">Katalog Bronjong</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="nav-menu" href="#">News</a>
+                </div>
+                <div class="dropdown client">
+                    <a class="nav-menu" href="#">Client</a>
+                    <div class="dropdown-content menu-client">
+                      <a href="#">List Client</a>
+                      <a href="#">List Client</a>
+                      <a href="#">List Client</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="nav-menu" href="#contact">Contact Us</a>
+                </div>
             </div>
             <div class="search-box">
                 <div class="search">
@@ -50,15 +99,15 @@
                         <h1 class="mb-50">Oil And Gas Equipment</h1>
                         <p class="mb-50">As the pioneer in manufacturing and construction of transmission line of high</p>
                         <div class="row banner-footer">
-                            <a href="" class="btn-primary">
+                            <a href="" class="view-more btn-primary">
                                 <div class="view-button">
                                     View More
                                 </div>
                             </a>
                             <a href="">
                                 <div class="work-button">
-                                    <img src="" alt="">
-                                    See Our Work
+                                    <img class="btn-play" src="{{ asset('custom/landing-page/images/icons/ic_play.png') }}" alt="">
+                                    <p><strong>See Our Work</strong></p>
                                 </div>
                             </a>
                         </div>
@@ -290,6 +339,7 @@
             </div>
         </div>
 
+        {{-- Message --}}
         <div class="section-7">
             <div class="message-content">
                 <div class="col-4 message-image">
@@ -311,7 +361,8 @@
             </div>
         </div>
 
-        <div class="section-8">
+        {{-- Contact --}}
+        <div class="section-8" id="contact">
             <div class="row">
                 <div class="col-5 contact-desc">
                     <h3>Get In Touch</h3>
@@ -351,7 +402,7 @@
             <div class="row">
                 <div class="col-4 footer-desc">
                     <img class="mb-20" src="{{ asset('custom/landing-page/images/logo-ssb.png') }}" alt="">
-                    <div class="sml-text-desc mb-35">
+                    <div class="mb-35">
                         <p>Seiring dengan meningkatnya Proyek Infrastruktur sebagai penunjang pertumbuhan ekonomi nasional disamping meningkatnya permintaan pasar</p>
                     </div>
                     {{-- <h5>Let’s stay in touch</h5>
@@ -375,6 +426,7 @@
                             <ul>
                                 <li>Profile</li>
                                 <li>Vision, Missiion & Values</li>
+                                <li>Sertifikat/Legalitas</li>
                             </ul>
                         </div>
                         <div class="menu">
@@ -386,6 +438,8 @@
                                     Steel Bridge</li>
                                 <li>Katalog Produk 
                                     Perlengkapan Jalan</li>
+                                <li>Katalog Steel Pipe</li>
+                                <li>Katalog Bronjong</li>
                             </ul>
                         </div>
                     </div>
@@ -406,12 +460,9 @@
                             <h5 class="mb-10">Jasa</h5>
                             <ul>
                                 <li>Landing</li>
-                                <li>Course List</li>
-                                <li>Course Details</li>
-                                <li>Blog</li>
-                                <li>Blog Post</li>
-                                <li>About</li>
-                                <li>Contact</li>
+                                <li>Jasa Perakitan</li>
+                                <li>Jasa Pekerjaan Sipil</li>
+                                <li>Jasa Rancang Bangun</li>
                             </ul>
                         </div>
                     </div>
@@ -421,6 +472,10 @@
                             <ul>
                                 <li>Lokasi</li>
                                 <li>Hunting : nomor marketing</li>
+                                <li>Nomor Gigih/Dito</li>
+                                <li>Nomor Dhendi/Budi</li>
+                                <li>Nomor Herdyan/Santoso</li>
+                                <li>Nomor Anton/Gress</li>
                             </ul>
                         </div>
                         <div class="menu">
@@ -436,7 +491,7 @@
         <hr class="mb-35">
         <div class="legal">
             <div class="box">
-                <div class="sml-text-desc item">
+                <div class="item">
                     <p>© 2022. All rights reserved</p>
                 </div>
                 <div class="sml-text-desc">
