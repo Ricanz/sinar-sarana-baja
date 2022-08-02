@@ -169,6 +169,17 @@ a.btn {
     border-radius: 10px;
 }
 
+.btn-fill-white {
+    border: 2px solid #015291;
+    background-color: white;
+    cursor: pointer;
+    color: #015291;
+    padding: 11px 22px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
 .btn-play {
     border: 2px solid #015291;
     background-color: transparent;
@@ -218,12 +229,20 @@ nav {
 
 @media only screen and (max-device-width: 1440px) {
     header nav.mobile-nav {
-        display: none !important;
+        display: none;
     }
 
     
     .container .section-2 .about .about-desc .mobile-box {
         display: none !important;
+    }
+
+    .btn-mobile {
+        visibility: hidden;
+    }
+
+    .btn-dekstop {
+        visibility: visible;
     }
 }
 
@@ -237,6 +256,7 @@ nav {
     header nav.mobile-nav {
         flex: 1;
         justify-content: space-between;
+        display: flex !important;
     }
 
     header nav.mobile-nav .logo-ssb img {
@@ -250,6 +270,14 @@ nav {
 
     header nav.mobile-nav .items img{
         width:36px;
+    }
+
+    .btn-dekstop {
+        visibility: hidden;
+    }
+
+    .btn-mobile {
+        visibility: visible;
     }
 
 }
@@ -545,6 +573,28 @@ textarea {
     padding-left: 10%;
     align-content: center;
     align-items: center;
+}
+
+@media only screen and (max-device-width: 480px) {
+    .container .section-3 .projects {
+        display: flex !important;
+    }
+}
+
+@media only screen and (max-device-width: 480px) {
+    .container .section-3 .card-title h2 {
+        font-size: 24px;
+        color: #212B36;
+        text-align: center;
+    }
+
+    .container .section-3 .projects {
+        display: block !important;
+    }
+
+    .container .section-3 .projects .card-project{
+        width: 100% !important;
+    }
 }
 
 .container .section-3 {

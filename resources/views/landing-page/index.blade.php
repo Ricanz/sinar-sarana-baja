@@ -188,24 +188,24 @@
         <div class="section-3">
             <div class="card-title">
                 <h2 class="item">Refrensi Project</h2>
-                <a class="btn btn-primary-outline" href="#">View All<i class="ml-10 fa-solid fa-arrow-right"></i></a>
+                <a class="btn btn-primary-outline btn-dekstop" href="#">View All<i class="ml-10 fa-solid fa-arrow-right"></i></a>
             </div>
             <div class="projects">
-                <div class="col-4 card-project">
+                <div class="col-4 card-project mb-35">
                     <img src="{{ asset('custom/landing-page/images/projects/1.png') }}" alt="">
                     <div class="card-desc">
                         <h6 class="mb-10">guardrail</h6>
                         <p>Pagar Pengaman Jalan adalah alat keselamatan jalan yang terbuat dari baja lembaran.</p>
                     </div>
                 </div>
-                <div class="col-4 card-project">
+                <div class="col-4 card-project mb-35">
                     <img src="{{ asset('custom/landing-page/images/projects/2.png') }}" alt="">
                     <div class="card-desc">
                         <h6 class="mb-10">delineator</h6>
                         <p>Pagar Pengaman Jalan adalah alat keselamatan jalan yang terbuat dari baja lembaran.</p>
                     </div>
                 </div>
-                <div class="col-4 card-project">
+                <div class="col-4 card-project mb-35">
                     <img src="{{ asset('custom/landing-page/images/projects/3.png') }}" alt="">
                     <div class="card-desc">
                         <h6 class="mb-10">delineator</h6>
@@ -213,6 +213,9 @@
                     </div>
                 </div>
             </div>
+            <center>
+                <a class="btn btn-fill-white btn-mobile" href="#">View All<i class="ml-10 fa-solid fa-arrow-right"></i></a>
+            </center>
         </div>
 
         {{-- Services  --}}
