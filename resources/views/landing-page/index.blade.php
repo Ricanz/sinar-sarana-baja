@@ -423,7 +423,7 @@
         {{-- Message --}}
         <div class="section-7">
             <div class="message-content">
-                <div class="col-4 message-image">
+                <div class="col-4 message-image message-dekstop">
                     <img src="{{ asset('custom/landing-page/images/illustration_contact.png') }}" alt="">
                 </div>
                 <div class="col-8 messages">
@@ -436,7 +436,9 @@
                         <input type="text" name="name" id="name" placeholder="Your Email...">
                         <input type="text" name="subject" id="subject" placeholder="Your Subject...">
                         <textarea name="message" id="message" cols="30" rows="10">Your Message...</textarea>
-                        <button class="btn-primary mt-20">Send Message</button>
+                        <div class="btn-center">
+                            <button class="btn-primary mt-20">Send Message</button>
+                        </div>
                     </div>
                 </div>
             </div>

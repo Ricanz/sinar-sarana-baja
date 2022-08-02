@@ -749,8 +749,6 @@ textarea {
         margin-top: 5px;
     }
 
-
-
     .container .section-5 .news-content h6 {
         text-align: center;
         margin-bottom: 20px !important;
@@ -877,6 +875,34 @@ textarea {
 .container .section-5 .news-content .news .support-news .news-1 .news-title p {
     color: #212B36;
     font-size: 18px;
+}
+
+@media only screen and (max-device-width: 480px) {
+
+    .container .section-7 .message-content .message-dekstop {
+        display: none !important;
+    }
+
+    .container .section-7 .message-content .messages {
+        width: 100%;
+        margin-left: 0 !important;
+    }
+
+    .container .section-7 .message-content .messages h2 {
+        font-size: 24px !important;
+        color: #212B36;
+        text-align: center;
+    }
+
+    .container .section-7 .message-content .messages p {
+        text-align: center;
+    }
+
+    .container .section-7 .messages .btn-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .container .section-6 {
