@@ -151,7 +151,7 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
                         </div>
                         <div class="spc-50"></div>
-                        <div class="row">
+                        <div class="row dekstop-box">
                             <div class="col-6 box-desc mr-20">
                                 <img class="mb-20" src="{{ asset('custom/landing-page/images/hr.png') }}" alt="" width="24px" height="3px">
                                 <div class="sml-text-desc">
@@ -160,6 +160,20 @@
                             </div>
                             <div class="col-6 box-desc pl-20 mr-20">
                                 <img class="mb-20" src="{{ asset('custom/landing-page/images/hr.png') }}" alt="" width="24px" height="3px">
+                                <div class="sml-text-desc">
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicab</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mobile-box">
+                            <div class="box-desc mb-35">
+                                <img class="mb-20 mobile-separator" src="{{ asset('custom/landing-page/images/hr.png') }}" alt="" width="24px" height="3px">
+                                <div class="sml-text-desc">
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicab</p>
+                                </div>
+                            </div>
+                            <div class="box-desc">
+                                <img class="mb-20 mobile-separator" src="{{ asset('custom/landing-page/images/hr.png') }}" alt="" width="24px" height="3px">
                                 <div class="sml-text-desc">
                                     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicab</p>
                                 </div>
