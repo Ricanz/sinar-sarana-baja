@@ -475,7 +475,9 @@ textarea {
         color: #637381;
     }
 
-    .container .section-1 .slide-carousel .description h1, h6, p{
+    .container .section-1 .slide-carousel .description h1, 
+    .container .section-1 .slide-carousel .description h6, 
+    .container .section-1 .slide-carousel .description p{
         text-align: center;
         margin-bottom: 30px !important;
     }
@@ -576,12 +578,6 @@ textarea {
 }
 
 @media only screen and (max-device-width: 480px) {
-    .container .section-3 .projects {
-        display: flex !important;
-    }
-}
-
-@media only screen and (max-device-width: 480px) {
     .container .section-3 .card-title h2 {
         font-size: 24px;
         color: #212B36;
@@ -645,6 +641,46 @@ textarea {
 
 .container .section-3 .card-desc {
     padding: 15px;
+}
+
+@media only screen and (max-device-width: 480px) {
+    .container .section-4 .service-desc {
+        display: block !important;
+        margin-bottom: 10px !important;
+    }
+
+    .container .section-4 .service-desc h3 {
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .container .section-4 .service-desc p {
+        text-align: center;
+    }
+
+    .container .section-4 .service-desc .mob-desc {
+        width: 100%;
+    }
+
+    .container .section-4 .services {
+        display: block !important;
+    }
+
+    .container .section-4 .services .service-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .container .section-4 .services .service-box img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container .section-4 .services .service-box p{
+        text-align: center;
+    }
 }
 
 .container .section-4 {

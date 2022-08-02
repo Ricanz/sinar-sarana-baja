@@ -224,7 +224,7 @@
                 <div class="col-6">
                     <h3>Jasa</h3>
                 </div>
-                <div class="col-6 med-text-desc">
+                <div class="col-6 med-text-desc mob-desc">
                     <p>Indonesian citizen, 70 years old. Appointed as Commissioner of the Company since May 2011, based on the Deed of GMS No. 12 dated May 7, 2011, which was ratified by Notary H. Fedris, S.H.</p>
                 </div>
             </div>
