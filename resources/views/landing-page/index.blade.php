@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sinar Sarana Baja</title>
     <link rel="icon" type="image/x-icon" href="{{ asset('custom/landing-page/images/favicon.png') }}">
@@ -12,7 +13,7 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="dekstop-nav">
             <div class="logo-ssb">
                 <center>
                     <img src="{{ asset('custom/landing-page/images/ssb-logo.png') }}" alt="">
@@ -84,6 +85,21 @@
                 <div class="lang">
                     <img src="{{ asset('custom/landing-page/images/icons/lang.png') }}" alt="">
                 </div>
+            </div>
+        </nav>
+
+        <nav class="mobile-nav">
+            <div class="logo-ssb">
+                <img src="{{ asset('custom/landing-page/images/ssb-logo.png') }}" alt="">
+            </div>
+            <div class="items">
+                <div class="toggle">
+                    <img src="{{ asset('custom/landing-page/images/ssb-logo.png') }}" alt="">
+                </div>
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass icon"></i>
+                </div>
+
             </div>
         </nav>
     </header>

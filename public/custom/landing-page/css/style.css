@@ -11,13 +11,6 @@
     }
   } */
 
-@media only screen and (max-device-width: 480px) {
-    /* styles for mobile browsers smaller than 480px; (iPhone) */
-    .container {
-        width: 100%;
-    }
-}
-
 .row {
     width: 100%;
     display: flex;
@@ -95,6 +88,13 @@ h6 {
     text-transform: uppercase;
     color: #015291;
     font-size: 12px;
+}
+
+@media only screen and (max-device-width: 480px) {
+    h1 {
+        font-size: 40px;
+        color: #212B36;
+    }
 }
 
 .mv-10 {
@@ -212,7 +212,36 @@ header nav .logo-ssb img {
 nav {
     width: 90%;
     margin: auto;
-    display: flex
+    display: flex;
+    align-items: center;
+}
+
+
+@media only screen and (max-device-width: 480px) {
+    /* styles for mobile browsers smaller than 480px; (iPhone) */
+
+    header nav.dekstop-nav {
+        display: none !important;
+    }
+
+    header nav.mobile-nav {
+        flex: 1;
+        justify-content: space-between;
+    }
+
+    header nav.mobile-nav .logo-ssb img {
+        width: 100%;
+    }
+
+    header nav.mobile-nav .items {
+        display: flex;
+        align-items: center;
+    }
+
+    header nav.mobile-nav .items img{
+        width:36px;
+    }
+
 }
 
 nav .logo-ssb {
@@ -389,6 +418,29 @@ textarea {
 
 .container .section-1 .slide-carousel .image {
     display: flex;
+}
+@media only screen and (max-device-width: 480px) {
+    .container .section-1 {
+        padding: 40px 0 120px 0
+    }
+
+    .container .section-1 .slide-carousel .image {
+        display: none !important;
+    }
+
+    .container .section-1 .slide-carousel .description {
+        width: 100% !important;
+    }
+
+    .container .section-1 .slide-carousel .description p{
+        font-size: 16px;
+        color: #637381;
+    }
+
+    .container .section-1 .slide-carousel .description h1, h6, p{
+        text-align: center;
+        margin-bottom: 30px !important;
+    }
 }
 
 .container .section-1 .slide-carousel .image img {
