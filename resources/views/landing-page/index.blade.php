@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sinar Sarana Baja</title>
     <link rel="icon" type="image/x-icon" href="{{ asset('custom/landing-page/images/favicon.png') }}">
@@ -11,7 +11,7 @@
     <script src="https://kit.fontawesome.com/25812ebfb2.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header> 
+    <header>
         <nav>
             <div class="logo-ssb">
                 <center>
