@@ -1040,6 +1040,59 @@ textarea {
     margin-left: 20%;
 }
 
+@media only screen and (max-device-width: 1440px) { 
+    .mob-icon {
+        visibility: hidden;
+    }
+}
+
+@media only screen and (max-device-width: 480px) { 
+    footer .content .row,
+    footer .content .footer-menu {
+        display: block !important;
+    }
+
+    footer .content .footer-desc,
+    footer .content .footer-menu,
+    footer .content .footer-menu .mob-menu {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    footer .content .footer-menu .menu {
+        margin-bottom: 10px;
+    }
+
+    .mob-icon {
+        margin-left: 10px;
+        visibility: visible;
+        font-size: 0.73em;
+    }
+
+    footer .content .mob-menu .menu-dropdown-brosur,
+    footer .content .mob-menu .menu-dropdown-produk,
+    footer .content .mob-menu .menu-dropdown-jasa,
+    footer .content .mob-menu .menu-dropdown-kontak,
+    footer .content .mob-menu .menu-dropdown-klien {
+        display: none;
+    }
+
+    footer .content .mob-menu .dropdown-active {
+        display: block !important;
+    }
+
+    footer .legal .box {
+        display: block !important;
+    }
+
+    footer .legal .box .item p {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    
+}
+
 footer {
     background-color: #015291;
 }

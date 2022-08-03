@@ -94,7 +94,7 @@
             </div>
             <div class="items">
                 <div class="toggle">
-                    <img src="{{ asset('custom/landing-page/images/ssb-logo.png') }}" alt="">
+                    <img src="{{ asset('custom/landing-page/images/iconbase.png') }}" alt="">
                 </div>
                 <div class="search-box">
                     <i class="fa-solid fa-magnifying-glass icon"></i>
@@ -491,10 +491,6 @@
                     <div class="mb-35">
                         <p>Seiring dengan meningkatnya Proyek Infrastruktur sebagai penunjang pertumbuhan ekonomi nasional disamping meningkatnya permintaan pasar</p>
                     </div>
-                    {{-- <h5>Let’s stay in touch</h5>
-                    <div class="sml-text-desc">
-                        <p>Berlangganan buletin kami untuk menerima artikel terbaru ke kotak masuk Anda setiap minggu.</p>
-                    </div> --}}
                     <div class="social">
                         <h5>Social</h5>
                         <div class="medias">
@@ -506,7 +502,7 @@
                     </div>
                 </div>
                 <div class="col-8 footer-menu">
-                    <div class="col-4">
+                    <div class="col-4 mob-menu">
                         <div class="menu">
                             <h5 class="mb-10">About</h5>
                             <ul>
@@ -516,8 +512,8 @@
                             </ul>
                         </div>
                         <div class="menu">
-                            <h5 class="mb-10">Brosur</h5>
-                            <ul>
+                            <h5 class="mb-10" onclick="footerDropdown('brosur')">Brosur<i class="fa-solid fa-chevron-right mob-icon brosur"></i></h5>
+                            <ul class="menu-dropdown-brosur">
                                 <li>Company Profile</li>
                                 <li>Katalog Produk CSP</li>
                                 <li>Katalog Produk 
@@ -529,10 +525,10 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 mob-menu">
                         <div class="menu">
-                            <h5 class="mb-10">Produk</h5>
-                            <ul>
+                            <h5 class="mb-10" onclick="footerDropdown('produk')">Produk<i class="fa-solid fa-chevron-right mob-icon produk"></i></h5>
+                            <ul class="menu-dropdown-produk">
                                 <li>Nestable Flange E-100</li>
                                 <li>Multi Plate (sub lagi 13 tipe)</li>
                                 <li>Flex Beam Guardrail & Railing</li>
@@ -543,8 +539,8 @@
                             </ul>
                         </div>
                         <div class="menu">
-                            <h5 class="mb-10">Jasa</h5>
-                            <ul>
+                            <h5 class="mb-10" onclick="footerDropdown('jasa')">Jasa<i class="fa-solid fa-chevron-right mob-icon jasa"></i></h5>
+                            <ul class="menu-dropdown-jasa">
                                 <li>Landing</li>
                                 <li>Jasa Perakitan</li>
                                 <li>Jasa Pekerjaan Sipil</li>
@@ -552,10 +548,10 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 mob-menu">
                         <div class="menu">
-                            <h5 class="mb-10">Kontak</h5>
-                            <ul>
+                            <h5 class="mb-10" onclick="footerDropdown('kontak')">Kontak<i class="fa-solid fa-chevron-right mob-icon kontak"></i></h5>
+                            <ul class="menu-dropdown-kontak">
                                 <li>Lokasi</li>
                                 <li>Hunting : nomor marketing</li>
                                 <li>Nomor Gigih/Dito</li>
@@ -565,8 +561,8 @@
                             </ul>
                         </div>
                         <div class="menu">
-                            <h5 class="mb-10">Klien</h5>
-                            <ul>
+                            <h5 class="mb-10" onclick="footerDropdown('klien')">Klien<i class="fa-solid fa-chevron-right mob-icon klien"></i></h5>
+                            <ul class="menu-dropdown-klien">
                                 <li>Nama Klien</li>
                             </ul>
                         </div>
@@ -596,5 +592,18 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+
+        function footerDropdown(val) {
+            if ($('.menu-dropdown-'+val+'.dropdown-active')[0]){
+                $('.mob-icon.'+val).css('transform', 'rotate(0deg)');
+                $( '.menu-dropdown-'+val ).removeClass('dropdown-active');
+            } else {
+                $('.mob-icon.'+val).css('transform', 'rotate(90deg)');
+                $( '.menu-dropdown-'+val ).addClass('dropdown-active');
+            }
+
+        }
+    </script>
 </body>
 </html>
