@@ -457,6 +457,7 @@ textarea {
 .container .section-1 .slide-carousel .image {
     display: flex;
 }
+
 @media only screen and (max-device-width: 480px) {
     .container .section-1 {
         padding: 40px 0 120px 0
@@ -481,6 +482,7 @@ textarea {
         text-align: center;
         margin-bottom: 30px !important;
     }
+
 }
 
 .container .section-1 .slide-carousel .image img {
@@ -958,6 +960,37 @@ textarea {
 .container .section-7 .message-content .messages h2 {
     color: #212B36;
     font-size: 36px;
+}
+
+@media only screen and (max-device-width: 1440px) {
+    .container .section-8 .mobile-map {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-device-width: 480px) { 
+    .container .section-8 .row {
+        display: block !important;
+    }
+
+    .container .section-8 .row .contact-desc,
+    .container .section-8 .row .contact-map {
+        width: 100%;
+        margin-left: 0 !important;
+    }
+
+    .container .section-8 .contact-desc h3 {
+        font-size: 32px;
+    }
+
+    .container .section-8 .dekstop-map {
+        display: none !important;
+    }
+
+    .container .section-8 .mobile-map {
+        display: block !important;
+    }
+
 }
 
 .container .section-8 {
