@@ -90,7 +90,7 @@ h6 {
     font-size: 12px;
 }
 
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-device-width: 560px) {
     h1 {
         font-size: 40px;
         color: #212B36;
@@ -246,8 +246,8 @@ nav {
     }
 }
 
-@media only screen and (max-device-width: 480px) {
-    /* styles for mobile browsers smaller than 480px; (iPhone) */
+@media only screen and (max-device-width: 560px) {
+    /* styles for mobile browsers smaller than 560px; (iPhone) */
 
     header nav.dekstop-nav {
         display: none !important;
@@ -466,7 +466,7 @@ textarea {
     display: flex;
 }
 
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-device-width: 560px) {
     .container .section-1 {
         padding: 40px 0 120px 0
     }
@@ -522,7 +522,7 @@ textarea {
     margin-bottom: 60px;
 }
 
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-device-width: 560px) {
     /* .container .section-2 {
         width: 100% !important;
     } */
@@ -587,7 +587,7 @@ textarea {
     align-items: center;
 }
 
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-device-width: 560px) {
     .container .section-3 .card-title h2 {
         font-size: 24px;
         color: #212B36;
@@ -653,7 +653,7 @@ textarea {
     padding: 15px;
 }
 
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-device-width: 560px) {
     .container .section-4 .service-desc {
         display: block !important;
         margin-bottom: 10px !important;
@@ -731,7 +731,7 @@ textarea {
     }
 }
 
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-device-width: 560px) {
     .container .section-5 .news-content .news .dekstop-news {
         display: none !important;
     }
@@ -887,7 +887,7 @@ textarea {
     font-size: 18px;
 }
 
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-device-width: 560px) {
 
     .container .section-7 .message-content .message-dekstop {
         display: none !important;
@@ -976,7 +976,7 @@ textarea {
     }
 }
 
-@media only screen and (max-device-width: 480px) { 
+@media only screen and (max-device-width: 560px) { 
     .container .section-8 .row {
         display: block !important;
     }
@@ -1054,7 +1054,7 @@ textarea {
     }
 }
 
-@media only screen and (max-device-width: 480px) { 
+@media only screen and (max-device-width: 560px) { 
     footer .content .row,
     footer .content .footer-menu {
         display: block !important;
