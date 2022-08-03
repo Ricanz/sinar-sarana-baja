@@ -600,6 +600,11 @@ textarea {
 
     .container .section-3 .projects .card-project{
         width: 100% !important;
+        margin: 20px 0 !important;
+    }
+
+    .container .section-3 .fill-button {
+        margin-top: 40px !important;
     }
 }
 
