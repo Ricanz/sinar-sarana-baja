@@ -254,9 +254,12 @@ nav {
     }
 
     header nav.mobile-nav {
-        flex: 1;
-        justify-content: space-between;
         display: flex !important;
+        justify-content: stretch;
+    }
+
+    header nav.mobile-nav item {
+        flex-grow: 1;
     }
 
     header nav.mobile-nav .logo-ssb img {
@@ -270,6 +273,11 @@ nav {
 
     header nav.mobile-nav .items img{
         width:36px;
+    }
+
+    header nav.mobile-nav .items i{
+        font-size:25px;
+        padding-left: 10px;
     }
 
     .btn-dekstop {
@@ -1148,6 +1156,7 @@ footer .legal .box .item p {
     color: #919EAB;
     font-size: 13px;
 }
+
 footer .box {
     display: flex;
     justify-content: stretch;

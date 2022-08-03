@@ -89,7 +89,7 @@
         </nav>
 
         <nav class="mobile-nav">
-            <div class="logo-ssb">
+            <div class="logo-ssb item">
                 <img src="{{ asset('custom/landing-page/images/ssb-logo.png') }}" alt="">
             </div>
             <div class="items">
