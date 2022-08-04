@@ -255,7 +255,7 @@ nav {
 
     header nav.mobile-nav {
         display: flex !important;
-        justify-content: stretch;
+        justify-content: space-between;
     }
 
     header nav.mobile-nav item {
@@ -273,6 +273,7 @@ nav {
 
     header nav.mobile-nav .items img{
         width:36px;
+        display: block;
     }
 
     header nav.mobile-nav .items i{
@@ -286,6 +287,21 @@ nav {
 
     .btn-mobile {
         visibility: visible;
+    }
+
+    header .mobile-nav .items {
+        width: 20%;
+        justify-content: flex-end;
+    }
+
+    header .mobile-nav .items .toggle,
+    header .mobile-nav .items .search-box {
+        width: 50%;
+    }
+
+    header .logo-ssb,
+    header .items {
+        margin: unset;
     }
 
 }
@@ -488,7 +504,11 @@ textarea {
     .container .section-1 .slide-carousel .description h6, 
     .container .section-1 .slide-carousel .description p{
         text-align: center;
-        margin-bottom: 30px !important;
+        margin-bottom: 30px;
+    }
+
+    .container .section-1 .work-button p {
+        margin-bottom: 0 !important;
     }
 
 }
@@ -933,6 +953,10 @@ textarea {
     text-align: center;
     font-size: 48px;
     color: #212B36;
+}
+
+.container .section-6 .clients .row {
+    overflow-x: scroll;
 }
 
 .container .section-6 .clients .client-detail {
