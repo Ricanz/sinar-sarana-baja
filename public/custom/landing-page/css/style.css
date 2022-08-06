@@ -137,6 +137,10 @@ h6 {
     margin-left: 10px !important;
 }
 
+.ml-20 {
+    margin-left: 20px !important;
+}
+
 .pl-20 {
     padding-left: 20px !important;
 }
@@ -183,6 +187,19 @@ a.btn {
 .btn-play {
     border: 2px solid #015291;
     background-color: transparent;
+    cursor: pointer;
+    color: #015291;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    margin-right: 15px;
+    width: 20px;
+}
+
+.btn-play-fill {
+    border: 2px solid #015291;
+    background-color: white;
     cursor: pointer;
     color: #015291;
     padding: 10px;
@@ -1125,9 +1142,7 @@ textarea {
     footer .legal .box .item p {
         text-align: center;
         margin-bottom: 20px;
-    }
-
-    
+    }    
 }
 
 footer {
@@ -1163,6 +1178,10 @@ footer .footer-menu {
 footer .footer-menu .menu {
     margin-right: 30px;
     margin-bottom: 30px;
+}
+
+footer .footer-menu .menu a{
+    text-decoration: none;
 }
 
 footer ul {
@@ -1209,3 +1228,114 @@ hr {
     border: none;
     background: #919EAB;
 }
+
+/* Single Page  */
+.container .section-2.about-us {
+    background-image: url('../images/banner-bg.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.container .section-2.about-us .about {
+    padding: 100px;
+}
+
+.container .about .about-us h2 {
+    color: #212B36;
+}
+
+.container .about .about-us .btn-about {
+    margin-top: 30px !important;
+}
+
+.container .section-vision {
+    width: 80%;
+    margin: 50px auto;
+}
+
+.container .section-vision .vision-bg{
+    background-image: url('../images/vision-bg.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 150px;
+    border-radius: 16px;
+}
+
+.container .section-vision h5 {
+    font-size: 24px;
+}
+
+.container .section-vision h3,
+.container .section-vision h5 {
+    color: white;
+    text-align: center;
+}
+
+.container .section-vision .vision-bg .item {
+    margin-bottom: 100px;
+}
+
+.container .section-vision .vision-bg img {
+    width: 30px;
+}
+
+.container .section-mission {
+    background-image: url('../images/banner-bg.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.container .section-mission .mission-bg {
+    width: 80%;
+    padding: 60px 0;
+}
+
+.container .section-mission .mission-bg .row {
+    margin: 60px 0;
+}
+
+.container .section-mission .mission-bg .med-text-desc p {
+    color: #212B36;
+}
+
+.container .section-mission .mission-bg .mission-img img {
+    width: 100%;
+}
+
+.container .section-mission .mission-bg .mission-img p {
+    color: #212B36;
+}
+
+.container .section-mission .mission-bg .mission-desc .mission {
+    background-color: white;
+    padding: 30px;
+    border-radius: 16px;
+}
+
+.container .section-mission .mission-bg .mission-desc .mission h1 {
+    font-size: 64px;
+    color: #919EAB;
+    opacity: 0.24;
+}
+
+.container .section-mission .mission-bg .mission-desc .mission h1 {
+    font-size: 64px;
+    color: #919EAB;
+    opacity: 0.24;
+}
+
+.container .section-mission .mission-bg .mission-desc .mission h5 {
+    color: #212B36;
+}
+
+.container .section-mission .mission-desc {
+    display: flex;
+    align-items: center;
+}
+

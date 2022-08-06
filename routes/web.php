@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\AboutUsController;
+use App\Http\Controllers\GeneralController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,6 +24,7 @@ Route::get('/admin/dashboard', function () {
 });
 
 Route::get('admin/about-us', [AboutUsController::class, 'index']);
+Route::get('/about-us', [GeneralController::class, 'about']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
