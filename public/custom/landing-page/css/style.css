@@ -1596,6 +1596,7 @@ hr {
 @media only screen and (max-device-width: 560px) {
     .container .section-news .hero-news h3 {
         text-align: center;
+        font-size: 28px;
     }
 
     .container .section-news .article {
