@@ -631,14 +631,19 @@ textarea {
 }
 
 @media only screen and (max-device-width: 560px) {
+    .container .section-3 .card-title .item { 
+        width: 100%;
+    }
+
     .container .section-3 .card-title h2 {
-        font-size: 24px;
+        font-size: 20px;
         color: #212B36;
-        text-align: center;
+        text-align: start;
     }
 
     .container .section-3 .projects {
         display: block !important;
+        padding-top: unset !important;
     }
 
     .container .section-3 .projects .card-project{
