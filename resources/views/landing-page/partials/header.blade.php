@@ -78,7 +78,9 @@
 
     <nav class="mobile-nav">
         <div class="logo-ssb item">
-            <img src="{{ asset('custom/landing-page/images/ssb-logo.png') }}" alt="">
+            <a href="{{ url('/') }}">
+                <img src="{{ asset('custom/landing-page/images/ssb-logo.png') }}" alt="">
+            </a>
         </div>
         <div class="items">
             <div class="toggle" id="myBtn">
