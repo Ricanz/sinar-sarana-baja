@@ -22,7 +22,7 @@
 
         </div>
     </div>
-    <div class="section-vision">
+    <div class="section-vision" id="vission-mission">
         <div class="vision-bg">
             <h3 class="item">Our Vision</h3>
             <center class="item">

@@ -24,7 +24,9 @@
                             <a href="{{ url('about-us') }}">
                                 <li>Profile</li>
                             </a>
-                            <li>Vision, Missiion & Values</li>
+                            <a href="{{ url('about-us#vission-mission') }}">
+                                <li>Vision, Missiion & Values</li>
+                            </a>
                             <li>Sertifikat/Legalitas</li>
                         </ul>
                     </div>
