@@ -24,7 +24,7 @@
                     <p>24 Juli 2022 | 8 menit yang lalu</p>
                 </div>
                 <div class="news-title mb-10">
-                    <a href="#" style="text-decoration: none">
+                    <a href="{{ url('news-detail/training-pemadam-kebakaran') }}" style="text-decoration: none">
                         <h2><strong>Training Pemadan Kebakaran Program ISO 45001:2018</strong></h2>
                     </a>
                 </div>

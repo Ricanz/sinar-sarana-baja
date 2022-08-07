@@ -13,4 +13,8 @@ class GeneralController extends Controller
     public function news() {
         return view('landing-page.news.index');
     }
+
+    public function news_detail() {
+        return view('landing-page.news.detail');
+    }
 }
