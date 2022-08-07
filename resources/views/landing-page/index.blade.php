@@ -371,7 +371,7 @@
             </div>
             <div class="col-7 contact-map mobile-map">
                 <center>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15924.475091023463!2d98.68546621852086!3d3.784324316961146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3036ce77adb6ced7%3A0xe1b6fd7218b0c050!2sBelawan%2C%20Belawan%20I%2C%20Medan%20Kota%20Belawan%2C%20Medan%20City%2C%20North%20Sumatra!5e0!3m2!1sen!2sid!4v1659264745013!5m2!1sen!2sid" style="border:0; border-radius: 16px;" width="30 0px" height="350px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15924.475091023463!2d98.68546621852086!3d3.784324316961146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3036ce77adb6ced7%3A0xe1b6fd7218b0c050!2sBelawan%2C%20Belawan%20I%2C%20Medan%20Kota%20Belawan%2C%20Medan%20City%2C%20North%20Sumatra!5e0!3m2!1sen!2sid!4v1659264745013!5m2!1sen!2sid" style="border:0; border-radius: 16px;" width="300px" height="350px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </center>
             </div>
         </div>

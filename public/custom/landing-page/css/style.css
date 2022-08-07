@@ -571,6 +571,7 @@ textarea {
     }
     .container .section-2 .sub-title h6 {
         text-align: start;
+        margin-bottom: 20px;
     }
 
     .container .section-2 .about-desc {
