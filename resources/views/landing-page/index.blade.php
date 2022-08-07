@@ -171,7 +171,7 @@
                     <p>The Company has concern on maintaining a healthy and green environment. Therefore, the Company together with the sub-contractors have conducted the waste management and disposal</p>
                 </div>
                 <div class="col-7 item">
-                    <a class="btn btn-primary-outline btn-dekstop" href="#">View All<i class="ml-10 fa-solid fa-arrow-right"></i></a>
+                    <a class="btn btn-primary-outline btn-dekstop" href="{{ url('/news') }}">View All<i class="ml-10 fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
             <div class="news">
@@ -181,7 +181,9 @@
                         <p>24 Juli 2022 | 8 menit yang lalu</p>
                     </div>
                     <div class="news-title mb-10">
-                        <p><strong>Training Pemadan Kebakaran Program ISO 45001:2018</strong></p>
+                        <a href="{{ url('/news-detail/pemadam-kebakaran') }}" style="text-decoration: none">
+                            <p><strong>Training Pemadan Kebakaran Program ISO 45001:2018</strong></p>
+                        </a>
                     </div>
                     <div class="news-detail">
                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
@@ -195,7 +197,9 @@
                                 <p>24 Juli 2022 | 8 menit yang lalu</p>
                             </div>
                             <div class="news-title mb-10">
-                                <p><strong>Training Pemadan Kebakaran Program ISO 45001:2018</strong></p>
+                                <a href="{{ url('/news-detail/pemadam-kebakaran') }}" style="text-decoration: none">
+                                    <p><strong>Training Pemadan Kebakaran Program ISO 45001:2018</strong></p>
+                                </a>
                             </div>
                         </div>
                         <div class="news-1">
@@ -204,7 +208,9 @@
                                 <p>24 Juli 2022 | 8 menit yang lalu</p>
                             </div>
                             <div class="news-title mb-10">
-                                <p><strong>Training Pemadan Kebakaran Program ISO 45001:2018</strong></p>
+                                <a href="{{ url('/news-detail/pemadam-kebakaran') }}" style="text-decoration: none">
+                                    <p><strong>Training Pemadan Kebakaran Program ISO 45001:2018</strong></p>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -215,7 +221,9 @@
                                 <p>24 Juli 2022 | 8 menit yang lalu</p>
                             </div>
                             <div class="news-title mb-10">
-                                <p><strong>Training Pemadan Kebakaran Program ISO 45001:2018</strong></p>
+                                <a href="{{ url('/news-detail/pemadam-kebakaran') }}" style="text-decoration: none">
+                                    <p><strong>Training Pemadan Kebakaran Program ISO 45001:2018</strong></p>
+                                </a>
                             </div>
                         </div>
                         <div class="news-1">
@@ -224,7 +232,9 @@
                                 <p>24 Juli 2022 | 8 menit yang lalu</p>
                             </div>
                             <div class="news-title mb-10">
-                                <p><strong>Training Pemadan Kebakaran Program ISO 45001:2018</strong></p>
+                                <a href="{{ url('/news-detail/pemadam-kebakaran') }}" style="text-decoration: none">
+                                    <p><strong>Training Pemadan Kebakaran Program ISO 45001:2018</strong></p>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -236,7 +246,9 @@
                             <img src="{{ asset('custom/landing-page/images/news/artikel-1.png') }}" alt="">
                         </div>
                         <div class="col-8 news-detail-mob">
-                            <p><strong>Training Pemadan Kebakaran Program ISO 45001:2018</strong></p>
+                            <a href="{{ url('/news-detail/pemadam-kebakaran') }}" style="text-decoration: none; color: #212B36">
+                                <p><strong>Training Pemadan Kebakaran Program ISO 45001:2018</strong></p>
+                            </a>
                             <p class="time">24 Juli 2022 | 8 menit yang lalu</p>
                         </div>
                     </div>
@@ -245,7 +257,9 @@
                             <img src="{{ asset('custom/landing-page/images/news/artikel-1.png') }}" alt="">
                         </div>
                         <div class="col-8 news-detail-mob">
-                            <p><strong>Training Pemadan Kebakaran Program ISO 45001:2018</strong></p>
+                            <a href="{{ url('/news-detail/pemadam-kebakaran') }}" style="text-decoration: none; color: #212B36">
+                                <p><strong>Training Pemadan Kebakaran Program ISO 45001:2018</strong></p>
+                            </a>
                             <p class="time">24 Juli 2022 | 8 menit yang lalu</p>
                         </div>
                     </div>
@@ -254,7 +268,9 @@
                             <img src="{{ asset('custom/landing-page/images/news/artikel-1.png') }}" alt="">
                         </div>
                         <div class="col-8 news-detail-mob">
-                            <p><strong>Training Pemadan Kebakaran Program ISO 45001:2018</strong></p>
+                            <a href="{{ url('/news-detail/pemadam-kebakaran') }}" style="text-decoration: none; color: #212B36">
+                                <p><strong>Training Pemadan Kebakaran Program ISO 45001:2018</strong></p>
+                            </a>
                             <p class="time">24 Juli 2022 | 8 menit yang lalu</p>
                         </div>
                     </div>
@@ -263,7 +279,9 @@
                             <img src="{{ asset('custom/landing-page/images/news/artikel-1.png') }}" alt="">
                         </div>
                         <div class="col-8 news-detail-mob">
-                            <p><strong>Training Pemadan Kebakaran Program ISO 45001:2018</strong></p>
+                            <a href="{{ url('/news-detail/pemadam-kebakaran') }}" style="text-decoration: none; color: #212B36">
+                                <p><strong>Training Pemadan Kebakaran Program ISO 45001:2018</strong></p>
+                            </a>
                             <p class="time">24 Juli 2022 | 8 menit yang lalu</p>
                         </div>
                     </div>
@@ -272,7 +290,9 @@
                             <img src="{{ asset('custom/landing-page/images/news/artikel-1.png') }}" alt="">
                         </div>
                         <div class="col-8 news-detail-mob">
-                            <p><strong>Training Pemadan Kebakaran Program ISO 45001:2018</strong></p>
+                            <a href="{{ url('/news-detail/pemadam-kebakaran') }}" style="text-decoration: none; color: #212B36">
+                                <p><strong>Training Pemadan Kebakaran Program ISO 45001:2018</strong></p>
+                            </a>
                             <p class="time">24 Juli 2022 | 8 menit yang lalu</p>
                         </div>
                     </div>

@@ -1636,6 +1636,10 @@ hr {
     .container .section-news .news-desc h2 {
         font-size: 24px;
     }
+    
+    .container .section-news .news-title h2 {
+        font-size: 24px;
+    }
 
     .container .section-news .newsletter .content {
         display: block;
