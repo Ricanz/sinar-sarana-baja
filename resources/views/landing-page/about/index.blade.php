@@ -6,17 +6,17 @@
                     <img src="{{ asset('custom/landing-page/images/illustration_teams.png') }}" alt="">
                 </div>
                 <div class="col-7 about-desc about-us">
-                    <h2 class="mb-20">Who We Are ?</h2>
+                    <h2 class="mb-20">Profil</h2>
                     <div class="med-text-desc mb-35">
                         <p>
-                            Vivamus consectetuer hendrerit lacus. Curabitur a felis in nunc fringilla tristique. Nulla neque dolor, sagittis eget, iaculis quis, molestie non, velit.
-                        </p>
-                        <br>
-                        <p>
-                            Nam pretium turpis et arcu. Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi sem ut ipsum. Praesent venenatis metus at tortor pulvinar varius.
+                            PT. Sinergy Sarana Baja merupakan perusahaan nasional yang berdiri dengan dilatarbelakangi oleh pesatnya pertumbuhan proyek infrastruktur di Indonesia yang merupakan salah satu faktor penggerak ekonomi nasional khususnya pada proyek konstruksi baja. Tingginya permintaan pasar terhadap produk baja khususnya Jembatan Rangka Baja / Steel Bridge, Pipa Baja Bergelombang/Corrugated Steel Pipe, Pagar Pengaman Jalan/Flex Beam Guardrail, Fasilitas Perlengkapan Jalan Raya, Gabion serta produk konstruksi baja lainnya, membuat PT. Sinergy Sarana Baja ikut turut berpartisipasi dalam kegiatan pembangunan infrastruktur di Indonesia.
+                            <br> <br>
+                            PT. Sinergy Sarana Baja dengan SDM yang berkualitas dan berpengalaman di bidangnya; memberikan solusi untuk menekan biaya serta peningkatakan efisiensi yang membuat end user mendapatkan produk yang berkualitas dengan harga yang lebih bersaing; sehingga produk yang PT. Sinergy Sarana Baja hasilkan dapat diterima, diminati dan diakui oleh para pelanggan di seluruh Indonesia.
+                            <br> <br>
+                            Produk - produk utama yang dihasilkan oleh PT. Sinergy Sarana Baja berbahan baku baja yang ramah lingkungan, memiliki umur pelayanan yang tinggi dengan menggunakan sistem pelapisan Hot Dip Galvanized, cocok untuk berbagai macam kondisi tanah, mudah dalam proses perakitan, sederhana dan tidak memerlukan biaya transportasi yang tinggi. Dengan moto kerja "Quality & Improvement", PT. Sinergy Sarana Baja berkomitmen untuk terus memberikan produk baja berkualitas dan berkelanjutan dalam berinovasi sesuai dengan perkembangan pasar.
                         </p>
                     </div>
-                    <a href="#" class="btn btn-primary">Check our work<i class="ml-10 fa-solid fa-arrow-right"></i></a>
+                    <a href="#" class="btn btn-primary btn-white-mob">Check our work<i class="ml-10 fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
 
@@ -28,7 +28,9 @@
             <center class="item">
                 <img class="btn-play-fill" src="{{ asset('custom/landing-page/images/icons/iconbase.png') }}" alt="">
             </center>
-            <h5 class="mb-20">Our vision offering the best product nulla vehicula tortor scelerisque ultrices malesuada.</h5>
+            <h5 class="mb-20">
+                Menjadi perusahaan terdepan dan terpercaya sebagai pemasok produk baja manufaktur yang berkomitmen terhadap kualitas mutu dan layanan pada proyek konstruksi nasional.
+            </h5>
         </div>
     </div>
 
@@ -44,27 +46,34 @@
                 </div>
                 <div class="col-6 mission-desc">
                     <div class="col-6 content">
-                        <div class="mission">
+                        <div class="mission mb-20">
                             <h1 class="mb-35">01</h1>
-                            <h5 class="mb-20">Vestibulum</h5>
+                            <h5 class="mb-20">Sinergy</h5>
                             <div class="med-text-desc">
-                                <p>In dui magna, posuere eget, vestibulum et, tempor auctor, justo.</p>
+                                <p>Bersinergi dengan mitra usaha dan meningkatkan kompetensi SDM yang tinggi, berkinerja unggul serta berorientasi kepada kepuasan pelanggan.</p>
+                            </div>
+                        </div>
+                        <div class="mission">
+                            <h1 class="mb-35">02</h1>
+                            <h5 class="mb-20">Mutu</h5>
+                            <div class="med-text-desc">
+                                <p>Menghasilkan dan memasok produk konstruksi baja manufaktur bermutu dan pengiriman tepat waktu sesuai dengan standar kebutuhan proyek nasional.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-6 content ml-20">
                         <div class="mission mb-20">
-                            <h1 class="mb-35">01</h1>
-                            <h5 class="mb-20">Vestibulum</h5>
+                            <h1 class="mb-35">03</h1>
+                            <h5 class="mb-20">Manajemen</h5>
                             <div class="med-text-desc">
-                                <p>In dui magna, posuere eget, vestibulum et, tempor auctor, justo.</p>
+                                <p>Menerapkan sistem manajemen modern dalam mengelola portofolio perusahaan dengan proses kerja yang ramah lingkungan, aman, nyaman serta berorientasi pada pemangku kepentingan.</p>
                             </div>
                         </div>
                         <div class="mission">
-                            <h1 class="mb-35">01</h1>
-                            <h5 class="mb-20">Vestibulum</h5>
+                            <h1 class="mb-35">04</h1>
+                            <h5 class="mb-20">Inovatif</h5>
                             <div class="med-text-desc">
-                                <p>In dui magna, posuere eget, vestibulum et, tempor auctor, justo.</p>
+                                <p>Bersinergi yang berkelanjutan dalam berinovasi mengembangkan produk dan jasa konstruksi baja seiring dengan berkembangnya permintaan pasar.</p>
                             </div>
                         </div>
                     </div>

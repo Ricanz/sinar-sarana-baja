@@ -555,8 +555,7 @@ textarea {
 }
 
 .container .section-2 {
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin: 60px 0;
 }
 
 @media only screen and (max-device-width: 560px) {
@@ -588,6 +587,7 @@ textarea {
     .container .section-2 .about-desc p {
         text-align: start;
         margin: 0 !important;
+        color: #212B36;
     }
 
     .container .section-2 .about .about-desc .row.dekstop-box {
@@ -622,6 +622,11 @@ textarea {
     padding-left: 10%;
     align-content: center;
     align-items: center;
+}
+
+
+.container .section-2 .about-desc p {
+    color: #212B36;
 }
 
 @media only screen and (max-device-width: 560px) {
@@ -1236,6 +1241,7 @@ hr {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    margin-top: unset;
 }
 
 .container .section-2.about-us .about {
@@ -1338,4 +1344,51 @@ hr {
     display: flex;
     align-items: center;
 }
+
+@media only screen and (max-device-width: 560px) {
+    .container .section-2.about-us {
+        margin-top: unset;
+    }
+
+    .container .section-2.about-us .about {
+        padding: 80px 0 !important;
+    }
+
+    .container .section-2.about-us .btn-white-mob {
+        background-color: white;
+        color: #015291;
+    }
+
+    .container .section-vision .vision-bg {
+        padding: 20px 10px;
+    }
+
+    .container .section-vision .vision-bg h3 {
+        font-size: 40px;
+    }
+
+    .container .section-vision .vision-bg h5 {
+        font-size: 18px;
+    }
+
+    .container .section-mission .mission-bg .mission-img {
+        display: none;
+    }
+
+    .container .section-mission .mission-desc {
+        width: 100%;
+    }
+
+    .container .section-mission .mission-bg .mission-desc .mission h1,
+    .container .section-mission .mission-bg .mission-desc .mission h5 {
+        margin-bottom: unset !important;
+    }
+
+    .container .section-mission .mission-bg .mission-desc .mission p {
+        margin-top: 10px !important;
+        font-size: 14px;
+    }
+
+}
+
 
