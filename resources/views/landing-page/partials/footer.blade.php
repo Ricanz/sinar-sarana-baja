@@ -68,7 +68,7 @@
                     </div>
                 </div>
                 <div class="col-4 mob-menu">
-                    <div class="menu">
+                    {{-- <div class="menu">
                         <h5 class="mb-10" onclick="footerDropdown('kontak')">Kontak<i class="fa-solid fa-chevron-right mob-icon kontak"></i></h5>
                         <ul class="menu-dropdown-kontak">
                             <li>Lokasi</li>
@@ -84,7 +84,7 @@
                         <ul class="menu-dropdown-klien">
                             <li>Nama Klien</li>
                         </ul>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>
