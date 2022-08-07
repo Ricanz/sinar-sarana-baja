@@ -24,7 +24,9 @@
                     <p>24 Juli 2022 | 8 menit yang lalu</p>
                 </div>
                 <div class="news-title mb-10">
-                    <h2><strong>Training Pemadan Kebakaran Program ISO 45001:2018</strong></h2>
+                    <a href="#" style="text-decoration: none">
+                        <h2><strong>Training Pemadan Kebakaran Program ISO 45001:2018</strong></h2>
+                    </a>
                 </div>
                 <div class="news-desc">
                     <div class="med-text-desc">
@@ -48,7 +50,9 @@
                     <p>24 Juli 2022 | 8 menit yang lalu</p>
                 </div>
                 <div class="news-title mb-10">
-                    <h2><strong>Training Pemadan Kebakaran Program ISO 45001:2018</strong></h2>
+                    <a href="#" style="text-decoration: none">
+                        <h2><strong>Training Pemadan Kebakaran Program ISO 45001:2018</strong></h2>
+                    </a>
                 </div>
                 <div class="news-desc">
                     <div class="med-text-desc">
@@ -72,7 +76,9 @@
                     <p>24 Juli 2022 | 8 menit yang lalu</p>
                 </div>
                 <div class="news-title mb-10">
-                    <h2><strong>Training Pemadan Kebakaran Program ISO 45001:2018</strong></h2>
+                    <a href="#" style="text-decoration: none">
+                        <h2><strong>Training Pemadan Kebakaran Program ISO 45001:2018</strong></h2>
+                    </a>
                 </div>
                 <div class="news-desc">
                     <div class="med-text-desc">
