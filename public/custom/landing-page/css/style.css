@@ -1593,3 +1593,38 @@ hr {
     color: white;
 }
 
+@media only screen and (max-device-width: 560px) {
+    .container .section-news .hero-news h3 {
+        text-align: center;
+    }
+
+    .container .section-news .article {
+        display: block;
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+
+    .container .section-news .image-news {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .container .section-news .news-desc {
+        width: 100%;
+    }
+
+    .container .section-news .news-desc h2 {
+        font-size: 24px;
+    }
+
+    .container .section-news .newsletter .content {
+        display: block;
+    }
+    .container .section-news .newsletter .content .newsletter-desc {
+        width: 100%;
+    }
+
+    .container .section-news .newsletter .content .newsletter-desc h3 {
+        font-size: 28px;
+    }
+}
+

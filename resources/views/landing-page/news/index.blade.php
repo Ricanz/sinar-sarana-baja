@@ -19,7 +19,7 @@
             <div class="col-8 image-news mr-20">
                 <img src="{{ asset('custom/landing-page/images/projects/1.png') }}" alt="">
             </div>
-            <div class="col-4 news-detail-mob">
+            <div class="col-4 news-desc news-detail-mob">
                 <div class="time mb-10 med-text-desc">
                     <p>24 Juli 2022 | 8 menit yang lalu</p>
                 </div>
@@ -43,7 +43,7 @@
             <div class="col-8 image-news mr-20">
                 <img src="{{ asset('custom/landing-page/images/projects/1.png') }}" alt="">
             </div>
-            <div class="col-4 news-detail-mob">
+            <div class="col-4 news-desc news-detail-mob">
                 <div class="time mb-10 med-text-desc">
                     <p>24 Juli 2022 | 8 menit yang lalu</p>
                 </div>
@@ -67,7 +67,7 @@
             <div class="col-8 image-news mr-20">
                 <img src="{{ asset('custom/landing-page/images/projects/1.png') }}" alt="">
             </div>
-            <div class="col-4 news-detail-mob">
+            <div class="col-4 news-desc news-detail-mob">
                 <div class="time mb-10 med-text-desc">
                     <p>24 Juli 2022 | 8 menit yang lalu</p>
                 </div>
@@ -98,7 +98,7 @@
             <div class="content">
                 <div class="col-6">
                 </div>
-                <div class="col-6">
+                <div class="col-6 newsletter-desc">
                     <h3 class="mb-10">Sinergy Sarana Baja</h3>
                     <p>We serve as ur motto said "Quality & Improvement"</p>
                 </div>
