@@ -2,7 +2,9 @@
     <div class="content">
         <div class="row">
             <div class="col-4 footer-desc">
-                <img class="mb-20" src="{{ asset('custom/landing-page/images/logo-ssb.png') }}" alt="">
+                <a href="{{ url('/') }}">
+                    <img class="mb-20" src="{{ asset('custom/landing-page/images/logo-ssb.png') }}" alt="">
+                </a>
                 <div class="mb-35">
                     <p>Seiring dengan meningkatnya Proyek Infrastruktur sebagai penunjang pertumbuhan ekonomi nasional disamping meningkatnya permintaan pasar</p>
                 </div>

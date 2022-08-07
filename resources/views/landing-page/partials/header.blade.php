@@ -2,7 +2,9 @@
     <nav class="dekstop-nav">
         <div class="logo-ssb">
             <center>
-                <img src="{{ asset('custom/landing-page/images/ssb-logo.png') }}" alt="">
+                <a href="{{ url('/') }}">
+                    <img src="{{ asset('custom/landing-page/images/ssb-logo.png') }}" alt="">
+                </a>
             </center>
         </div>
         <div class="nav-items">
