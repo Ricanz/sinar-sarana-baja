@@ -40,7 +40,7 @@
             <div class="med-text-desc">
                 <p>Curabitur ullamcorper ultricies nisi. Aenean viverra rhoncus pede.</p>
             </div>
-            <div class="row">
+            <div class="row dekstop-mission">
                 <div class="col-6 mission-img">
                     <img src="{{ asset('custom/landing-page/images/illustration_vision.png') }}" alt="">
                 </div>
@@ -70,6 +70,40 @@
                             </div>
                         </div>
                         <div class="mission">
+                            <h1 class="mb-35">04</h1>
+                            <h5 class="mb-20">Inovatif</h5>
+                            <div class="med-text-desc">
+                                <p>Bersinergi yang berkelanjutan dalam berinovasi mengembangkan produk dan jasa konstruksi baja seiring dengan berkembangnya permintaan pasar.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mobile-mission">
+                <div class="mission-desc">
+                    <div class="content">
+                        <div class="mission mb-20">
+                            <h1 class="mb-35">01</h1>
+                            <h5 class="mb-20">Sinergy</h5>
+                            <div class="med-text-desc">
+                                <p>Bersinergi dengan mitra usaha dan meningkatkan kompetensi SDM yang tinggi, berkinerja unggul serta berorientasi kepada kepuasan pelanggan.</p>
+                            </div>
+                        </div>
+                        <div class="mission mb-20">
+                            <h1 class="mb-35">02</h1>
+                            <h5 class="mb-20">Mutu</h5>
+                            <div class="med-text-desc">
+                                <p>Menghasilkan dan memasok produk konstruksi baja manufaktur bermutu dan pengiriman tepat waktu sesuai dengan standar kebutuhan proyek nasional.</p>
+                            </div>
+                        </div>
+                        <div class="mission mb-20">
+                            <h1 class="mb-35">03</h1>
+                            <h5 class="mb-20">Manajemen</h5>
+                            <div class="med-text-desc">
+                                <p>Menerapkan sistem manajemen modern dalam mengelola portofolio perusahaan dengan proses kerja yang ramah lingkungan, aman, nyaman serta berorientasi pada pemangku kepentingan.</p>
+                            </div>
+                        </div>
+                        <div class="mission mb-20">
                             <h1 class="mb-35">04</h1>
                             <h5 class="mb-20">Inovatif</h5>
                             <div class="med-text-desc">

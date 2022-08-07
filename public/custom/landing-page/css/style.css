@@ -1336,12 +1336,6 @@ hr {
     opacity: 0.24;
 }
 
-.container .section-mission .mission-bg .mission-desc .mission h1 {
-    font-size: 64px;
-    color: #919EAB;
-    opacity: 0.24;
-}
-
 .container .section-mission .mission-bg .mission-desc .mission h5 {
     color: #212B36;
 }
@@ -1349,6 +1343,12 @@ hr {
 .container .section-mission .mission-desc {
     display: flex;
     align-items: center;
+}
+
+@media only screen and (max-device-width: 1440px) {
+    .container .section-mission .mission-bg .mobile-mission {
+        display: none;
+    }
 }
 
 @media only screen and (max-device-width: 560px) {
@@ -1377,22 +1377,21 @@ hr {
         font-size: 18px;
     }
 
-    .container .section-mission .mission-bg .mission-img {
-        display: none;
+    .container .section-mission .mission-bg .dekstop-mission {
+        display: none !important;
     }
 
-    .container .section-mission .mission-desc {
-        width: 100%;
-    }
-
-    .container .section-mission .mission-bg .mission-desc .mission h1,
-    .container .section-mission .mission-bg .mission-desc .mission h5 {
-        margin-bottom: unset !important;
+    .container .section-mission .mission-bg .mobile-mission {
+        display: block !important;
     }
 
     .container .section-mission .mission-bg .mission-desc .mission p {
         margin-top: 10px !important;
         font-size: 14px;
+    }
+
+    .container .section-mission .mission-bg .mission-desc .mission h1 {
+        margin-bottom: unset !important;
     }
 
 }
