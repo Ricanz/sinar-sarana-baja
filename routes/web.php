@@ -25,6 +25,7 @@ Route::get('/admin/dashboard', function () {
 
 Route::get('admin/about-us', [AboutUsController::class, 'index']);
 Route::get('/about-us', [GeneralController::class, 'about']);
+Route::get('/news', [GeneralController::class, 'news']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');

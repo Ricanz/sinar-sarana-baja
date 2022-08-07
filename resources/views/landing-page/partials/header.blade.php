@@ -51,7 +51,7 @@
                 </div>
             </div>
             <div class="dropdown">
-                <a class="nav-menu" href="#">News</a>
+                <a class="nav-menu" href="{{ url('news') }}">News</a>
             </div>
             <div class="dropdown client">
                 <a class="nav-menu" href="#">Client</a>
@@ -147,6 +147,16 @@
                                 <li>Jasa Pekerjaan Sipil</li>
                                 <li>Jasa Rancang Bangun</li>
                             </ul>
+                        </div>
+                        <div class="menu">
+                            <a href="{{ url('/news') }}">
+                                <h5 class="mb-10 menu-header">News</h5>
+                            </a>
+                        </div>
+                        <div class="menu">
+                            <a href="#">
+                                <h5 class="mb-10 menu-header">Contact</h5>
+                            </a>
                         </div>
                     </div>
 
