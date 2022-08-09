@@ -1,7 +1,5 @@
 <?php
 
-use App\Http\Controllers\Admin\AboutUsController;
-use App\Http\Controllers\GeneralController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,17 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('landing-page.index');
+    return view('welcome');
 });
-
-Route::get('/admin/dashboard', function () {
-    return view('admin.index');
-});
-
-Route::get('admin/about-us', [AboutUsController::class, 'index']);
-Route::get('/about-us', [GeneralController::class, 'about']);
-Route::get('/news', [GeneralController::class, 'news']);
-Route::get('/news-detail/{slug}', [GeneralController::class, 'news_detail']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
