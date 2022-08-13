@@ -17,25 +17,27 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('landing-page.index');
+    return view('landing-page.maintenance');
 });
+// Route::get('/', function () {
+//     return view('landing-page.index');
+// });
 
 
-// Route::get('admin/about-us', [AboutUsController::class, 'index']);
-Route::get('/about-us', [GeneralController::class, 'about']);
-Route::get('/news', [GeneralController::class, 'news']);
-Route::get('/news-detail/{slug}', [GeneralController::class, 'news_detail']);
+// Route::get('/about-us', [GeneralController::class, 'about']);
+// Route::get('/news', [GeneralController::class, 'news']);
+// Route::get('/news-detail/{slug}', [GeneralController::class, 'news_detail']);
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+// Route::get('/dashboard', function () {
+//     return view('dashboard');
+// })->middleware(['auth'])->name('dashboard');
 
-Route::middleware('auth')->group(function () {
-    Route::get('/admin/dashboard', function () {
-        return view('admin.index');
-    });
+// Route::middleware('auth')->group(function () {
+//     Route::get('/admin/dashboard', function () {
+//         return view('admin.index');
+//     });
 
-    Route::get('admin/about', [AboutController::class, 'index'])->name('about');
-    Route::post('admin/submit', [AboutController::class, 'update'])->name('updateAbout');
-});
+//     Route::get('admin/about', [AboutController::class, 'index'])->name('about');
+//     Route::post('admin/submit', [AboutController::class, 'update'])->name('updateAbout');
+// });
 require __DIR__.'/auth.php';
