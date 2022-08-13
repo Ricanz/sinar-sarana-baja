@@ -62,10 +62,9 @@
                     <div class="menu">
                         <h5 class="mb-10" onclick="footerDropdown('jasa')">Jasa<i class="fa-solid fa-chevron-right mob-icon jasa"></i></h5>
                         <ul class="menu-dropdown-jasa">
-                            <li>Landing</li>
-                            <li>Jasa Perakitan</li>
-                            <li>Jasa Pekerjaan Sipil</li>
-                            <li>Jasa Rancang Bangun</li>
+                            @foreach ($services as $item)
+                            <li>{{ $item->title }}</li>
+                            @endforeach
                         </ul>
                     </div>
                 </div>

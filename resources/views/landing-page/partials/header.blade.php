@@ -23,7 +23,7 @@
                 <a class="nav-menu" href="#">Product</a>
                 <div class="dropdown-content menu-product">
                     <a href="#">Nestable Flange E-100</a>
-                    <a href="#">Multi Plate (sub lagi 13 tipe)</a>
+                    <a href="#">Multi Plate</a>
                     <a href="#">Flex Beam Guardrail & Railing</a>
                     <a href="#">Tiang PJU</a>
                     <a href="#">Steel Bridge</a>
@@ -34,9 +34,9 @@
             <div class="dropdown service">
                 <a class="nav-menu" href="#">Jasa</a>
                 <div class="dropdown-content menu-service">
-                    <a href="#">Jasa Perakitan</a>
-                    <a href="#">Jasa Pekerjaan Sipil</a>
-                    <a href="#">Jasa Rancang Bangun</a>
+                    @foreach ($services as $item)
+                        <a href="{{ url('service/'.$item->slug) }}">{{ $item->title }}</a>
+                    @endforeach
                 </div>
             </div>
             <div class="dropdown brosur">
@@ -142,10 +142,11 @@
                             <h5 class="mb-10" onclick="footerDropdown('jasa')">Jasa<i
                                     class="fa-solid fa-chevron-right mob-icon jasa"></i></h5>
                             <ul class="menu-dropdown-jasa">
-                                <li>Landing</li>
-                                <li>Jasa Perakitan</li>
-                                <li>Jasa Pekerjaan Sipil</li>
-                                <li>Jasa Rancang Bangun</li>
+                                @foreach ($services as $item)
+                                <a href="{{ url('service/'.$item->slug) }}">
+                                    <li>{{ $item->title }}</li>
+                                </a>
+                                @endforeach
                             </ul>
                         </div>
                         <div class="menu">
