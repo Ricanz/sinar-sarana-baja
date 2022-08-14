@@ -3,17 +3,13 @@
         <div class="about">
             <div class="row">
                 <div class="col-5 about-image">
-                    <img src="{{ asset('custom/landing-page/images/illustration_teams.png') }}" alt="">
+                    <img src="{{ asset($profile->image) }}" alt="">
                 </div>
                 <div class="col-7 about-desc about-us">
                     <h2 class="mb-20">Profil</h2>
                     <div class="med-text-desc mb-35">
                         <p>
-                            PT. Sinergy Sarana Baja merupakan perusahaan nasional yang berdiri dengan dilatarbelakangi oleh pesatnya pertumbuhan proyek infrastruktur di Indonesia yang merupakan salah satu faktor penggerak ekonomi nasional khususnya pada proyek konstruksi baja. Tingginya permintaan pasar terhadap produk baja khususnya Jembatan Rangka Baja / Steel Bridge, Pipa Baja Bergelombang/Corrugated Steel Pipe, Pagar Pengaman Jalan/Flex Beam Guardrail, Fasilitas Perlengkapan Jalan Raya, Gabion serta produk konstruksi baja lainnya, membuat PT. Sinergy Sarana Baja ikut turut berpartisipasi dalam kegiatan pembangunan infrastruktur di Indonesia.
-                            <br> <br>
-                            PT. Sinergy Sarana Baja dengan SDM yang berkualitas dan berpengalaman di bidangnya; memberikan solusi untuk menekan biaya serta peningkatakan efisiensi yang membuat end user mendapatkan produk yang berkualitas dengan harga yang lebih bersaing; sehingga produk yang PT. Sinergy Sarana Baja hasilkan dapat diterima, diminati dan diakui oleh para pelanggan di seluruh Indonesia.
-                            <br> <br>
-                            Produk - produk utama yang dihasilkan oleh PT. Sinergy Sarana Baja berbahan baku baja yang ramah lingkungan, memiliki umur pelayanan yang tinggi dengan menggunakan sistem pelapisan Hot Dip Galvanized, cocok untuk berbagai macam kondisi tanah, mudah dalam proses perakitan, sederhana dan tidak memerlukan biaya transportasi yang tinggi. Dengan moto kerja "Quality & Improvement", PT. Sinergy Sarana Baja berkomitmen untuk terus memberikan produk baja berkualitas dan berkelanjutan dalam berinovasi sesuai dengan perkembangan pasar.
+                            {!! $profile->description !!}
                         </p>
                     </div>
                     <a href="#" class="btn btn-primary btn-white-mob">Check our work<i class="ml-10 fa-solid fa-arrow-right"></i></a>
@@ -29,7 +25,7 @@
                 <img class="btn-play-fill" src="{{ asset('custom/landing-page/images/icons/iconbase.png') }}" alt="">
             </center>
             <h5 class="mb-20">
-                Menjadi perusahaan terdepan dan terpercaya sebagai pemasok produk baja manufaktur yang berkomitmen terhadap kualitas mutu dan layanan pada proyek konstruksi nasional.
+                {!! $profile->vission !!}
             </h5>
         </div>
     </div>

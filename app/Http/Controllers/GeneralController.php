@@ -2,13 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\About;
 use App\Models\Service;
 use Illuminate\Http\Request;
 
 class GeneralController extends Controller
 {
     public function about() {
-        return view('landing-page.about.index');
+        $profile = About::where('id', 1)->first();
+        return view('landing-page.about.index', compact('profile'));
     }
 
     public function news() {
