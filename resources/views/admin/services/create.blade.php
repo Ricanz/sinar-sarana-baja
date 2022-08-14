@@ -11,7 +11,7 @@
         </div>
         <div class="form-group">
             <label for="description">Description</label>
-            <textarea name="description" id="description" class="form-control" cols="30" rows="7"></textarea>
+            <textarea name="description" id="mytextarea" class="form-control" cols="30" rows="15"></textarea>
         </div>
         <button class="btn btn-primary btn-user btn-block mt-4">Create</button>
     </form>
