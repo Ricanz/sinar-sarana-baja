@@ -47,15 +47,15 @@
     </div>
 
     <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
-            aria-expanded="true" aria-controls="collapsePages">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseServices"
+            aria-expanded="true" aria-controls="collapseServices">
             <i class="fas fa-fw fa-folder"></i>
             <span>Services</span>
         </a>
-        <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+        <div id="collapseServices" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <a class="collapse-item" href="{{ url('admin/services') }}">Services Data</a>
-                <a class="collapse-item" href="{{ url('admin/services/create') }}">Add Services</a>
+                <a class="collapse-item" href="{{ url('admin/services/create') }}">Add Service</a>
             </div>
         </div>
     </li>
@@ -64,19 +64,13 @@
     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
             aria-expanded="true" aria-controls="collapsePages">
-            <i class="fas fa-fw fa-folder"></i>
-            <span>Pages</span>
+            <i class="fas fa-fw fa-book"></i>
+            <span>Articles</span>
         </a>
         <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Login Screens:</h6>
-                <a class="collapse-item" href="login.html">Login</a>
-                <a class="collapse-item" href="register.html">Register</a>
-                <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
-                <div class="collapse-divider"></div>
-                <h6 class="collapse-header">Other Pages:</h6>
-                <a class="collapse-item" href="404.html">404 Page</a>
-                <a class="collapse-item" href="blank.html">Blank Page</a>
+                <a class="collapse-item" href="{{ url('admin/articles') }}">Articles Data</a>
+                <a class="collapse-item" href="{{ url('admin/article/create') }}">Add Article</a>
             </div>
         </div>
     </li>

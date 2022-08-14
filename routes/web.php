@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\AboutController;
 use App\Http\Controllers\Admin\AboutUsController;
+use App\Http\Controllers\Admin\ArticleController;
 use App\Http\Controllers\Admin\ServicesController;
 use App\Http\Controllers\GeneralController;
 use Illuminate\Support\Facades\Route;
@@ -52,5 +53,14 @@ Route::middleware('auth')->group(function () {
     Route::get('admin/service/edit/{id}', [ServicesController::class, 'edit_view']);
     Route::post('admin/service/update', [ServicesController::class, 'update'])->name('updateService');
     Route::post('admin/service/delete', [ServicesController::class, 'destroy'])->name('deleteService');
+
+    // Article
+    Route::get('admin/articles', [ArticleController::class, 'index'])->name('articles');
+    Route::get('admin/article/create', [ArticleController::class, 'create_view']);
+    Route::post('admin/article/submit', [ArticleController::class, 'submit'])->name('addArticle');
+    Route::get('admin/article/edit/{id}', [ArticleController::class, 'edit_view']);
+    Route::post('admin/article/update', [ArticleController::class, 'update'])->name('updateArticle');
+    Route::post('admin/article/delete', [ArticleController::class, 'destroy'])->name('deleteArticle');
+
 });
 require __DIR__.'/auth.php';

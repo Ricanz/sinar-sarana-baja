@@ -6,8 +6,8 @@
         <div class="container-fluid">
 
             <!-- Page Heading -->
-            <h1 class="h3 mb-2 text-gray-800">Services Data</h1>
-            <p class="mb-4">Data for services</p>
+            <h1 class="h3 mb-2 text-gray-800">Articles Data</h1>
+            <p class="mb-4">Data for article</p>
 
             <!-- DataTales Example -->
             <div class="card shadow mb-4">
@@ -20,6 +20,7 @@
                             <thead>
                                 <tr>
                                     <th>No</th>
+                                    <th>Image</th>
                                     <th>Title</th>
                                     <th>Description</th>
                                     <th>Status</th>
@@ -27,19 +28,22 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach ($services as $item)
+                                @foreach ($articles as $item)
                                     <tr>
                                         <td>{{ $loop->iteration }}</td>
+                                        <td>
+                                            <img src="{{ asset($item->image) }}" alt="" width="150px">
+                                        </td>
                                         <td>{{ $item->title }}</td>
                                         <td>{!! Str::limit($item->description, 150, '...') !!}</td>
                                         <td>{{ $item->status }}</td>
                                         <td style="display: flex">
-                                            <form action="{{ route('deleteService') }}" method="POST">
+                                            <form action="{{ route('deleteArticle') }}" method="POST">
                                                 @csrf
                                                 <input type="hidden" name="id" id="id" value="{{ $item->id }}">
                                                 <button class="btn btn-danger" style="margin-right: 10px">Delete</button>
                                             </form>
-                                            <a href="{{ url('admin/service/edit/'.$item->id) }}" class="btn btn-primary">Edit</a>
+                                            <a href="{{ url('admin/article/edit/'.$item->id) }}" class="btn btn-primary">Edit</a>
                                         </td>
                                     </tr>
                                 @endforeach
