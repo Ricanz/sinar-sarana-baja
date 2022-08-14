@@ -7,7 +7,7 @@
                 </a>
             </center>
         </div>
-        <div class="nav-items">
+        {{-- <div class="nav-items">
             <div class="dropdown">
                 <a class="nav-menu active" href="{{ url('/') }}">Home</a>
             </div>
@@ -64,6 +64,70 @@
             <div class="dropdown">
                 <a class="nav-menu" href="/#contact">Contact Us</a>
             </div>
+        </div> --}}
+        <div class="nav-items">
+            <ul>
+
+                <li><a href="{{ url('/') }}" style="color: #015291">Home</a></li>
+    
+                <li><a href="{{ url('about-us') }}">About</a>
+                    <ul>
+                        <li><a href="{{ url('about-us') }}">Profile</a></li>
+                        <li><a href="{{ url('about-us#vission-mission') }}">Vision, Missiion & Values</a></li>
+                        <li><a href="#">Sertifikat/Legalitas</a></li>
+                    </ul>
+                </li>
+    
+                <li class="dropdown"><a href="#">Product</a>
+                    <ul>
+                        <li><a href="#">Nestable Flange E-100</a></li>
+    
+                        <li><a href="#">Multi Plate</a>
+                            <ul>
+                                <li><a href="#">Sub Product</a></li>
+                                <li><a href="#">Sub Product</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Flex Beam Guardrail & Railing</a></li>
+                        <li><a href="#">Tiang PJU</a></li>
+                        <li><a href="#">Steel Bridge</a></li>
+                        <li><a href="#">Steel Pipe</a></li>
+                        <li><a href="#">Bronjong</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">Jasa</a>
+                    <ul>
+                        @foreach ($services as $item)
+                            <li><a href="{{ url('service/'.$item->slug) }}">{{ $item->title }}</a></li>
+                        @endforeach
+                    </ul>
+                </li>
+
+                <li><a href="#">Brosur</a>
+                    <ul>
+                        <li><a href="{{ url('about-us') }}">Profile</a></li>
+                        <li><a href="#">Company Profile</a></li>
+                        <li><a href="#">Katalog Produk CSP</a></li>
+                        <li><a href="#">Katalog Produk Steel Bridge</a></li>
+                        <li><a href="#">Katalog Produk Perlengkapan Jalan</a></li>
+                        <li><a href="#">Katalog Steel Pipe</a></li>
+                        <li><a href="#">Katalog Bronjong</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="{{ url('/news') }}">News</a></li>
+    
+                <li><a href="#">Client</a>
+                    <ul>
+                        <li><a href="#">Client 1</a></li>
+                        <li><a href="#">Client 2</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="{{ url('/#contact') }}">Kontak</a></li>
+    
+            </ul>
         </div>
         <div class="search-box">
             <div class="search">

@@ -36,6 +36,8 @@ Route::middleware('auth')->group(function () {
     Route::get('/admin/dashboard', function () {
         return view('admin.index');
     });
+    // Test
+    Route::get('admin/test', [GeneralController::class, 'test']);
 
     // Profile
     Route::get('admin/about', [AboutController::class, 'index'])->name('about');

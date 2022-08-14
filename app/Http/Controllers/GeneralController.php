@@ -33,4 +33,8 @@ class GeneralController extends Controller
         $data = Service::where('slug', $slug)->where('status', 'active')->first();
         return view('landing-page.services.detail', compact('data'));
     }
+
+    public function test() {
+        return view('admin.test');
+    }
 }
