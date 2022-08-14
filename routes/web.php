@@ -41,5 +41,8 @@ Route::middleware('auth')->group(function () {
     Route::get('admin/services', [ServicesController::class, 'index'])->name('services');
     Route::get('admin/services/create', [ServicesController::class, 'create_view']);
     Route::post('admin/services/submit', [ServicesController::class, 'submit'])->name('addService');
+    Route::get('admin/service/edit/{id}', [ServicesController::class, 'edit_view']);
+    Route::post('admin/service/update', [ServicesController::class, 'update'])->name('updateService');
+    Route::post('admin/service/delete', [ServicesController::class, 'destroy'])->name('deleteService');
 });
 require __DIR__.'/auth.php';

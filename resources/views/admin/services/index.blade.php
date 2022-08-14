@@ -22,6 +22,7 @@
                                     <th>No</th>
                                     <th>Title</th>
                                     <th>Description</th>
+                                    <th>Status</th>
                                     <th class="text-center">Action</th>
                                 </tr>
                             </thead>
@@ -30,10 +31,16 @@
                                     <tr>
                                         <td>{{ $loop->iteration }}</td>
                                         <td>{{ $item->title }}</td>
-                                        <td>{{ Str::limit($item->description, 150, '...') }}</td>
+                                        <td>{!! Str::limit($item->description, 150, '...') !!}</td>
+                                        <td>{{ $item->status }}</td>
                                         <td style="display: flex">
-                                            <a href="" class="btn btn-danger" style="margin-right: 10px">Delete</a>
-                                            <a href="" class="btn btn-primary">Edit</a>
+                                            {{-- <a href="" class="btn btn-danger" style="margin-right: 10px">Delete</a> --}}
+                                            <form action="{{ route('deleteService') }}" method="POST">
+                                                @csrf
+                                                <input type="hidden" name="id" id="id" value="{{ $item->id }}">
+                                                <button class="btn btn-danger" style="margin-right: 10px">Delete</button>
+                                            </form>
+                                            <a href="{{ url('admin/service/edit/'.$item->id) }}" class="btn btn-primary">Edit</a>
                                         </td>
                                     </tr>
                                 @endforeach

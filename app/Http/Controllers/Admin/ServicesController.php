@@ -37,7 +37,31 @@ class ServicesController extends Controller
             return redirect()->route('services')
                 ->with('success', 'Service Berhasil Ditambah');
         }
+    }
 
+    public function edit_view($id) {
+        $service = Service::findOrFail($id);
+        return view('admin.services.edit', compact('service'));
+    }
+    
+    public function update(Request $request) {
+        $service = Service::findOrFail($request->id);
 
+        $service->title = $request->title;
+        $service->description = $request->description;
+        $service->status = $request->status;
+        $service->slug = str_replace(' ', '-', strtolower($request->title));
+        $service->save();
+        if($service) {
+            return redirect()->route('services')
+                ->with('success', 'Service Berhasil Diubah');
+        }
+    }
+
+    public function destroy(Request $request) {
+        $service = Service::findOrFail($request->id);
+        $service->delete();
+        return redirect()->route('services')
+            ->with('delete', 'Service Berhasil Dihapus');
     }
 }

@@ -63,7 +63,9 @@
                         <h5 class="mb-10" onclick="footerDropdown('jasa')">Jasa<i class="fa-solid fa-chevron-right mob-icon jasa"></i></h5>
                         <ul class="menu-dropdown-jasa">
                             @foreach ($services as $item)
-                            <li>{{ $item->title }}</li>
+                            <a href="{{ url('service/'.$item->slug) }}">
+                                <li>{{ $item->title }}</li>
+                            </a>
                             @endforeach
                         </ul>
                     </div>

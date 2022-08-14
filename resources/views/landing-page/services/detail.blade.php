@@ -28,7 +28,7 @@
                 </div>
                 <div class="news-desc">
                     <p>
-                        {{ $data->description }}
+                        {!! $data->description !!}
                     </p>
                 </div>
             </div>
