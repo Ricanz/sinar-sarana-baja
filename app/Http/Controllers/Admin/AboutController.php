@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\About;
+use App\Models\Mission;
 use Illuminate\Http\Request;
 
 class AboutController extends Controller
@@ -49,6 +50,29 @@ class AboutController extends Controller
         }
         return redirect()->route('about')
                 ->with('success', 'About Us Berhasil Diperbarui');
+    }
+
+    public function mission() {
+        $missions = Mission::orderBy('id')->get();
+        return view('admin.about.mission', compact('missions'));
+    }
+
+    public function edit_mission($id) {
+        $mission = Mission::findOrFail($id);
+        return view('admin.about.mission-detail', compact('mission'));
+    }
+
+    public function update_mission(Request $request) {
+        $mission = Mission::where('id', $request->id)->first();
+        if ($mission) {
+            $mission->title = $request->title;
+            $mission->description = $request->description;
+            $mission->status = $request->status;
+            $mission->slug = str_replace(' ', '-', strtolower($request->title));
+            $mission->save();
+        }
+        return redirect()->route('mission')
+                ->with('success', 'Mission Berhasil Diperbarui');
     }
 
 }

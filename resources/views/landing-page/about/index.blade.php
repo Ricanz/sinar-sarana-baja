@@ -34,7 +34,7 @@
         <div class="mission-bg">
             <h3 class="item mb-20">Our Mission</h3>
             <div class="med-text-desc">
-                <p>Curabitur ullamcorper ultricies nisi. Aenean viverra rhoncus pede.</p>
+                <p>Misi PT. Sinergy Sarana Baja</p>
             </div>
             <div class="row dekstop-mission">
                 <div class="col-6 mission-img">
@@ -44,32 +44,32 @@
                     <div class="col-6 content">
                         <div class="mission mb-20">
                             <h1 class="mb-35">01</h1>
-                            <h5 class="mb-20">Sinergy</h5>
+                            <h5 class="mb-20">{{ $mission1->title }}</h5>
                             <div class="med-text-desc">
-                                <p>Bersinergi dengan mitra usaha dan meningkatkan kompetensi SDM yang tinggi, berkinerja unggul serta berorientasi kepada kepuasan pelanggan.</p>
+                                {!! $mission1->description !!}
                             </div>
                         </div>
                         <div class="mission">
                             <h1 class="mb-35">02</h1>
-                            <h5 class="mb-20">Mutu</h5>
+                            <h5 class="mb-20">{{ $mission2->title }}</h5>
                             <div class="med-text-desc">
-                                <p>Menghasilkan dan memasok produk konstruksi baja manufaktur bermutu dan pengiriman tepat waktu sesuai dengan standar kebutuhan proyek nasional.</p>
+                                {!! $mission2->description !!}
                             </div>
                         </div>
                     </div>
                     <div class="col-6 content ml-20">
                         <div class="mission mb-20">
                             <h1 class="mb-35">03</h1>
-                            <h5 class="mb-20">Manajemen</h5>
+                            <h5 class="mb-20">{{ $mission3->title }}</h5>
                             <div class="med-text-desc">
-                                <p>Menerapkan sistem manajemen modern dalam mengelola portofolio perusahaan dengan proses kerja yang ramah lingkungan, aman, nyaman serta berorientasi pada pemangku kepentingan.</p>
+                                {!! $mission3->description !!}
                             </div>
                         </div>
                         <div class="mission">
                             <h1 class="mb-35">04</h1>
-                            <h5 class="mb-20">Inovatif</h5>
+                            <h5 class="mb-20">{{ $mission4->title }}</h5>
                             <div class="med-text-desc">
-                                <p>Bersinergi yang berkelanjutan dalam berinovasi mengembangkan produk dan jasa konstruksi baja seiring dengan berkembangnya permintaan pasar.</p>
+                                {!! $mission4->description !!}
                             </div>
                         </div>
                     </div>
@@ -80,30 +80,30 @@
                     <div class="content">
                         <div class="mission mb-20">
                             <h1 class="mb-35">01</h1>
-                            <h5 class="mb-20">Sinergy</h5>
+                            <h5 class="mb-20">{{ $mission1->title }}</h5>
                             <div class="med-text-desc">
-                                <p>Bersinergi dengan mitra usaha dan meningkatkan kompetensi SDM yang tinggi, berkinerja unggul serta berorientasi kepada kepuasan pelanggan.</p>
+                                {!! $mission1->description !!}
                             </div>
                         </div>
                         <div class="mission mb-20">
                             <h1 class="mb-35">02</h1>
-                            <h5 class="mb-20">Mutu</h5>
+                            <h5 class="mb-20">{{ $mission2->title }}</h5>
                             <div class="med-text-desc">
-                                <p>Menghasilkan dan memasok produk konstruksi baja manufaktur bermutu dan pengiriman tepat waktu sesuai dengan standar kebutuhan proyek nasional.</p>
+                                {!! $mission2->description !!}
                             </div>
                         </div>
                         <div class="mission mb-20">
                             <h1 class="mb-35">03</h1>
-                            <h5 class="mb-20">Manajemen</h5>
+                            <h5 class="mb-20">{{ $mission3->title }}</h5>
                             <div class="med-text-desc">
-                                <p>Menerapkan sistem manajemen modern dalam mengelola portofolio perusahaan dengan proses kerja yang ramah lingkungan, aman, nyaman serta berorientasi pada pemangku kepentingan.</p>
+                                {!! $mission3->description !!}
                             </div>
                         </div>
                         <div class="mission mb-20">
                             <h1 class="mb-35">04</h1>
-                            <h5 class="mb-20">Inovatif</h5>
+                            <h5 class="mb-20">{{ $mission4->title }}</h5>
                             <div class="med-text-desc">
-                                <p>Bersinergi yang berkelanjutan dalam berinovasi mengembangkan produk dan jasa konstruksi baja seiring dengan berkembangnya permintaan pasar.</p>
+                                {!! $mission4->description !!}
                             </div>
                         </div>
                     </div>

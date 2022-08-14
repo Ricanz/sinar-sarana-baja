@@ -36,8 +36,16 @@ Route::middleware('auth')->group(function () {
         return view('admin.index');
     });
 
+    // Profile
     Route::get('admin/about', [AboutController::class, 'index'])->name('about');
     Route::post('admin/submit', [AboutController::class, 'update'])->name('updateAbout');
+
+    // Mission
+    Route::get('admin/mission', [AboutController::class, 'mission'])->name('mission');
+    Route::get('admin/mission/edit/{id}', [AboutController::class, 'edit_mission']);
+    Route::post('admin/mission/submit', [AboutController::class, 'update_mission'])->name('updateMission');
+
+    // Services
     Route::get('admin/services', [ServicesController::class, 'index'])->name('services');
     Route::get('admin/services/create', [ServicesController::class, 'create_view']);
     Route::post('admin/services/submit', [ServicesController::class, 'submit'])->name('addService');
