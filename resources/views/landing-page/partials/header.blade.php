@@ -15,7 +15,7 @@
                 <a class="nav-menu" href="#">About</a>
                 <div class="dropdown-content menu-about">
                     <a href="{{ url('about-us') }}">Profile</a>
-                    <a href="#">Vision, Missiion & Values</a>
+                    <a href="{{ url('about-us#vission-mission') }}">Vision, Missiion & Values</a>
                     <a href="#">Sertifikat/Legalitas</a>
                 </div>
             </div>
