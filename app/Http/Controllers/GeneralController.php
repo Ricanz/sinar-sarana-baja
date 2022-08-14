@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\About;
+use App\Models\Article;
 use App\Models\Mission;
 use App\Models\Service;
 use Illuminate\Http\Request;
@@ -19,11 +20,13 @@ class GeneralController extends Controller
     }
 
     public function news() {
-        return view('landing-page.news.index');
+        $news = Article::where('status', 'active')->get();
+        return view('landing-page.news.index', compact('news'));
     }
 
-    public function news_detail() {
-        return view('landing-page.news.detail');
+    public function news_detail($slug) {
+        $article = Article::where('slug', $slug)->first();
+        return view('landing-page.news.detail', compact('article'));
     }
 
     public function service_detail($slug) {

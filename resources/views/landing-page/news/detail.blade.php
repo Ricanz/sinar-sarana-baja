@@ -19,20 +19,18 @@
         <div class="news-detail">
             <div class="content">
                 <div class="image">
-                    <img src="{{ url('custom/landing-page/images/projects/1.png') }}" alt="" class="mb-20">
+                    <img src="{{ url($article->image) }}" alt="" class="mb-20">
                 </div>
                 <div class="time mb-10 med-text-desc">
-                    <p>24 Juli 2022 | 8 menit yang lalu</p>
+                    <p>{{ $article->created_at->format('d M Y') }} | {{\Carbon\Carbon::parse($article->created_at)->diffForHumans()}}</p>
                 </div>
                 <div class="news-title mb-10">
                     <a href="#" style="text-decoration: none">
-                        <h2><strong>Training Pemadan Kebakaran Program ISO 45001:2018</strong></h2>
+                        <h2><strong>{{ $article->title }}</strong></h2>
                     </a>
                 </div>
                 <div class="news-desc">
-                    <p>Don't put a vulputate bow. Everyone's makeup. I chatted some time. For he takes advantage of the fact that Vestibulum ullamcorper mauris at ligula.
-
-                        To put the children. The boat is a Suspended pillow, propagandist and venomous sauce, sem libero volutpat nibh, no pellentesque wants to walk now. There is no such thing as a fear of the casino laoreet. It's a sad situation.</p>
+                    {!! $article->description !!}
                 </div>
             </div>
         </div>

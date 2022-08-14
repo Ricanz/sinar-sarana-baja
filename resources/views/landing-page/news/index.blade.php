@@ -15,84 +15,33 @@
             </div>
         </div>
 
-        <div class="article">
-            <div class="col-8 image-news mr-20">
-                <img src="{{ asset('custom/landing-page/images/projects/1.png') }}" alt="">
-            </div>
-            <div class="col-4 news-desc news-detail-mob">
-                <div class="time mb-10 med-text-desc">
-                    <p>24 Juli 2022 | 8 menit yang lalu</p>
+        @foreach ($news as $item)
+            <div class="article">
+                <div class="col-8 image-news mr-20">
+                    <img src="{{ asset($item->image) }}" alt="">
                 </div>
-                <div class="news-title mb-10">
-                    <a href="{{ url('news-detail/training-pemadam-kebakaran') }}" style="text-decoration: none">
-                        <h2><strong>Training Pemadan Kebakaran Program ISO 45001:2018</strong></h2>
-                    </a>
-                </div>
-                <div class="news-desc">
-                    <div class="med-text-desc">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
+                <div class="col-4 news-desc news-detail-mob">
+                    <div class="time mb-10 med-text-desc">
+                        <p>{{ $item->created_at->format('d M Y') }} | {{\Carbon\Carbon::parse($item->created_at)->diffForHumans()}}</p>
+                    </div>
+                    <div class="news-title mb-10">
+                        <a href="{{ url('news-detail/'.$item->slug) }}" style="text-decoration: none">
+                            <h2><strong>{{ $item->title }}</strong></h2>
+                        </a>
+                    </div>
+                    <div class="news-desc">
+                        <div class="med-text-desc">
+                            {!! Str::limit($item->description, 250, '...') !!}
+                        </div>
+                    </div>
+                    <div class="news-author">
+                        <img src="{{ asset('custom/landing-page/images/admins/admin.png') }}" alt="">
+                        <h5 class="selected">Admin SSB</h5>
                     </div>
                 </div>
-                <div class="news-author">
-                    <img src="{{ asset('custom/landing-page/images/admins/admin.png') }}" alt="">
-                    <h5 class="selected">Sans Bro</h5>
-                </div>
             </div>
-        </div>
-        <div class="article">
-            <div class="col-8 image-news mr-20">
-                <img src="{{ asset('custom/landing-page/images/projects/1.png') }}" alt="">
-            </div>
-            <div class="col-4 news-desc news-detail-mob">
-                <div class="time mb-10 med-text-desc">
-                    <p>24 Juli 2022 | 8 menit yang lalu</p>
-                </div>
-                <div class="news-title mb-10">
-                    <a href="#" style="text-decoration: none">
-                        <h2><strong>Training Pemadan Kebakaran Program ISO 45001:2018</strong></h2>
-                    </a>
-                </div>
-                <div class="news-desc">
-                    <div class="med-text-desc">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                    </div>
-                </div>
-                <div class="news-author">
-                    <img src="{{ asset('custom/landing-page/images/admins/admin.png') }}" alt="">
-                    <h5>Sans Bro</h5>
-                </div>
-            </div>
-        </div>
-        <div class="article">
-            <div class="col-8 image-news mr-20">
-                <img src="{{ asset('custom/landing-page/images/projects/1.png') }}" alt="">
-            </div>
-            <div class="col-4 news-desc news-detail-mob">
-                <div class="time mb-10 med-text-desc">
-                    <p>24 Juli 2022 | 8 menit yang lalu</p>
-                </div>
-                <div class="news-title mb-10">
-                    <a href="#" style="text-decoration: none">
-                        <h2><strong>Training Pemadan Kebakaran Program ISO 45001:2018</strong></h2>
-                    </a>
-                </div>
-                <div class="news-desc">
-                    <div class="med-text-desc">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                    </div>
-                </div>
-                <div class="news-author">
-                    <img src="{{ asset('custom/landing-page/images/admins/admin.png') }}" alt="">
-                    <h5>Sans Bro</h5>
-                </div>
-            </div>
-        </div>
+            
+        @endforeach
 
         <div class="load-more">
             <a href="#" class="btn btn-load-more">
