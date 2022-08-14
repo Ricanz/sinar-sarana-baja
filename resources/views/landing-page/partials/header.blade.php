@@ -62,7 +62,7 @@
                 </div>
             </div>
             <div class="dropdown">
-                <a class="nav-menu" href="#contact">Contact Us</a>
+                <a class="nav-menu" href="/#contact">Contact Us</a>
             </div>
         </div>
         <div class="search-box">
@@ -155,7 +155,7 @@
                             </a>
                         </div>
                         <div class="menu">
-                            <a href="#">
+                            <a href="/#contact">
                                 <h5 class="mb-10 menu-header">Contact</h5>
                             </a>
                         </div>
