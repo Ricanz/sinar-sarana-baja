@@ -35,7 +35,6 @@ class AboutController extends Controller
      */
     public function update(Request $request)
     {
-        // dd($request->all());
         $data = About::where('id',1)->first();
         if ($request->image != null) {
             $extention = $request->image->extension();

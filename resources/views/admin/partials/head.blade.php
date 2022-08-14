@@ -22,4 +22,7 @@
     tinymce.init({
         selector: '#mytextarea'
     });
+    tinymce.init({
+        selector: '#mytextarea-1'
+    });
 </script>

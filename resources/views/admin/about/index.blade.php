@@ -11,13 +11,13 @@
         </div>
         <div class="form-group">
             <label for="description">Deskripsi profile</label>
-            <textarea name="description" id="description" class="form-control" cols="30" rows="7">
+            <textarea name="description" id="mytextarea-1" class="form-control" cols="30" rows="10">
                 {{ $about->description }}
             </textarea>
         </div>
         <div class="form-group">
             <label for="vission">Visi</label>
-            <textarea name="vission" id="vission" class="form-control" cols="30" rows="7">
+            <textarea name="vission" id="mytextarea" class="form-control" cols="30" rows="10">
                 {{ $about->vission }}
             </textarea>
         </div>
