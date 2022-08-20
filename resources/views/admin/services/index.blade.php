@@ -31,7 +31,7 @@
                                     <tr>
                                         <td>{{ $loop->iteration }}</td>
                                         <td>{{ $item->title }}</td>
-                                        <td>{!! Str::limit($item->description, 150, '...') !!}</td>
+                                        <td>{!! Str::limit($item->description, 150,'...') !!}</td>
                                         <td>{{ $item->status }}</td>
                                         <td style="display: flex">
                                             <form action="{{ route('deleteService') }}" method="POST">

@@ -19,9 +19,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('landing-page.index');
+    return view('landing-page.maintenance');
 });
 
+Route::get('/home', function () {
+    return view('landing-page.index');
+});
 
 Route::get('/about-us', [GeneralController::class, 'about']);
 Route::get('/news', [GeneralController::class, 'news']);

@@ -47,6 +47,20 @@
     </div>
 
     <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseProducts"
+            aria-expanded="true" aria-controls="collapseProducts">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Products</span>
+        </a>
+        <div id="collapseProducts" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <a class="collapse-item" href="{{ url('admin/products') }}">Products Data</a>
+                <a class="collapse-item" href="{{ url('admin/product/create') }}">Add Product</a>
+            </div>
+        </div>
+    </li>
+
+    <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseServices"
             aria-expanded="true" aria-controls="collapseServices">
             <i class="fas fa-fw fa-folder"></i>
@@ -59,6 +73,13 @@
             </div>
         </div>
     </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+    <!-- Heading -->
+    <div class="sidebar-heading">
+        Additional
+    </div>
 
     <!-- Nav Item - Pages Collapse Menu -->
     <li class="nav-item">
@@ -75,19 +96,6 @@
         </div>
     </li>
 
-    <!-- Nav Item - Charts -->
-    <li class="nav-item">
-        <a class="nav-link" href="charts.html">
-            <i class="fas fa-fw fa-chart-area"></i>
-            <span>Charts</span></a>
-    </li>
-
-    <!-- Nav Item - Tables -->
-    <li class="nav-item">
-        <a class="nav-link" href="tables.html">
-            <i class="fas fa-fw fa-table"></i>
-            <span>Tables</span></a>
-    </li>
 
     <!-- Divider -->
     <hr class="sidebar-divider d-none d-md-block">
