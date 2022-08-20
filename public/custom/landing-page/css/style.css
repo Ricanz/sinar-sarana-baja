@@ -1578,6 +1578,7 @@ hr {
 
     .modal .modal-content .nav-menu .menu a {
         text-decoration: none;
+        margin-left: 0;
     }
 
     /* .modal .modal-content .nav-menu .menu .menu-header a {
@@ -1587,12 +1588,15 @@ hr {
     .modal .modal-content .nav-menu .menu ul {
         list-style-type: none;
         justify-content: left;
+        display: flex;
+        flex-direction: column;
     }
 
     .modal .modal-content .nav-menu .menu ul li {
         text-align: left;
         color: #919EAB;
         font-size: 13px;
+        margin-left: 0;
     }
 }
 

@@ -176,42 +176,49 @@
                         <div class="menu">
                             <h5 class="mb-10" onclick="footerDropdown('brosur')">Brosur<i
                                     class="fa-solid fa-chevron-right mob-icon brosur"></i></h5>
-                            <ul class="menu-dropdown-brosur">
-                                <li>Company Profile</li>
-                                <li>Katalog Produk CSP</li>
-                                <li>Katalog Produk
-                                    Steel Bridge</li>
-                                <li>Katalog Produk
-                                    Perlengkapan Jalan</li>
-                                <li>Katalog Steel Pipe</li>
-                                <li>Katalog Bronjong</li>
-                            </ul>
+                            <div class="menu-dropdown-brosur">
+                            
+                                <ul>
+                                    <li>Company Profile</li>
+                                    <li>Katalog Produk CSP</li>
+                                    <li>Katalog Produk
+                                        Steel Bridge</li>
+                                    <li>Katalog Produk
+                                        Perlengkapan Jalan</li>
+                                    <li>Katalog Steel Pipe</li>
+                                    <li>Katalog Bronjong</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <div class="mob-menu">
                         <div class="menu">
                             <h5 class="mb-10" onclick="footerDropdown('produk')">Produk<i
                                     class="fa-solid fa-chevron-right mob-icon produk"></i></h5>
-                            <ul class="menu-dropdown-produk">
-                                <li>Nestable Flange E-100</li>
-                                <li>Multi Plate (sub lagi 13 tipe)</li>
-                                <li>Flex Beam Guardrail & Railing</li>
-                                <li>Tiang PJU</li>
-                                <li>Steel Bridge</li>
-                                <li>Steel Pipe</li>
-                                <li>Bronjong</li>
-                            </ul>
+                            <div class="menu-dropdown-produk">
+                                <ul>
+                                    <li>Nestable Flange E-100</li>
+                                    <li>Multi Plate</li>
+                                    <li>Flex Beam Guardrail & Railing</li>
+                                    <li>Tiang PJU</li>
+                                    <li>Steel Bridge</li>
+                                    <li>Steel Pipe</li>
+                                    <li>Bronjong</li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="menu">
                             <h5 class="mb-10" onclick="footerDropdown('jasa')">Jasa<i
                                     class="fa-solid fa-chevron-right mob-icon jasa"></i></h5>
-                            <ul class="menu-dropdown-jasa">
-                                @foreach ($services as $item)
-                                <a href="{{ url('service/'.$item->slug) }}">
-                                    <li>{{ $item->title }}</li>
-                                </a>
-                                @endforeach
-                            </ul>
+                            <div class="menu-dropdown-jasa">
+                                <ul>
+                                    @foreach ($services as $item)
+                                    <a href="{{ url('service/'.$item->slug) }}">
+                                        <li>{{ $item->title }}</li>
+                                    </a>
+                                    @endforeach
+                                </ul>
+                            </div>
                         </div>
                         <div class="menu">
                             <a href="{{ url('/news') }}">
