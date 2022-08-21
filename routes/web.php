@@ -3,6 +3,7 @@
 use App\Http\Controllers\Admin\AboutController;
 use App\Http\Controllers\Admin\AboutUsController;
 use App\Http\Controllers\Admin\ArticleController;
+use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\ServicesController;
 use App\Http\Controllers\GeneralController;
 use Illuminate\Support\Facades\Route;
@@ -51,6 +52,22 @@ Route::middleware('auth')->group(function () {
     Route::get('admin/mission', [AboutController::class, 'mission'])->name('mission');
     Route::get('admin/mission/edit/{id}', [AboutController::class, 'edit_mission']);
     Route::post('admin/mission/submit', [AboutController::class, 'update_mission'])->name('updateMission');
+
+    // Products
+    Route::get('admin/products', [ProductController::class, 'index'])->name('products');
+    Route::get('admin/product/create', [ProductController::class, 'create_view']);
+    Route::post('admin/product/submit', [ProductController::class, 'submit'])->name('addProduct');
+    Route::get('admin/product/edit/{id}', [ProductController::class, 'edit_view']);
+    Route::post('admin/product/update', [ProductController::class, 'update'])->name('updateProduct');
+    Route::post('admin/product/delete', [ProductController::class, 'destroy'])->name('deleteProduct');
+
+    // Tabs
+    Route::get('admin/product-tabs', [ProductController::class, 'tabs'])->name('tabs');
+    Route::get('admin/product-tab/create', [ProductController::class, 'create_tab']);
+    Route::post('admin/product-tab/submit', [ProductController::class, 'submit_tab'])->name('addTab');
+    Route::get('admin/product-tab/edit/{id}', [ProductController::class, 'edit_tab']);
+    Route::post('admin/product-tab/update', [ProductController::class, 'update_tab'])->name('updateTab');
+    Route::post('admin/product-tab/delete', [ProductController::class, 'destroy_tab'])->name('deletTab');
 
     // Services
     Route::get('admin/services', [ServicesController::class, 'index'])->name('services');
