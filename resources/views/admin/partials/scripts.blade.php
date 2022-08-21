@@ -14,3 +14,9 @@
 <!-- Page level custom scripts -->
 <script src="{{asset('custom/tadmin/js/demo/chart-area-demo.js')}}"></script>
 <script src="{{asset('custom/tadmin/js/demo/chart-pie-demo.js')}}"></script>
+
+<script>
+    $(document).ready(function() {
+  $('#summernote').summernote();
+});
+</script>

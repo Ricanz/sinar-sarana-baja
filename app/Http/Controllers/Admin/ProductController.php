@@ -115,10 +115,12 @@ class ProductController extends Controller
             'title' => 'required',
             'description' => 'required',
         ]);
+        // dd($request->all());
 
         $detail = ProductDetail::create([
             'product_id' => $request->product_id,
             'title' => $request->title,
+            'slug' => str_replace(' ', '-', strtolower($request->title)),
             'description' => $request->description,
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
@@ -138,7 +140,6 @@ class ProductController extends Controller
 
     public function update_tab(Request $request){
         $detail = ProductDetail::findOrFail($request->id);
-    
         $detail->title = $request->title;
         $detail->description = $request->description;
         $detail->save();

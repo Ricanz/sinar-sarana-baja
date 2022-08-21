@@ -23,14 +23,13 @@ Route::get('/', function () {
     return view('landing-page.maintenance');
 });
 
-Route::get('/home', function () {
-    return view('landing-page.index');
-});
+Route::get('/home', [GeneralController::class, 'index']);
 
 Route::get('/about-us', [GeneralController::class, 'about']);
 Route::get('/news', [GeneralController::class, 'news']);
 Route::get('/news-detail/{slug}', [GeneralController::class, 'news_detail']);
 Route::get('/service/{slug}', [GeneralController::class, 'service_detail']);
+Route::get('/products', [GeneralController::class, 'products']);
 Route::get('/product-detail/{slug}', [GeneralController::class, 'product_detail']);
 
 Route::get('/dashboard', function () {

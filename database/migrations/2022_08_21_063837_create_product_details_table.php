@@ -17,6 +17,7 @@ class CreateProductDetailsTable extends Migration
             $table->id();
             $table->integer('product_id');
             $table->string('title');
+            $table->string('slug');
             $table->longText('description');
             $table->enum('status', ['active', 'inactive'])->default('active');
             $table->timestamps();

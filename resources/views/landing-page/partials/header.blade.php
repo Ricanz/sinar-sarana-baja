@@ -78,21 +78,17 @@
                     </ul>
                 </li>
     
-                <li class="dropdown"><a href="#">Produk</a>
+                <li class="dropdown"><a href="{{ url('products') }}">Produk</a>
                     <ul>
-                        <li><a href="{{ url('product-detail/nestable') }}">Nestable Flange E-100</a></li>
-    
-                        <li><a href="#">Multi Plate</a>
+                        {{-- <li><a href="#">Multi Plate</a>
                             <ul>
                                 <li><a href="#">Sub Product</a></li>
                                 <li><a href="#">Sub Product</a></li>
                             </ul>
-                        </li>
-                        <li><a href="#">Flex Beam Guardrail & Railing</a></li>
-                        <li><a href="#">Tiang PJU</a></li>
-                        <li><a href="#">Steel Bridge</a></li>
-                        <li><a href="#">Steel Pipe</a></li>
-                        <li><a href="#">Bronjong</a></li>
+                        </li> --}}
+                        @foreach ($products as $item)
+                            <li><a href="{{ url('product-detail/'.$item->slug) }}">{{ $item->name }}</a></li>
+                        @endforeach
                     </ul>
                 </li>
 
@@ -180,13 +176,11 @@
                                     class="fa-solid fa-chevron-right mob-icon produk"></i></h5>
                             <div class="menu-dropdown-produk">
                                 <ul>
-                                    <li>Nestable Flange E-100</li>
-                                    <li>Multi Plate</li>
-                                    <li>Flex Beam Guardrail & Railing</li>
-                                    <li>Tiang PJU</li>
-                                    <li>Steel Bridge</li>
-                                    <li>Steel Pipe</li>
-                                    <li>Bronjong</li>
+                                    @foreach ($products as $item)
+                                    <a href="{{ url('product-detail/'.$item->slug) }}">
+                                        <li>{{ $item->name }}</li>
+                                    </a>
+                                    @endforeach
                                 </ul>
                             </div>
                         </div>

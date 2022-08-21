@@ -23,7 +23,7 @@
                 </div>
                 <div class="news-title mb-10">
                     <a href="#" style="text-decoration: none">
-                        <h2><strong>{{ $data->title }}</strong></h2>
+                        <h2><strong>{{ $data->name }}</strong></h2>
                     </a>
                 </div>
                 <!--
@@ -44,19 +44,27 @@
 
                 <div class="tabset">
                     <!-- Tab 1 -->
-                    <input type="radio" name="tabset" id="tab1" aria-controls="marzen" checked>
-                    <label for="tab1">Märzen</label>
+                    
+                    <input type="radio" name="tabset" id="{{ $primary_tab->slug }}" aria-controls="{{ $primary_tab->slug }}" checked>
+                    <label for="{{ $primary_tab->slug }}">{{ $primary_tab->title }}</label>
+                    @foreach ($details as $detail)
+                        <input type="radio" name="tabset" id="{{ $detail->slug }}" aria-controls="{{ $detail->slug }}">
+                        <label for="{{ $detail->slug }}">{{ $detail->title }}</label>
+                    @endforeach
+                    {{-- <input type="radio" name="tabset" id="tab1" aria-controls="marzen" checked>
+                    <label for="tab1">Märzen</label> --}}
                     <!-- Tab 2 -->
-                    <input type="radio" name="tabset" id="tab2" aria-controls="rauchbier">
-                    <label for="tab2">Rauchbier</label>
-                    <!-- Tab 3 -->
-                    <input type="radio" name="tabset" id="tab3" aria-controls="dunkles">
-                    <label for="tab3">Dunkles Bock</label>
-                    <input type="radio" name="tabset" id="tab4" aria-controls="section">
-                    <label for="tab4">Section</label>
 
                     <div class="tab-panels">
-                        <section id="marzen" class="tab-panel">
+                        <section id="{{ $primary_tab->slug }}" class="tab-panel">
+                            {!! $primary_tab->description !!}
+                        </section>
+                        @foreach($details as $item)
+                            <section id="{{ $item->slug }}" class="tab-panel">
+                                {!! $item->description !!}
+                            </section>
+                        @endforeach
+                        {{-- <section id="marzen" class="tab-panel">
                             <h2>6A. Märzen</h2>
                             <p><strong>Overall Impression:</strong> An elegant, malty German amber lager with a clean,
                                 rich, toasty and bready malt flavor, restrained bitterness, and a dry finish that
@@ -70,42 +78,7 @@
                                 lager version (in the Viennese style of the time) was first served at Oktoberfest in
                                 1872, a tradition that lasted until 1990 when the golden Festbier was adopted as the
                                 standard festival beer.</p>
-                        </section>
-                        <section id="rauchbier" class="tab-panel">
-                            <h2>6B. Rauchbier</h2>
-                            <p><strong>Overall Impression:</strong> An elegant, malty German amber lager with a
-                                balanced, complementary beechwood smoke character. Toasty-rich malt in aroma and flavor,
-                                restrained bitterness, low to high smoke flavor, clean fermentation profile, and an
-                                attenuated finish are characteristic.</p>
-                            <p><strong>History:</strong> A historical specialty of the city of Bamberg, in the
-                                Franconian region of Bavaria in Germany. Beechwood-smoked malt is used to make a
-                                Märzen-style amber lager. The smoke character of the malt varies by maltster; some
-                                breweries produce their own smoked malt (rauchmalz).</p>
-                        </section>
-                        <section id="dunkles" class="tab-panel">
-                            <h2>6C. Dunkles Bock</h2>
-                            <p><strong>Overall Impression:</strong> A dark, strong, malty German lager beer that
-                                emphasizes the malty-rich and somewhat toasty qualities of continental malts without
-                                being sweet in the finish.</p>
-                            <p><strong>History:</strong> Originated in the Northern German city of Einbeck, which was a
-                                brewing center and popular exporter in the days of the Hanseatic League (14th to 17th
-                                century). Recreated in Munich starting in the 17th century. The name “bock” is based on
-                                a corruption of the name “Einbeck” in the Bavarian dialect, and was thus only used after
-                                the beer came to Munich. “Bock” also means “Ram” in German, and is often used in logos
-                                and advertisements.</p>
-                        </section>
-                        <section id="section" class="tab-panel">
-                            <h2>This Is Section</h2>
-                            <p><strong>Overall Impression:</strong> A dark, strong, malty German lager beer that
-                                emphasizes the malty-rich and somewhat toasty qualities of continental malts without
-                                being sweet in the finish.</p>
-                            <p><strong>History:</strong> Originated in the Northern German city of Einbeck, which was a
-                                brewing center and popular exporter in the days of the Hanseatic League (14th to 17th
-                                century). Recreated in Munich starting in the 17th century. The name “bock” is based on
-                                a corruption of the name “Einbeck” in the Bavarian dialect, and was thus only used after
-                                the beer came to Munich. “Bock” also means “Ram” in German, and is often used in logos
-                                and advertisements.</p>
-                        </section>
+                        </section> --}}
                     </div>
 
                 </div>
@@ -119,7 +92,7 @@
                 </div>
                 <div class="col-6 newsletter-desc">
                     <h3 class="mb-10">Sinergy Sarana Baja</h3>
-                    <p>We serve as ur motto said "Quality & Improvement"</p>
+                    <p>We serve as our motto said "Quality & Improvement"</p>
                 </div>
             </div>
         </div>

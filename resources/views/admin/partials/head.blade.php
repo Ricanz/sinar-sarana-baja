@@ -16,7 +16,8 @@
 <!-- Custom styles for this template-->
 <link href="{{ asset('custom/tadmin/css/sb-admin-2.min.css') }}" rel="stylesheet">
 
-<script src="https://cdn.tiny.cloud/1/n9ewn1nun9fmc8oexqrk4iu6r25b2k06g4zbet7v1ovqaqr7/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+<script src="https://cdn.tiny.cloud/1/n9ewn1nun9fmc8oexqrk4iu6r25b2k06g4zbet7v1ovqaqr7/tinymce/5/tinymce.min.js"
+    referrerpolicy="origin"></script>
 
 <script>
     tinymce.init({
@@ -26,3 +27,10 @@
         selector: '#mytextarea-1'
     });
 </script>
+
+<!-- include summernote css/js -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+</script>
+<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>

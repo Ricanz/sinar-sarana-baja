@@ -88,31 +88,24 @@
     {{-- Projects --}}
     <div class="section-3">
         <div class="card-title">
-            <h2 class="item">Refrensi Project</h2>
-            <a class="btn btn-primary-outline btn-dekstop" href="#">View All<i class="ml-10 fa-solid fa-arrow-right"></i></a>
+            <h2 class="item">Produk Kami</h2>
+            <a class="btn btn-primary-outline btn-dekstop" href="#">Lihat Semua<i class="ml-10 fa-solid fa-arrow-right"></i></a>
         </div>
         <div class="projects">
-            <div class="col-4 card-project mb-35">
-                <img src="{{ asset('custom/landing-page/images/projects/1.png') }}" alt="">
+            @foreach($products as $product)
+            <div class="col-3 card-project mb-35">
+                <img src="{{ asset($product->image) }}" alt="">
                 <div class="card-desc">
-                    <h6 class="mb-10">guardrail</h6>
-                    <p>Pagar Pengaman Jalan adalah alat keselamatan jalan yang terbuat dari baja lembaran.</p>
+                    <a href="{{ url('product-detail/'.$product->slug) }}">
+                        <h6 class="mb-10">{{ $product->name }}</h6>
+                    </a>
+                    <hr class="divider-hr">
+                    <div class="med-text-desc">
+                        {!! Str::limit($product->description, 100, '...') !!}
+                    </div>
                 </div>
             </div>
-            <div class="col-4 card-project mb-35">
-                <img src="{{ asset('custom/landing-page/images/projects/2.png') }}" alt="">
-                <div class="card-desc">
-                    <h6 class="mb-10">delineator</h6>
-                    <p>Pagar Pengaman Jalan adalah alat keselamatan jalan yang terbuat dari baja lembaran.</p>
-                </div>
-            </div>
-            <div class="col-4 card-project mb-35">
-                <img src="{{ asset('custom/landing-page/images/projects/3.png') }}" alt="">
-                <div class="card-desc">
-                    <h6 class="mb-10">delineator</h6>
-                    <p>Pagar Pengaman Jalan adalah alat keselamatan jalan yang terbuat dari baja lembaran.</p>
-                </div>
-            </div>
+            @endforeach
         </div>
         <center class="fill-button">
             <a class="btn btn-fill-white btn-mobile" href="#">View All<i class="ml-10 fa-solid fa-arrow-right"></i></a>

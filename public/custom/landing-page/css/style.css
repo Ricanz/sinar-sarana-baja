@@ -257,6 +257,10 @@ a.btn {
     color: #919EAB;
 }
 
+.no-background {
+    background-image: none !important;
+}
+
 header {
     height: 100px;
     background-color: white;
@@ -820,12 +824,41 @@ textarea {
 
 .container .section-3 .card-project p {
     color: #212B36;
-    font-size: 20px;
+    font-size: 14px;
+}
+
+.container .section-3 .card-project a {
+    text-decoration: none;
 }
 
 .container .section-3 .card-desc {
     padding: 15px;
 }
+
+.container .products-section{
+    padding-top: 0px !important;
+}
+
+.container .products-section .projects{
+    padding-top: 0px !important;
+}
+
+.container .products-section .projects .card-project {
+    border: 4px solid #CA9B4E;
+}
+
+.container .products-section .projects .card-project:hover {
+    border: 4px solid #015291;
+}
+
+.container .products-section .projects .card-project .card-desc p {
+    font-size: 14px;
+}
+
+.container .products-section .projects .card-project .card-desc a {
+    text-decoration: none;
+}
+
 
 @media only screen and (max-device-width: 560px) {
     .container .section-4 .service-desc {
@@ -1360,6 +1393,15 @@ hr {
     height: 1px;
     border: none;
     background: #919EAB;
+}
+
+.divider-hr {
+    height: 1.5px;
+    width: 60%;
+    border: none;
+    background: #919EAB;
+    margin: unset;
+    margin-bottom: 10px;
 }
 
 /* Single Page  */

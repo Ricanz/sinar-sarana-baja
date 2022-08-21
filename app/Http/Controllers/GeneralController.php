@@ -6,10 +6,22 @@ use App\Models\About;
 use App\Models\Article;
 use App\Models\Mission;
 use App\Models\Service;
+use App\Models\Product;
+use App\Models\ProductDetail;
 use Illuminate\Http\Request;
 
 class GeneralController extends Controller
 {
+    public function index() {
+        $products = Product::select('products.slug', 'products.name', 'products.image', 'product_details.description')
+                    ->join('product_details', 'products.id', 'product_details.product_id')
+                    ->where('product_details.slug', 'deskripsi')
+                    ->where('products.status', 'active')
+                    ->take(3)
+                    ->get();
+        return view('landing-page.index', compact('products'));
+    }
+
     public function about() {
         $profile = About::where('id', 1)->first();
         $mission1 = Mission::where('id', 1)->where('status', 'active')->first();
@@ -34,9 +46,20 @@ class GeneralController extends Controller
         return view('landing-page.services.detail', compact('data'));
     }
 
+    public function products() {
+        $products = Product::select('products.slug', 'products.name', 'products.image', 'product_details.description')
+                    ->join('product_details', 'products.id', 'product_details.product_id')
+                    ->where('product_details.slug', 'deskripsi')
+                    ->where('products.status', 'active')
+                    ->get();
+        return view('landing-page.products.index', compact('products'));
+    }
+
     public function product_detail($slug) {
-        $data = Service::where('slug', $slug)->where('status', 'active')->first();
-        return view('landing-page.products.detail', compact('data'));
+        $data = Product::where('slug', $slug)->where('status', 'active')->first();
+        $details = ProductDetail::where('product_id', $data->id)->where('slug', '!=', 'deskripsi')->where('status', 'active')->get();
+        $primary_tab = ProductDetail::where('product_id', $data->id)->where('slug', 'deskripsi')->where('status', 'active')->first();
+        return view('landing-page.products.detail', compact('data', 'details', 'primary_tab'));
     }
 
     public function test() {

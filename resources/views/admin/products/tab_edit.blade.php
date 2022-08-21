@@ -18,10 +18,11 @@
         <div class="form-group">
             <label for="description">Title (Tabs)</label>
             <input type="text" name="title" id="title" class="form-control" value="{{ $tab->title }}">
+            <input type="hidden" name="id" id="id" class="form-control" value="{{ $tab->id }}">
         </div>
         <div class="form-group">
             <label for="description">Description</label>
-            <textarea name="description" id="mytextarea" class="form-control" cols="30" rows="15">
+            <textarea name="description" id="summernote" class="form-control" cols="30" rows="15">
                 {{ $tab->description }}
             </textarea>
         </div>
