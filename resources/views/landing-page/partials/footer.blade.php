@@ -50,13 +50,11 @@
                     <div class="menu">
                         <h5 class="mb-10" onclick="footerDropdown('produk')">Produk<i class="fa-solid fa-chevron-right mob-icon produk"></i></h5>
                         <ul class="menu-dropdown-produk">
-                            <li>Nestable Flange E-100</li>
-                            <li>Multi Plate (sub lagi 13 tipe)</li>
-                            <li>Flex Beam Guardrail & Railing</li>
-                            <li>Tiang PJU</li>
-                            <li>Steel Bridge</li>
-                            <li>Steel Pipe</li>
-                            <li>Bronjong</li>
+                            @foreach ($products as $item)
+                            <a href="{{ url('product-detail/'.$item->slug) }}">
+                                <li>{{ $item->name }}</li>
+                            </a>
+                            @endforeach
                         </ul>
                     </div>
                     <div class="menu">
