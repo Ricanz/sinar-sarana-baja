@@ -30,6 +30,7 @@ Route::get('/about-us', [GeneralController::class, 'about']);
 Route::get('/news', [GeneralController::class, 'news']);
 Route::get('/news-detail/{slug}', [GeneralController::class, 'news_detail']);
 Route::get('/service/{slug}', [GeneralController::class, 'service_detail']);
+Route::get('/product-detail/{slug}', [GeneralController::class, 'product_detail']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');

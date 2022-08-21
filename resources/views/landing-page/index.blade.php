@@ -5,18 +5,14 @@
             <div class="slide-carousel">
                 <div class="col-5 description">
                     <h6 class="mb-35">Sinergy Sarana Baja</h6>
-                    <h1 class="mb-50">Oil And Gas Equipment</h1>
-                    <p class="mb-50">As the pioneer in manufacturing and construction of transmission line of high</p>
+                    <h1 class="mb-50">Quality and Improvement</h1>
+                    <p class="mb-50">
+                        Menghadirkan produk berkualitas dengan bahan baku pilihan terbaik!
+                    </p>
                     <div class="row banner-footer">
                         <a href="" class="view-more btn-primary">
                             <div class="view-button">
-                                View More
-                            </div>
-                        </a>
-                        <a href="">
-                            <div class="work-button">
-                                <img class="btn-play" src="{{ asset('custom/landing-page/images/icons/ic_play.png') }}" alt="">
-                                <p><strong>See Our Work</strong></p>
+                                Lihat Produk
                             </div>
                         </a>
                     </div>
@@ -31,7 +27,7 @@
     {{-- Description --}}
     <div class="section-2">
         <div class="sub-title">
-            <h6>description</h6>
+            <h6>tentang kami</h6>
         </div>
         <div class="about">
             <div class="row">
@@ -39,22 +35,30 @@
                     <img src="{{ asset('custom/landing-page/images/about.png') }}" alt="">
                 </div>
                 <div class="col-7 about-desc">
-                    <h2 class="mb-20">Offshore Maintenance and Service</h2>
+                    <h2 class="mb-20">PT. Sinergy Sarana Baja</h2>
                     <div class="med-text-desc">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                        <p>
+                            Perusahaan nasional yang berdiri dengan dilatarbelakangi oleh pesatnya pertumbuhan proyek infrastruktur di Indonesia yang merupakan salah satu faktor penggerak ekonomi nasional khususnya pada proyek konstruksi baja.
+                            <br><br>
+                            PT. Sinergy Sarana Baja dengan SDM yang berkualitas dan berpengalaman di bidangnya.
+                        </p>
                     </div>
                     <div class="spc-50"></div>
                     <div class="row dekstop-box">
                         <div class="col-6 box-desc mr-20">
                             <img class="mb-20" src="{{ asset('custom/landing-page/images/hr.png') }}" alt="" width="24px" height="3px">
                             <div class="sml-text-desc">
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicab</p>
+                                <p>
+                                    Memberikan solusi untuk menekan biaya serta peningkatakan efisiensi yang membuat end user mendapatkan produk yang berkualitas dengan harga yang lebih bersaing.
+                                </p>
                             </div>
                         </div>
                         <div class="col-6 box-desc pl-20 mr-20">
                             <img class="mb-20" src="{{ asset('custom/landing-page/images/hr.png') }}" alt="" width="24px" height="3px">
                             <div class="sml-text-desc">
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicab</p>
+                                <p>
+                                    Produk yang PT. Sinergy Sarana Baja hasilkan dapat diterima, diminati dan diakui oleh para pelanggan di seluruh Indonesia.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -62,13 +66,17 @@
                         <div class="box-desc mb-35">
                             <img class="mb-20 mobile-separator" src="{{ asset('custom/landing-page/images/hr.png') }}" alt="" width="24px" height="3px">
                             <div class="sml-text-desc">
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicab</p>
+                                <p>
+                                    Memberikan solusi untuk menekan biaya serta peningkatakan efisiensi yang membuat end user mendapatkan produk yang berkualitas dengan harga yang lebih bersaing.
+                                </p>
                             </div>
                         </div>
                         <div class="box-desc">
                             <img class="mb-20 mobile-separator" src="{{ asset('custom/landing-page/images/hr.png') }}" alt="" width="24px" height="3px">
                             <div class="sml-text-desc">
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicab</p>
+                                <p>
+                                    Produk yang PT. Sinergy Sarana Baja hasilkan dapat diterima, diminati dan diakui oleh para pelanggan di seluruh Indonesia.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -118,44 +126,52 @@
                 <h3>Jasa</h3>
             </div>
             <div class="col-6 med-text-desc mob-desc">
-                <p>Indonesian citizen, 70 years old. Appointed as Commissioner of the Company since May 2011, based on the Deed of GMS No. 12 dated May 7, 2011, which was ratified by Notary H. Fedris, S.H.</p>
+                <p>PT. Sinergy Sarana Baja berkomitmen untuk terus memberikan produk baja berkualitas dan berkelanjutan dalam berinovasi sesuai dengan perkembangan pasar.</p>
             </div>
         </div>
         <div class="services">
             <div class="col-4 service-box">
                 <img src="{{ asset('custom/landing-page/images/services/ic_3D_curve_auto_colon.png') }}" alt="">
                 <div class="bold-med-text">
-                    <p><strong>Structured Approach</strong></p>
+                    <p><strong>Berintegritas</strong></p>
                 </div>
                 <div class="med-text-desc">
-                    <p>Prior to joining the Company as one of the Board of Commissioners’member</p>
+                    <p>
+                        Integritas dalam pembuatan produk san service ke pelanggan
+                    </p>
                 </div>
             </div>
             <div class="col-4 service-box">
                 <img src="{{ asset('custom/landing-page/images/services/ic_chat_bot.png') }}" alt="">
                 <div class="bold-med-text">
-                    <p><strong>Professional Feedbacks</strong></p>
+                    <p><strong>Kepuasan Pelanggan</strong></p>
                 </div>
                 <div class="med-text-desc">
-                    <p>Prior to joining the Company as one of the Board of Commissioners’member</p>
+                    <p>
+                        Aktif 24/7 untuk melayani hingga menuju kepuasan pelanggan yang baik.
+                    </p>
                 </div>
             </div>
             <div class="col-4 service-box">
                 <img src="{{ asset('custom/landing-page/images/services/ic_airport_location.png') }}" alt="">
                 <div class="bold-med-text">
-                    <p><strong>Efficiency</strong></p>
+                    <p><strong>Berinovasi</strong></p>
                 </div>
                 <div class="med-text-desc">
-                    <p>Prior to joining the Company as one of the Board of Commissioners’member</p>
+                    <p>
+                        Selalu meletakkan inovasi yang baik di tiap produk.
+                    </p>
                 </div>
             </div>
             <div class="col-4 service-box">
                 <img src="{{ asset('custom/landing-page/images/services/ic_event.png') }}" alt="">
                 <div class="bold-med-text">
-                    <p><strong>Flexible Schedule</strong></p>
+                    <p><strong>Berkembang</strong></p>
                 </div>
                 <div class="med-text-desc">
-                    <p>Prior to joining the Company as one of the Board of Commissioners’member</p>
+                    <p>
+                        Perkembangan menjadi point utama dalam setiap persiapan kami.
+                    </p>
                 </div>
             </div>
         </div>
@@ -164,14 +180,15 @@
     {{-- News --}}
     <div class="section-5">
         <div class="news-content">
-            <h6 class="mb-50">blog</h6>
             <div class="news-header">
                 <div class="col-5 news-header-mob">
                     <h2 class="mb-20">Latest New</h2>
-                    <p>The Company has concern on maintaining a healthy and green environment. Therefore, the Company together with the sub-contractors have conducted the waste management and disposal</p>
+                    <p>
+                        Informasi mengenai kegiatan terkini dan pengetahuan seputar produk dan jasa kami.
+                    </p>
                 </div>
                 <div class="col-7 item">
-                    <a class="btn btn-primary-outline btn-dekstop" href="{{ url('/news') }}">View All<i class="ml-10 fa-solid fa-arrow-right"></i></a>
+                    <a class="btn btn-primary-outline btn-dekstop" href="{{ url('/news') }}">Lihat Semua<i class="ml-10 fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
             <div class="news">
@@ -304,9 +321,9 @@
     {{-- Clients --}}
     <div class="section-6">
         <div class="card-title">
-            <h2 class="mb-20">Our Clients</h2>
+            <h2 class="mb-20">Klien</h2>
             <div class="med-text-desc mb-20">
-                <p>Klien kami sudah memilih kami</p>
+                <p>Partner kerja sama PT. Sinergy Sarana Baja</p>
             </div>
         </div>
         <div class="clients">
@@ -342,15 +359,15 @@
             <div class="col-8 messages">
                 <h2 class="mb-10"><strong>Drop us a line</strong></h2>
                 <div class="sml-text-desc mb-35">
-                    <p>We normally respond within 2 business days</p>
+                    <p>Kami aktif 24/7 untuk melayani Anda</p>
                 </div>
                 <div class="message-form form-input">
-                    <input type="email" name="email" id="email" placeholder="Your Name...">
-                    <input type="text" name="name" id="name" placeholder="Your Email...">
-                    <input type="text" name="subject" id="subject" placeholder="Your Subject...">
-                    <textarea name="message" id="message" cols="30" rows="10">Your Message...</textarea>
+                    <input type="email" name="email" id="email" placeholder="Nama Anda..">
+                    <input type="text" name="name" id="name" placeholder="Email Anda..">
+                    <input type="text" name="subject" id="subject" placeholder="Pesan Anda..">
+                    <textarea name="message" id="message" cols="30" rows="10">Pesan Anda..</textarea>
                     <div class="btn-center">
-                        <button class="btn-primary mt-20">Send Message</button>
+                        <button class="btn-primary mt-20">Kirim</button>
                     </div>
                 </div>
             </div>

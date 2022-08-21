@@ -68,9 +68,9 @@
         <div class="nav-items">
             <ul>
 
-                <li><a href="{{ url('/') }}" style="color: #015291">Home</a></li>
+                <li><a href="{{ url('/') }}" style="color: #015291">Beranda</a></li>
     
-                <li><a href="{{ url('about-us') }}">About</a>
+                <li><a href="{{ url('about-us') }}">Tentang</a>
                     <ul>
                         <li><a href="{{ url('about-us') }}">Profile</a></li>
                         <li><a href="{{ url('about-us#vission-mission') }}">Vision, Missiion & Values</a></li>
@@ -78,9 +78,9 @@
                     </ul>
                 </li>
     
-                <li class="dropdown"><a href="#">Product</a>
+                <li class="dropdown"><a href="#">Produk</a>
                     <ul>
-                        <li><a href="#">Nestable Flange E-100</a></li>
+                        <li><a href="{{ url('product-detail/nestable') }}">Nestable Flange E-100</a></li>
     
                         <li><a href="#">Multi Plate</a>
                             <ul>
@@ -116,9 +116,9 @@
                     </ul>
                 </li>
 
-                <li><a href="{{ url('/news') }}">News</a></li>
+                <li><a href="{{ url('/news') }}">Berita</a></li>
     
-                <li><a href="#">Client</a>
+                <li><a href="#">Klien</a>
                     <ul>
                         <li><a href="#">Client 1</a></li>
                         <li><a href="#">Client 2</a></li>
@@ -162,7 +162,7 @@
                 <div class="nav-menu">
                     <div class="mob-menu">
                         <div class="menu">
-                            <h5 class="mb-10">About</h5>
+                            <h5 class="mb-10">Tentang</h5>
                             <ul>
                                 <a href="{{ url('about-us') }}">
                                     <li>Profile</li>
@@ -172,23 +172,6 @@
                                 </a>
                                 <li>Sertifikat/Legalitas</li>
                             </ul>
-                        </div>
-                        <div class="menu">
-                            <h5 class="mb-10" onclick="footerDropdown('brosur')">Brosur<i
-                                    class="fa-solid fa-chevron-right mob-icon brosur"></i></h5>
-                            <div class="menu-dropdown-brosur">
-                            
-                                <ul>
-                                    <li>Company Profile</li>
-                                    <li>Katalog Produk CSP</li>
-                                    <li>Katalog Produk
-                                        Steel Bridge</li>
-                                    <li>Katalog Produk
-                                        Perlengkapan Jalan</li>
-                                    <li>Katalog Steel Pipe</li>
-                                    <li>Katalog Bronjong</li>
-                                </ul>
-                            </div>
                         </div>
                     </div>
                     <div class="mob-menu">
@@ -221,13 +204,30 @@
                             </div>
                         </div>
                         <div class="menu">
+                            <h5 class="mb-10" onclick="footerDropdown('brosur')">Brosur<i
+                                    class="fa-solid fa-chevron-right mob-icon brosur"></i></h5>
+                            <div class="menu-dropdown-brosur">
+                            
+                                <ul>
+                                    <li>Company Profile</li>
+                                    <li>Katalog Produk CSP</li>
+                                    <li>Katalog Produk
+                                        Steel Bridge</li>
+                                    <li>Katalog Produk
+                                        Perlengkapan Jalan</li>
+                                    <li>Katalog Steel Pipe</li>
+                                    <li>Katalog Bronjong</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="menu">
                             <a href="{{ url('/news') }}">
-                                <h5 class="mb-10 menu-header">News</h5>
+                                <h5 class="mb-10 menu-header">Berita</h5>
                             </a>
                         </div>
                         <div class="menu">
                             <a href="/#contact">
-                                <h5 class="mb-10 menu-header">Contact</h5>
+                                <h5 class="mb-10 menu-header">Kontak</h5>
                             </a>
                         </div>
                     </div>
