@@ -62,6 +62,14 @@ class GeneralController extends Controller
         return view('landing-page.products.detail', compact('data', 'details', 'primary_tab'));
     }
 
+    public function brochures() {
+        return view('landing-page.brochures.index');
+    }
+
+    public function clients() {
+        return view('landing-page.clients.index');
+    }
+
     public function test() {
         return view('admin.test');
     }

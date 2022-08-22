@@ -100,26 +100,11 @@
                     </ul>
                 </li>
 
-                <li><a href="#">Brosur</a>
-                    <ul>
-                        <li><a href="{{ url('about-us') }}">Profile</a></li>
-                        <li><a href="#">Company Profile</a></li>
-                        <li><a href="#">Katalog Produk CSP</a></li>
-                        <li><a href="#">Katalog Produk Steel Bridge</a></li>
-                        <li><a href="#">Katalog Produk Perlengkapan Jalan</a></li>
-                        <li><a href="#">Katalog Steel Pipe</a></li>
-                        <li><a href="#">Katalog Bronjong</a></li>
-                    </ul>
-                </li>
+                <li><a href="{{ url('/brochures') }}">Brosur</a></li>
 
                 <li><a href="{{ url('/news') }}">Berita</a></li>
     
-                <li><a href="#">Klien</a>
-                    <ul>
-                        <li><a href="#">Client 1</a></li>
-                        <li><a href="#">Client 2</a></li>
-                    </ul>
-                </li>
+                <li><a href="{{ url('/clients') }}">Klien</a></li>
 
                 <li><a href="{{ url('/#contact') }}">Kontak</a></li>
     
@@ -198,21 +183,14 @@
                             </div>
                         </div>
                         <div class="menu">
-                            <h5 class="mb-10" onclick="footerDropdown('brosur')">Brosur<i
-                                    class="fa-solid fa-chevron-right mob-icon brosur"></i></h5>
-                            <div class="menu-dropdown-brosur">
-                            
-                                <ul>
-                                    <li>Company Profile</li>
-                                    <li>Katalog Produk CSP</li>
-                                    <li>Katalog Produk
-                                        Steel Bridge</li>
-                                    <li>Katalog Produk
-                                        Perlengkapan Jalan</li>
-                                    <li>Katalog Steel Pipe</li>
-                                    <li>Katalog Bronjong</li>
-                                </ul>
-                            </div>
+                            <a href="{{ url('/brochures') }}">
+                                <h5 class="mb-10 menu-header">Brosur</h5>
+                            </a>
+                        </div>
+                        <div class="menu">
+                            <a href="{{ url('/clients') }}">
+                                <h5 class="mb-10 menu-header">Klien</h5>
+                            </a>
                         </div>
                         <div class="menu">
                             <a href="{{ url('/news') }}">

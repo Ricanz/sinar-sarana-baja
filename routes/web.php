@@ -4,6 +4,7 @@ use App\Http\Controllers\Admin\AboutController;
 use App\Http\Controllers\Admin\AboutUsController;
 use App\Http\Controllers\Admin\ArticleController;
 use App\Http\Controllers\Admin\BrosurController;
+use App\Http\Controllers\Admin\ClientController;
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\ServicesController;
 use App\Http\Controllers\GeneralController;
@@ -32,6 +33,8 @@ Route::get('/news-detail/{slug}', [GeneralController::class, 'news_detail']);
 Route::get('/service/{slug}', [GeneralController::class, 'service_detail']);
 Route::get('/products', [GeneralController::class, 'products']);
 Route::get('/product-detail/{slug}', [GeneralController::class, 'product_detail']);
+Route::get('/brochures', [GeneralController::class, 'brochures']);
+Route::get('/clients', [GeneralController::class, 'clients']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -83,6 +86,11 @@ Route::middleware('auth')->group(function () {
     Route::post('admin/brochure/submit', [BrosurController::class, 'submit'])->name('addBrochure');
     Route::post('admin/brochure/delete', [BrosurController::class, 'destroy'])->name('deleteBrochure');
 
+    // Clients
+    Route::get('admin/clients', [ClientController::class, 'index'])->name('clients');
+    Route::get('admin/client/create', [ClientController::class, 'create_view']);
+    Route::post('admin/client/submit', [ClientController::class, 'submit'])->name('addClient');
+    Route::post('admin/client/delete', [ClientController::class, 'destroy'])->name('deleteClient');
 
 
 
