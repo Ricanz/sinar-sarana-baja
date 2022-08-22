@@ -3,6 +3,7 @@
 use App\Http\Controllers\Admin\AboutController;
 use App\Http\Controllers\Admin\AboutUsController;
 use App\Http\Controllers\Admin\ArticleController;
+use App\Http\Controllers\Admin\BrosurController;
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\ServicesController;
 use App\Http\Controllers\GeneralController;
@@ -75,6 +76,15 @@ Route::middleware('auth')->group(function () {
     Route::get('admin/service/edit/{id}', [ServicesController::class, 'edit_view']);
     Route::post('admin/service/update', [ServicesController::class, 'update'])->name('updateService');
     Route::post('admin/service/delete', [ServicesController::class, 'destroy'])->name('deleteService');
+
+    // Brosur
+    Route::get('admin/brochures', [BrosurController::class, 'index'])->name('brochures');
+    Route::get('admin/brochure/create', [BrosurController::class, 'create_view']);
+    Route::post('admin/brochure/submit', [BrosurController::class, 'submit'])->name('addBrochure');
+    Route::post('admin/brochure/delete', [BrosurController::class, 'destroy'])->name('deleteBrochure');
+
+
+
 
     // Article
     Route::get('admin/articles', [ArticleController::class, 'index'])->name('articles');

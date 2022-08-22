@@ -820,6 +820,7 @@ textarea {
 
 .container .section-3 .card-project img {
     width: 100%;
+    border-radius: 15px;
 }
 
 .container .section-3 .card-project p {

@@ -6,9 +6,8 @@
         <div class="container-fluid">
 
             <!-- Page Heading -->
-            <h1 class="h3 mb-2 text-gray-800">Product Tabs Data</h1>
-            <p class="mb-4">Data for product tabs</p>
-            <a href="{{ url('admin/product-tab/create') }}" class="btn btn-primary btn-sm mb-2"> Add Tab</a>
+            <h1 class="h3 mb-2 text-gray-800">Brochures Data</h1>
+            <p class="mb-4">Data for brochures</p>
 
             <!-- DataTales Example -->
             <div class="card shadow mb-4">
@@ -21,26 +20,31 @@
                             <thead>
                                 <tr>
                                     <th>No</th>
-                                    <th>Product</th>
-                                    <th>Tab</th>
-                                    <th>Status</th>
-                                    <th>Action</th>
+                                    <th>Image</th>
+                                    <th>Title</th>
+                                    <th>File</th>
+                                    <th class="text-center">Action</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach ($tabs as $item)
+                                @foreach ($brochures as $item)
                                     <tr>
                                         <td>{{ $loop->iteration }}</td>
-                                        <td>{{ $item->product->name }}</td>
+                                        <td>
+                                            <img src="{{ asset($item->image) }}" alt="" width="100px">
+                                        </td>
                                         <td>{{ $item->title }}</td>
-                                        <td>{{ $item->status }}</td>
+                                        <td>
+                                            <a href="{{ url('http://127.0.0.1:8000/'.$item->file) }}" target="_blank">
+                                                Lihat File
+                                            </a>
+                                        </td>
                                         <td style="display: flex">
-                                            <form action="{{ route('deletTab') }}" method="POST">
+                                            <form action="{{ route('deleteBrochure') }}" method="POST">
                                                 @csrf
                                                 <input type="hidden" name="id" id="id" value="{{ $item->id }}">
                                                 <button class="btn btn-danger" style="margin-right: 10px">Delete</button>
                                             </form>
-                                            <a href="{{ url('admin/product-tab/edit/'.$item->id) }}" class="btn btn-primary">Edit</a>
                                         </td>
                                     </tr>
                                 @endforeach

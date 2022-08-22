@@ -75,6 +75,20 @@
         </div>
     </li>
 
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBrochures"
+            aria-expanded="true" aria-controls="collapseBrochures">
+            <i class="fas fa-fw fa-file"></i>
+            <span>Brochures</span>
+        </a>
+        <div id="collapseBrochures" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <a class="collapse-item" href="{{ url('admin/brochures') }}">Brochures Data</a>
+                <a class="collapse-item" href="{{ url('admin/brochure/create') }}">Add Brochure</a>
+            </div>
+        </div>
+    </li>
+
     <!-- Divider -->
     <hr class="sidebar-divider">
     <!-- Heading -->

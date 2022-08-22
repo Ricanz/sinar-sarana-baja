@@ -51,6 +51,7 @@ class ProductController extends Controller
                 ProductDetail::create([
                     'product_id' => $product->id,
                     'title' => 'Deskripsi',
+                    'slug' => 'deskripsi',
                     'description' => $request->description
                 ]);
             }
@@ -82,6 +83,8 @@ class ProductController extends Controller
 
         $product->name = $request->title;
         $product->image = $image;
+        $product->slug = str_replace(' ', '-', strtolower($request->title));
+
         $product->save();
 
         return redirect()->route('products')
