@@ -74,7 +74,7 @@
                     <ul>
                         <li><a href="{{ url('about-us') }}">Profile</a></li>
                         <li><a href="{{ url('about-us#vission-mission') }}">Vision, Missiion & Values</a></li>
-                        <li><a href="#">Sertifikat/Legalitas</a></li>
+                        <li><a href="{{ url('certificates') }}">Sertifikat/Legalitas</a></li>
                     </ul>
                 </li>
     
@@ -151,7 +151,9 @@
                                 <a href="{{ url('about-us#vission-mission') }}">
                                     <li>Vision, Missiion & Values</li>
                                 </a>
-                                <li>Sertifikat/Legalitas</li>
+                                <a href="{{ url('certificates') }}">
+                                    <li>Sertifikat/Legalitas</li>
+                                </a>
                             </ul>
                         </div>
                     </div>

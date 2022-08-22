@@ -70,6 +70,10 @@ class GeneralController extends Controller
         return view('landing-page.clients.index');
     }
 
+    public function certificates() {
+        return view('landing-page.certificates.index');
+    }
+
     public function test() {
         return view('admin.test');
     }

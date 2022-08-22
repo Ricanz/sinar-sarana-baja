@@ -4,6 +4,7 @@ use App\Http\Controllers\Admin\AboutController;
 use App\Http\Controllers\Admin\AboutUsController;
 use App\Http\Controllers\Admin\ArticleController;
 use App\Http\Controllers\Admin\BrosurController;
+use App\Http\Controllers\Admin\CertificateController;
 use App\Http\Controllers\Admin\ClientController;
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\ServicesController;
@@ -35,6 +36,7 @@ Route::get('/products', [GeneralController::class, 'products']);
 Route::get('/product-detail/{slug}', [GeneralController::class, 'product_detail']);
 Route::get('/brochures', [GeneralController::class, 'brochures']);
 Route::get('/clients', [GeneralController::class, 'clients']);
+Route::get('/certificates', [GeneralController::class, 'certificates']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -92,6 +94,11 @@ Route::middleware('auth')->group(function () {
     Route::post('admin/client/submit', [ClientController::class, 'submit'])->name('addClient');
     Route::post('admin/client/delete', [ClientController::class, 'destroy'])->name('deleteClient');
 
+    // Certificates
+    Route::get('admin/certificates', [CertificateController::class, 'index'])->name('certificates');
+    Route::get('admin/certificate/create', [CertificateController::class, 'create_view']);
+    Route::post('admin/certificate/submit', [CertificateController::class, 'submit'])->name('addCertificate');
+    Route::post('admin/certificate/delete', [CertificateController::class, 'destroy'])->name('deleteCertificate');
 
 
     // Article
