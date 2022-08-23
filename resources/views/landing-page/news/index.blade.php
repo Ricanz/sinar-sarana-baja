@@ -31,7 +31,7 @@
                     </div>
                     <div class="news-desc">
                         <div class="med-text-desc">
-                            {!! Str::limit($item->description, 250, '...') !!}
+                            {{-- {!! Str::limit($item->description, 100, '...') !!} --}}
                         </div>
                     </div>
                     <div class="news-author">
@@ -43,11 +43,11 @@
             
         @endforeach
 
-        <div class="load-more">
+        {{-- <div class="load-more">
             <a href="#" class="btn btn-load-more">
                 <img src="{{ asset('custom/landing-page/images/icons/ic_load.png') }}" alt=""> Load More
             </a>
-        </div>
+        </div> --}}
 
         <div class="newsletter">
             <div class="content">

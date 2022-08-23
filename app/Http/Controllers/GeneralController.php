@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Models\About;
 use App\Models\Article;
+use App\Models\Brosur;
+use App\Models\Certificate;
+use App\Models\Client;
 use App\Models\Mission;
 use App\Models\Service;
 use App\Models\Product;
@@ -63,15 +66,18 @@ class GeneralController extends Controller
     }
 
     public function brochures() {
-        return view('landing-page.brochures.index');
+        $brochures = Brosur::all();
+        return view('landing-page.brochures.index', compact('brochures'));
     }
 
     public function clients() {
-        return view('landing-page.clients.index');
+        $clients = Client::all();
+        return view('landing-page.clients.index', compact('clients'));
     }
 
     public function certificates() {
-        return view('landing-page.certificates.index');
+        $certificates = Certificate::where('status', 'active')->get();
+        return view('landing-page.certificates.index', compact('certificates'));
     }
 
     public function test() {

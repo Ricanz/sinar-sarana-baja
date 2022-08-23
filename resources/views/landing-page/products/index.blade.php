@@ -2,7 +2,7 @@
     <div class="section-news">
         
         <div class="hero-news">
-            <h3>Jasa Sinergy Sarana Baja</h3>
+            <h3>Produk Sinergy Sarana Baja</h3>
         </div>
 
         <div class="breadcrumb">
@@ -43,9 +43,6 @@
                 </div>
                 @endforeach
             </div>
-            <center class="fill-button">
-                <a class="btn btn-fill-white btn-mobile" href="#">View All<i class="ml-10 fa-solid fa-arrow-right"></i></a>
-            </center>
         </div>
 
         

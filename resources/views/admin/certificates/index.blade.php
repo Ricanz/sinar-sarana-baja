@@ -35,7 +35,7 @@
                                         </td>
                                         <td>{{ $item->title }}</td>
                                         <td>
-                                            <a href="{{ url('http://127.0.0.1:8000/'.$item->file) }}" target="_blank">
+                                            <a href="{{ url('/'.$item->file) }}" target="_blank">
                                                 Lihat File
                                             </a>
                                         </td>
