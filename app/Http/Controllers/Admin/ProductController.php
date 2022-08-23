@@ -42,6 +42,7 @@ class ProductController extends Controller
             'image' => $image,
             'status' => 'active',
             'slug' => str_replace(' ', '-', strtolower($request->title)),
+            'short_desc' => substr(strip_tags($request->description), 0, 255),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
         ]);
@@ -65,12 +66,13 @@ class ProductController extends Controller
 
     public function edit_view ($id) {
         $product = Product::findOrFail($id);
-        return view('admin.products.edit', compact('product'));
+        $detail = ProductDetail::where('product_id', $product->id)->where('slug', 'deskripsi')->first();
+        return view('admin.products.edit', compact('product', 'detail'));
     }
 
     public function update(Request $request) {
         $product = Product::findOrFail($request->id);
-
+        $detail = ProductDetail::where('product_id', $product->id)->where('slug', 'deskripsi')->first();
         if ($request->image != null) {
             $extention = $request->image->extension();
             $file_name = time() . '.' . $extention;
@@ -83,9 +85,12 @@ class ProductController extends Controller
 
         $product->name = $request->title;
         $product->image = $image;
+        $product->short_desc = substr(strip_tags($request->description), 0, 255);
         $product->slug = str_replace(' ', '-', strtolower($request->title));
-
         $product->save();
+
+        $detail->description = $request->description;
+        $detail->save();
 
         return redirect()->route('products')
                 ->with('success', 'Product Berhasil Diubah');

@@ -16,6 +16,7 @@ class Article extends Model
         'slug',
         'image',
         'status',
+        'short_desc',
         'created_at',
         'updated_at'
     ];

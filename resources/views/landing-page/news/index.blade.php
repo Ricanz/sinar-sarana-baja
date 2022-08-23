@@ -18,7 +18,7 @@
         @foreach ($news as $item)
             <div class="article">
                 <div class="col-8 image-news mr-20">
-                    <img src="{{ asset($item->image) }}" alt="">
+                    <img src="{{ asset($item->image) }}" alt="" height="250px">
                 </div>
                 <div class="col-4 news-desc news-detail-mob">
                     <div class="time mb-10 med-text-desc">
@@ -31,7 +31,7 @@
                     </div>
                     <div class="news-desc">
                         <div class="med-text-desc">
-                            {{-- {!! Str::limit($item->description, 100, '...') !!} --}}
+                            {!! Str::limit($item->short_desc, 100, '...') !!}
                         </div>
                     </div>
                     <div class="news-author">

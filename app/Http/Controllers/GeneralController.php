@@ -50,10 +50,7 @@ class GeneralController extends Controller
     }
 
     public function products() {
-        $products = Product::select('products.slug', 'products.name', 'products.image', 'product_details.description')
-                    ->join('product_details', 'products.id', 'product_details.product_id')
-                    ->where('product_details.slug', 'deskripsi')
-                    ->where('products.status', 'active')
+        $products = Product::where('products.status', 'active')
                     ->get();
         return view('landing-page.products.index', compact('products'));
     }

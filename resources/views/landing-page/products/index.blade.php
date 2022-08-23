@@ -37,7 +37,7 @@
                         </a>
                         <hr class="divider-hr">
                         <div class="med-text-desc">
-                            {!! Str::limit($product->description, 100, '...') !!}
+                            {!! Str::limit($product->short_desc, 100, '...') !!}
                         </div>
                     </div>
                 </div>

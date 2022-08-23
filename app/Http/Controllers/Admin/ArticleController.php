@@ -37,6 +37,7 @@ class ArticleController extends Controller
         $article = Article::create([
             'title' => $request->title,
             'description' => $request->description,
+            'short_desc' => substr(strip_tags($request->description), 0, 200),
             'status' => 'active',
             'slug' => str_replace(' ', '-', strtolower($request->title)),
             'image' => $image,
@@ -71,6 +72,7 @@ class ArticleController extends Controller
         $article->title = $request->title;
         $article->description = $request->description;
         $article->status = $request->status;
+        $article->short_desc = substr(strip_tags($request->description), 0, 200);
         $article->slug = str_replace(' ', '-', strtolower($request->title));
         $article->image = $image;
         $article->save();

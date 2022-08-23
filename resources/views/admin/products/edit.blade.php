@@ -14,6 +14,12 @@
             <label for="description">Title</label>
             <input type="text" name="title" id="title" class="form-control" value="{{ $product->name }}">
         </div>
+        <div class="form-group">
+            <label for="description">Description</label>
+            <textarea name="description" id="summernote" class="form-control" cols="30" rows="15">
+                {{ $detail->description }}
+            </textarea>
+        </div>
         <button class="btn btn-primary btn-user btn-block mt-4">Simpan</button>
     </form>
 </x-app-layout>
