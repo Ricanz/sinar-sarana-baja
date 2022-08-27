@@ -20,6 +20,7 @@ class CreateProductDetailsTable extends Migration
             $table->string('slug');
             $table->longText('description');
             $table->enum('status', ['active', 'inactive'])->default('active');
+            $table->enum('is_product', ['y', 'n'])->default('n');
             $table->timestamps();
         });
     }

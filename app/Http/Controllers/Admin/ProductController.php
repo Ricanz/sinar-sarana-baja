@@ -109,7 +109,7 @@ class ProductController extends Controller
     // Tab Function
 
     public function tabs() {
-        $tabs = ProductDetail::with('product')->get();
+        $tabs = ProductDetail::with('product')->orderBy('created_at', 'DESC')->get();
         return view('admin.products.tab', compact('tabs'));
     }
 
@@ -123,13 +123,13 @@ class ProductController extends Controller
             'title' => 'required',
             'description' => 'required',
         ]);
-        // dd($request->all());
 
         $detail = ProductDetail::create([
             'product_id' => $request->product_id,
             'title' => $request->title,
             'slug' => str_replace(' ', '-', strtolower($request->title)),
             'description' => $request->description,
+            'is_product' => $request->is_product,
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
         ]);

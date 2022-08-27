@@ -22,6 +22,13 @@
             <label for="description">Description</label>
             <textarea name="description" id="summernote" class="form-control" cols="30" rows="15"></textarea>
         </div>
+        <div class="form-group">
+            <label for="description">Is Product?</label>
+            <select name="is_product" id="is_product" class="form-control">
+                <option value="y" selected>Yes</option>
+                <option value="n" selected>No</option>
+            </select>
+        </div>
         <button class="btn btn-primary btn-user btn-block mt-4">Create</button>
     </form>
 </x-app-layout>

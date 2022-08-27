@@ -87,7 +87,16 @@
                             </ul>
                         </li> --}}
                         @foreach ($products as $item)
-                            <li><a href="{{ url('product-detail/'.$item->slug) }}">{{ $item->name }}</a></li>
+                            <li>
+                                <a href="{{ url('product-detail/'.$item->slug) }}">{{ $item->name }}</a>
+                                @if ($tab_products)
+                                    <ul>
+                                        @foreach ($tab_products as $tab)
+                                            <li><a href="{{ url('product-detail/'.$item->slug) }}">{{ $tab->title }}</a></li>
+                                        @endforeach
+                                    </ul>
+                                @endif
+                            </li>
                         @endforeach
                     </ul>
                 </li>
