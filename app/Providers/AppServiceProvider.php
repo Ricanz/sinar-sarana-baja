@@ -27,8 +27,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        View::share('services', Service::where('status', 'active')->get());
-        View::share('products', Product::where('status', 'active')->get());
-        View::share('tab_products', ProductDetail::where('status', 'active')->where('is_product', 'y')->get());
+        // View::share('services', Service::where('status', 'active')->get());
+        // View::share('products', Product::where('status', 'active')->get());
+        // View::share('tab_products', ProductDetail::where('status', 'active')->where('is_product', 'y')->get());
     }
 }
