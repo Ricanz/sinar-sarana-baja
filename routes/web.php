@@ -6,6 +6,7 @@ use App\Http\Controllers\Admin\ArticleController;
 use App\Http\Controllers\Admin\BrosurController;
 use App\Http\Controllers\Admin\CertificateController;
 use App\Http\Controllers\Admin\ClientController;
+use App\Http\Controllers\Admin\GalleryController;
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\ServicesController;
 use App\Http\Controllers\GeneralController;
@@ -100,7 +101,6 @@ Route::middleware('auth')->group(function () {
     Route::post('admin/certificate/submit', [CertificateController::class, 'submit'])->name('addCertificate');
     Route::post('admin/certificate/delete', [CertificateController::class, 'destroy'])->name('deleteCertificate');
 
-
     // Article
     Route::get('admin/articles', [ArticleController::class, 'index'])->name('articles');
     Route::get('admin/article/create', [ArticleController::class, 'create_view']);
@@ -108,6 +108,17 @@ Route::middleware('auth')->group(function () {
     Route::get('admin/article/edit/{id}', [ArticleController::class, 'edit_view']);
     Route::post('admin/article/update', [ArticleController::class, 'update'])->name('updateArticle');
     Route::post('admin/article/delete', [ArticleController::class, 'destroy'])->name('deleteArticle');
+
+    // Galleries
+    Route::get('admin/product/galleries', [GalleryController::class, 'product'])->name('productGallery');
+    Route::get('admin/product/gallery/create', [GalleryController::class, 'prod_create']);
+    Route::post('admin/product/gallery/submit', [GalleryController::class, 'prod_submit'])->name('addProdGal');
+    Route::post('admin/product/gallery/delete', [GalleryController::class, 'prod_destroy'])->name('deleteProdGal');
+
+    Route::get('admin/service/galleries', [GalleryController::class, 'service'])->name('serviceGallery');
+    Route::get('admin/service/gallery/create', [GalleryController::class, 'serv_create']);
+    Route::post('admin/service/gallery/submit', [GalleryController::class, 'serv_submit'])->name('addServGal');
+    Route::post('admin/service/gallery/delete', [GalleryController::class, 'serv_destroy'])->name('deleteServGal');
 
 });
 require __DIR__.'/auth.php';

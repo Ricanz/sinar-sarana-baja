@@ -89,6 +89,34 @@
         </div>
     </li>
 
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseProductGallery"
+            aria-expanded="true" aria-controls="collapseProductGallery">
+            <i class="fas fa-fw fa-camera"></i>
+            <span>Product Galleries</span>
+        </a>
+        <div id="collapseProductGallery" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <a class="collapse-item" href="{{ url('admin/product/galleries') }}">Product Pictures</a>
+                <a class="collapse-item" href="{{ url('admin/product/gallery/create') }}">Add Picture</a>
+            </div>
+        </div>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseServiceGallery"
+            aria-expanded="true" aria-controls="collapseServiceGallery">
+            <i class="fas fa-fw fa-image"></i>
+            <span>Service Galleries</span>
+        </a>
+        <div id="collapseServiceGallery" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <a class="collapse-item" href="{{ url('admin/service/galleries') }}">Service Pictures</a>
+                <a class="collapse-item" href="{{ url('admin/service/gallery/create') }}">Add Picture</a>
+            </div>
+        </div>
+    </li>
+
     <!-- Divider -->
     <hr class="sidebar-divider">
     <!-- Heading -->
