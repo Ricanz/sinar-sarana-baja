@@ -32,7 +32,7 @@
                     </p>
                     @if ($data->images)
                         @foreach ($data->images as $img)
-                            <img src="{{ asset($img->image) }}" alt="Images" class="mb-20 mt-20">
+                            <img src="{{ asset($img->image) }}" alt="Images" class="mb-20 mt-20" width="40%">
                         @endforeach
                     @endif
                 </div>
