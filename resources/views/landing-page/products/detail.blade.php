@@ -58,10 +58,20 @@
                     <div class="tab-panels">
                         <section id="{{ $primary_tab->slug }}" class="tab-panel">
                             {!! $primary_tab->description !!}
+                            @if ($primary_tab->images)
+                                @foreach ($primary_tab->images as $data)
+                                    <img src="{{ asset($data->image) }}" alt="Images" class="mb-20">
+                                @endforeach
+                            @endif
                         </section>
                         @foreach($details as $item)
                             <section id="{{ $item->slug }}" class="tab-panel">
                                 {!! $item->description !!}
+                                @if ($item->images)
+                                    @foreach ($item->images as $data)
+                                        <img src="{{ asset($data->image) }}" alt="Images" class="mb-20">
+                                    @endforeach
+                                @endif
                             </section>
                         @endforeach
                         {{-- <section id="marzen" class="tab-panel">

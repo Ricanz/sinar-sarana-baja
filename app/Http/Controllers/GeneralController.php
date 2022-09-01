@@ -57,8 +57,8 @@ class GeneralController extends Controller
 
     public function product_detail($slug) {
         $data = Product::where('slug', $slug)->where('status', 'active')->first();
-        $details = ProductDetail::where('product_id', $data->id)->where('slug', '!=', 'deskripsi')->where('status', 'active')->get();
-        $primary_tab = ProductDetail::where('product_id', $data->id)->where('slug', 'deskripsi')->where('status', 'active')->first();
+        $details = ProductDetail::with('images')->where('product_id', $data->id)->where('slug', '!=', 'deskripsi')->where('status', 'active')->get();
+        $primary_tab = ProductDetail::with('images')->where('product_id', $data->id)->where('slug', 'deskripsi')->where('status', 'active')->first();
         return view('landing-page.products.detail', compact('data', 'details', 'primary_tab'));
     }
 

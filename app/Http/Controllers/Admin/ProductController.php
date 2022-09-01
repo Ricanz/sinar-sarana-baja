@@ -123,9 +123,10 @@ class ProductController extends Controller
             'title' => 'required',
             'description' => 'required',
         ]);
+        $product_id = (int)$request->product_id;
 
         $detail = ProductDetail::create([
-            'product_id' => $request->product_id,
+            'product_id' => $product_id,
             'title' => $request->title,
             'slug' => str_replace(' ', '-', strtolower($request->title)),
             'description' => $request->description,

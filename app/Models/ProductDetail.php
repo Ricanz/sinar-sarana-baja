@@ -17,4 +17,9 @@ class ProductDetail extends Model
     {
         return $this->belongsTo(Product::class);
     }
+
+    public function images()
+    {
+        return $this->hasMany(Gallery::class, 'parent_id', 'id')->where('type', 'product');
+    }
 }
