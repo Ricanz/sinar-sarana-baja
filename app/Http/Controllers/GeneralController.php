@@ -45,7 +45,7 @@ class GeneralController extends Controller
     }
 
     public function service_detail($slug) {
-        $data = Service::where('slug', $slug)->where('status', 'active')->first();
+        $data = Service::with('images')->where('slug', $slug)->where('status', 'active')->first();
         return view('landing-page.services.detail', compact('data'));
     }
 

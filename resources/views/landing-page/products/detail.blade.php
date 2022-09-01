@@ -60,7 +60,7 @@
                             {!! $primary_tab->description !!}
                             @if ($primary_tab->images)
                                 @foreach ($primary_tab->images as $data)
-                                    <img src="{{ asset($data->image) }}" alt="Images" class="mb-20">
+                                    <img src="{{ asset($data->image) }}" alt="Images" class="mb-20 mt-20">
                                 @endforeach
                             @endif
                         </section>
@@ -69,7 +69,7 @@
                                 {!! $item->description !!}
                                 @if ($item->images)
                                     @foreach ($item->images as $data)
-                                        <img src="{{ asset($data->image) }}" alt="Images" class="mb-20">
+                                        <img src="{{ asset($data->image) }}" alt="Images" class="mb-20 mt-20">
                                     @endforeach
                                 @endif
                             </section>

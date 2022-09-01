@@ -18,4 +18,9 @@ class Service extends Model
         'created_at',
         'updated_at'
     ];
+
+    public function images()
+    {
+        return $this->hasMany(Gallery::class, 'parent_id', 'id')->where('type', 'service');
+    }
 }
