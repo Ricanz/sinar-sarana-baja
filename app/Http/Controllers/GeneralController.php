@@ -22,7 +22,12 @@ class GeneralController extends Controller
                     ->where('products.status', 'active')
                     ->take(3)
                     ->get();
-        return view('landing-page.index', compact('products'));
+        $main_news = Article::inRandomOrder()->where('status', 'active')->latest()->first();
+        $news_left = Article::inRandomOrder()->where('status', 'active')->latest()->limit(2)->get();
+        $news_right = Article::inRandomOrder()->where('status', 'active')->latest()->limit(2)->get();
+        $mobile_news = Article::inRandomOrder()->where('status', 'active')->latest()->limit(5)->get();
+        $client = Client::inRandomOrder()->latest()->limit(5)->get();
+        return view('landing-page.index', compact('products', 'main_news', 'news_left', 'news_right', 'mobile_news','client'));
     }
 
     public function about() {

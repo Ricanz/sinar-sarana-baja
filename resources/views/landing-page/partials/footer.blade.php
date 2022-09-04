@@ -69,18 +69,27 @@
                     </div>
                 </div>
                 <div class="col-4 mob-menu">
-                    {{-- <div class="menu">
+                    <div class="menu">
                         <h5 class="mb-10" onclick="footerDropdown('kontak')">Kontak<i class="fa-solid fa-chevron-right mob-icon kontak"></i></h5>
                         <ul class="menu-dropdown-kontak">
                             <li>Lokasi</li>
-                            <li>Hunting : nomor marketing</li>
-                            <li>Nomor Gigih/Dito</li>
-                            <li>Nomor Dhendi/Budi</li>
-                            <li>Nomor Herdyan/Santoso</li>
-                            <li>Nomor Anton/Gress</li>
+                            <li>Jl. Lavionda Raya 31 Sektor 1.7 Blok 1.5, Kota Tangerang Selatan, Banten</li>
+                            <br>
+                            <li>Hunting :</li>
+                            <li>Gito Dwirmawan</li>
+                            <li>Hp: 0811689140</li>
+                            <li>Email: dwirmawan.gito@gmail.com</li>
+                            <br>
+                            <li>Budi Darmawan, ST</li>
+                            <li>Hp: 08111589141</li>
+                            <li>Email: bdarmawan.ssb@gmail.com</li>
+                            <br>
+                            <li>Safira Khalisa</li>
+                            <li>Hp: 08111379142</li>
+                            <li>Email: kasafira@gmail.com</li>
                         </ul>
                     </div>
-                    <div class="menu">
+                    {{-- <div class="menu">
                         <h5 class="mb-10" onclick="footerDropdown('klien')">Klien<i class="fa-solid fa-chevron-right mob-icon klien"></i></h5>
                         <ul class="menu-dropdown-klien">
                             <li>Nama Klien</li>
