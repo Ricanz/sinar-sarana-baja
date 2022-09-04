@@ -115,43 +115,56 @@
     
     <div class="section-4">
         <div class="service-desc mb-80">
-            <h3>Our Core Values</h3>
+            <div class="col-6">
+                <h3>Jasa</h3>
+            </div>
+            <div class="col-6 med-text-desc mob-desc">
+                <p>PT. Sinergy Sarana Baja berkomitmen untuk terus memberikan produk baja berkualitas dan berkelanjutan dalam berinovasi sesuai dengan perkembangan pasar.</p>
+            </div>
         </div>
         <div class="services">
             <div class="col-4 service-box">
                 <img src="{{ asset('custom/landing-page/images/services/ic_3D_curve_auto_colon.png') }}" alt="">
                 <div class="bold-med-text">
-                    <p><strong>Structured Approach</strong></p>
+                    <p><strong>Berintegritas</strong></p>
                 </div>
                 <div class="med-text-desc">
-                    <p>Prior to joining the Company as one of the Board of Commissioners’member</p>
+                    <p>
+                        Integritas dalam pembuatan produk san service ke pelanggan
+                    </p>
                 </div>
             </div>
             <div class="col-4 service-box">
                 <img src="{{ asset('custom/landing-page/images/services/ic_chat_bot.png') }}" alt="">
                 <div class="bold-med-text">
-                    <p><strong>Professional Feedbacks</strong></p>
+                    <p><strong>Kepuasan Pelanggan</strong></p>
                 </div>
                 <div class="med-text-desc">
-                    <p>Prior to joining the Company as one of the Board of Commissioners’member</p>
+                    <p>
+                        Aktif 24/7 untuk melayani hingga menuju kepuasan pelanggan yang baik.
+                    </p>
                 </div>
             </div>
             <div class="col-4 service-box">
                 <img src="{{ asset('custom/landing-page/images/services/ic_airport_location.png') }}" alt="">
                 <div class="bold-med-text">
-                    <p><strong>Efficiency</strong></p>
+                    <p><strong>Berinovasi</strong></p>
                 </div>
                 <div class="med-text-desc">
-                    <p>Prior to joining the Company as one of the Board of Commissioners’member</p>
+                    <p>
+                        Selalu meletakkan inovasi yang baik di tiap produk.
+                    </p>
                 </div>
             </div>
             <div class="col-4 service-box">
                 <img src="{{ asset('custom/landing-page/images/services/ic_event.png') }}" alt="">
                 <div class="bold-med-text">
-                    <p><strong>Flexible Schedule</strong></p>
+                    <p><strong>Berkembang</strong></p>
                 </div>
                 <div class="med-text-desc">
-                    <p>Prior to joining the Company as one of the Board of Commissioners’member</p>
+                    <p>
+                        Perkembangan menjadi point utama dalam setiap persiapan kami.
+                    </p>
                 </div>
             </div>
         </div>
