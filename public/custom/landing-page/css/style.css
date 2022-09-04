@@ -5,11 +5,27 @@
     max-width: 1440px;
 }
 
-/* @media (min-width: 320px) {
-    .container {
-      max-width: 100%;
+@media (max-width: 2000px) {
+    .mobile-nav {
+        display: none;
     }
-  } */
+
+    .btn-mobile {
+        display: none;
+    }
+
+    .mobile-news {
+        display: none !important;
+    }
+
+    .mobile-map {
+        display: none;
+    }
+
+    .mobile-mission {
+        display: none !important;
+    }
+  }
 
 .row {
     width: 100%;
