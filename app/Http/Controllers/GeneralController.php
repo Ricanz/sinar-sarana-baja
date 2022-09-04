@@ -16,9 +16,7 @@ use Illuminate\Http\Request;
 class GeneralController extends Controller
 {
     public function index() {
-        $products = Product::select('products.slug', 'products.name', 'products.image', 'product_details.description')
-                    ->join('product_details', 'products.id', 'product_details.product_id')
-                    ->where('product_details.slug', 'deskripsi')
+        $products = Product::select('products.slug', 'products.name', 'products.image', 'short_desc')
                     ->where('products.status', 'active')
                     ->take(3)
                     ->get();
