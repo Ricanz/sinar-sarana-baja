@@ -313,16 +313,16 @@
                     <div class="contact">
                         <div class="contact-head mb-10">
                             <img src="{{ asset('custom/landing-page/images/icons/ic_mobile.png') }}" alt="">
-                            <p class="item"><strong>Phone</strong></p>    
+                            <p class="item"><strong>Telepon</strong></p>    
                         </div>
                         <span>+62 811 689 140</span>
                     </div>
                     <div class="contact">
                         <div class="contact-head mb-10">
                             <img src="{{ asset('custom/landing-page/images/icons/ic_pin.png') }}" alt="">
-                            <p class="item"><strong>Address</strong></p>    
+                            <p class="item"><strong>Alamat</strong></p>    
                         </div>
-                        <span>DKI Jakarta</span>
+                        <span>Jl. Lavionda Raya 31 Sektor 1.7 Blok 1.5, Kota Tangerang Selatan, Banten</span>
                     </div>
                 </div>
             </div>
