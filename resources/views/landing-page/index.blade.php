@@ -196,7 +196,7 @@
                         </a>
                     </div>
                     <div class="news-detail">
-                        <p>{{ $main_news->short_desc }}</p>
+                        <p>{{ Str::limit($main_news->short_desc, 150, '...') }}</p>
                     </div>
                 </div>
                 <div class="col-6 support-news dekstop-news">
