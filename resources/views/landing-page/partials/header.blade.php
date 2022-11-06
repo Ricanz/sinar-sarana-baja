@@ -80,18 +80,12 @@
     
                 <li class="dropdown"><a href="{{ url('products') }}">Produk</a>
                     <ul>
-                        {{-- <li><a href="#">Multi Plate</a>
-                            <ul>
-                                <li><a href="#">Sub Product</a></li>
-                                <li><a href="#">Sub Product</a></li>
-                            </ul>
-                        </li> --}}
                         @foreach ($products as $item)
                             <li>
                                 <a href="{{ url('product-detail/'.$item->slug) }}">{{ $item->name }}</a>
-                                @if ($tab_products)
+                                @if ($item->details)
                                     <ul>
-                                        @foreach ($tab_products as $tab)
+                                        @foreach ($item->details as $tab)
                                             <li><a href="{{ url('product-detail/'.$item->slug) }}">{{ $tab->title }}</a></li>
                                         @endforeach
                                     </ul>

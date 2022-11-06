@@ -12,7 +12,7 @@
                             {!! $profile->description !!}
                         </p>
                     </div>
-                    <a href="#" class="btn btn-primary btn-white-mob">Check our work<i class="ml-10 fa-solid fa-arrow-right"></i></a>
+                    <a href="{{ url('/products') }}" class="btn btn-primary btn-white-mob">Check our work<i class="ml-10 fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
 
