@@ -30,12 +30,13 @@ class BannerController extends Controller
             $file_name = time() . '.' . $extention;
             $txt = "storage/about/" . $file_name;
             $request->image->storeAs('public/about', $file_name);
-            
-            $data->description = $request->description;
-            $data->vission = $request->title;
-            $data->image = $txt;
-            $data->save();
+        } else{
+            $txt = $data->image;
         }
+        $data->description = $request->description;
+        $data->vission = $request->title;
+        $data->image = $txt;
+        $data->save();
         return redirect()->route('banner')
                 ->with('success', 'Banner Berhasil Diperbarui');
     }

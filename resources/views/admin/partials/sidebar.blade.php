@@ -37,6 +37,11 @@
             <i class="fas fa-fw fa-wrench"></i>
             <span>Mission</span></a>
     </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{{ url('admin/banner') }}">
+            <i class="fas fa-fw fa-edit"></i>
+            <span>Homepage Banner</span></a>
+    </li>
 
     <!-- Divider -->
     <hr class="sidebar-divider">
