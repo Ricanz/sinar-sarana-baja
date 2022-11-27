@@ -7,6 +7,7 @@ use App\Http\Controllers\Admin\BannerController;
 use App\Http\Controllers\Admin\BrosurController;
 use App\Http\Controllers\Admin\CertificateController;
 use App\Http\Controllers\Admin\ClientController;
+use App\Http\Controllers\Admin\ContactController;
 use App\Http\Controllers\Admin\GalleryController;
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\ServicesController;
@@ -125,5 +126,10 @@ Route::middleware('auth')->group(function () {
     Route::get('admin/banner', [BannerController::class, 'index'])->name('banner');
     Route::post('admin/banner/submit', [BannerController::class, 'submit'])->name('addBanner');
 
+    // Contact
+    Route::get('admin/contact', [ContactController::class, 'index'])->name('contact');
+    Route::get('admin/contact/create', [ContactController::class, 'create']);
+    Route::post('admin/contact/submit', [ContactController::class, 'submit'])->name('addContact');
+    Route::post('admin/contact/delete', [ContactController::class, 'destroy'])->name('deleteContact');
 });
 require __DIR__.'/auth.php';

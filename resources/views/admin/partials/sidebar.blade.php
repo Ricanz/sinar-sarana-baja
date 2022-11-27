@@ -42,6 +42,19 @@
             <i class="fas fa-fw fa-edit"></i>
             <span>Homepage Banner</span></a>
     </li>
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseContact"
+            aria-expanded="true" aria-controls="collapseContact">
+            <i class="fas fa-fw fa-phone"></i>
+            <span>Contacts</span>
+        </a>
+        <div id="collapseContact" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <a class="collapse-item" href="{{ url('admin/contact') }}">Contact Data</a>
+                <a class="collapse-item" href="{{ url('admin/contact/create') }}">Add Contact</a>
+            </div>
+        </div>
+    </li>
 
     <!-- Divider -->
     <hr class="sidebar-divider">
