@@ -18,6 +18,7 @@ class CreateAboutsTable extends Migration
             $table->longText('description')->nullable();
             $table->longText('vission')->nullable();
             $table->string('image')->nullable();
+            $table->string('type')->nullable();
             $table->timestamps();
         });
     }

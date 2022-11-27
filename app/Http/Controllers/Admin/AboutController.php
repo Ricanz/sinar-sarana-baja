@@ -16,7 +16,7 @@ class AboutController extends Controller
      */
     public function index()
     {
-        $about = About::where('id',1)->first();
+        $about = About::where('id',1)->where('type', 'about')->first();
         if($about == null) {
             About::create([
                 'description' => '',

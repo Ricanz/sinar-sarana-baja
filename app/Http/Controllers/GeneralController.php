@@ -29,7 +29,7 @@ class GeneralController extends Controller
     }
 
     public function about() {
-        $profile = About::where('id', 1)->first();
+        $profile = About::where('id', 1)->where('type', 'about')->first();
         $mission1 = Mission::where('id', 1)->where('status', 'active')->first();
         $mission2 = Mission::where('id', 2)->where('status', 'active')->first();
         $mission3 = Mission::where('id', 3)->where('status', 'active')->first();
