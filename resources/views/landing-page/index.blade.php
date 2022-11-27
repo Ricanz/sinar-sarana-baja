@@ -5,10 +5,11 @@
             <div class="slide-carousel">
                 <div class="col-5 description">
                     <h6 class="mb-35">Sinergy Sarana Baja</h6>
-                    <h1 class="mb-50">Quality and Improvement</h1>
+                    <h1 class="mb-50">{{ $banner->vission }}</h1>
                     <p class="mb-50">
-                        Menghadirkan produk berkualitas dengan bahan baku pilihan terbaik!
+                        {!! $banner->description !!}
                     </p>
+                    <br>
                     <div class="row banner-footer">
                         <a href="{{ url('products') }}" class="view-more btn-primary">
                             <div class="view-button">
@@ -18,7 +19,7 @@
                     </div>
                 </div>
                 <div class="col-8 image">
-                    <img src="{{ asset('custom/landing-page/images/slide-1.png') }}" alt="">
+                    <img src="{{ asset($banner->image) }}" alt="">
                 </div>
             </div>
         </div>

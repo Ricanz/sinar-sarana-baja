@@ -3,6 +3,7 @@
 use App\Http\Controllers\Admin\AboutController;
 use App\Http\Controllers\Admin\AboutUsController;
 use App\Http\Controllers\Admin\ArticleController;
+use App\Http\Controllers\Admin\BannerController;
 use App\Http\Controllers\Admin\BrosurController;
 use App\Http\Controllers\Admin\CertificateController;
 use App\Http\Controllers\Admin\ClientController;
@@ -119,6 +120,10 @@ Route::middleware('auth')->group(function () {
     Route::get('admin/service/gallery/create', [GalleryController::class, 'serv_create']);
     Route::post('admin/service/gallery/submit', [GalleryController::class, 'serv_submit'])->name('addServGal');
     Route::post('admin/service/gallery/delete', [GalleryController::class, 'serv_destroy'])->name('deleteServGal');
+
+    // Banner
+    Route::get('admin/banner', [BannerController::class, 'index'])->name('banner');
+    Route::post('admin/banner/submit', [BannerController::class, 'submit'])->name('addBanner');
 
 });
 require __DIR__.'/auth.php';

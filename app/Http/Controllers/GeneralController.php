@@ -25,7 +25,8 @@ class GeneralController extends Controller
         $news_right = Article::inRandomOrder()->where('status', 'active')->latest()->limit(2)->get();
         $mobile_news = Article::inRandomOrder()->where('status', 'active')->latest()->limit(5)->get();
         $client = Client::inRandomOrder()->latest()->limit(5)->get();
-        return view('landing-page.index', compact('products', 'main_news', 'news_left', 'news_right', 'mobile_news','client'));
+        $banner = About::where('type', 'banner')->first();
+        return view('landing-page.index', compact('products', 'main_news', 'news_left', 'news_right', 'mobile_news','client', 'banner'));
     }
 
     public function about() {
