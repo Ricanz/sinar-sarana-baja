@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Models\About;
 use App\Models\Brosur;
 use App\Models\Contact;
 use App\Models\Service;
@@ -34,5 +35,6 @@ class AppServiceProvider extends ServiceProvider
         View::share('tab_products', ProductDetail::where('status', 'active')->where('is_product', 'y')->get());
         View::share('contacts', Contact::limit(3)->get());
         View::share('brosur', Brosur::get());
+        View::share('footer_desc', About::where('type', 'footer')->first());
     }
 }

@@ -7,10 +7,14 @@
         <div class="row">
             <div class="col-4 footer-desc">
                 <a href="{{ url('/') }}">
-                    <img class="mb-20" src="{{ asset('custom/landing-page/images/logo-ssb.png') }}" alt="">
+                    <img class="mb-20" src="{{ asset($footer_desc->image) }}" alt="">
                 </a>
                 <div class="mb-35">
-                    <p>Seiring dengan meningkatnya Proyek Infrastruktur sebagai penunjang pertumbuhan ekonomi nasional disamping meningkatnya permintaan pasar</p>
+                    {{-- <p>Seiring dengan meningkatnya Proyek Infrastruktur sebagai penunjang pertumbuhan ekonomi nasional disamping meningkatnya permintaan pasar</p> --}}
+                    {!! $footer_desc->description !!}
+                    {{-- @foreach ($footer_desc as $item)
+                        {{ $item }}
+                    @endforeach --}}
                 </div>
                 <div class="social">
                     <h5>Social</h5>
@@ -48,7 +52,7 @@
                     </div>
                 </div>
                 <div class="col-4 mob-menu">
-                    <div class="menu">
+                    <div class="menu">  
                         <h5 class="mb-10" onclick="footerDropdown('produk')">Produk<i class="fa-solid fa-chevron-right mob-icon produk"></i></h5>
                         <ul class="menu-dropdown-produk">
                             @foreach ($products as $item)

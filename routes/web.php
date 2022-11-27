@@ -131,5 +131,9 @@ Route::middleware('auth')->group(function () {
     Route::get('admin/contact/create', [ContactController::class, 'create']);
     Route::post('admin/contact/submit', [ContactController::class, 'submit'])->name('addContact');
     Route::post('admin/contact/delete', [ContactController::class, 'destroy'])->name('deleteContact');
+
+    // Footer Desc
+    Route::get('admin/footer-description', [ContactController::class, 'footer_desc'])->name('footer');
+    Route::post('admin/footer-description/submit', [ContactController::class, 'footer_desc_submit'])->name('addFooterDesc');
 });
 require __DIR__.'/auth.php';

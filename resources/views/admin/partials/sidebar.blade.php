@@ -43,6 +43,11 @@
             <span>Homepage Banner</span></a>
     </li>
     <li class="nav-item">
+        <a class="nav-link" href="{{ url('admin/footer-description') }}">
+            <i class="fas fa-fw fa-edit"></i>
+            <span>Footer Description</span></a>
+    </li>
+    <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseContact"
             aria-expanded="true" aria-controls="collapseContact">
             <i class="fas fa-fw fa-phone"></i>
