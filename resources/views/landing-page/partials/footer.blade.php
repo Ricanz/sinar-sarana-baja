@@ -39,14 +39,11 @@
                     <div class="menu">
                         <h5 class="mb-10" onclick="footerDropdown('brosur')">Brosur<i class="fa-solid fa-chevron-right mob-icon brosur"></i></h5>
                         <ul class="menu-dropdown-brosur">
-                            <li>Company Profile</li>
-                            <li>Katalog Produk CSP</li>
-                            <li>Katalog Produk 
-                                Steel Bridge</li>
-                            <li>Katalog Produk 
-                                Perlengkapan Jalan</li>
-                            <li>Katalog Steel Pipe</li>
-                            <li>Katalog Bronjong</li>
+                            @foreach ($brosur as $item)
+                            <a href="{{ url('brochures') }}">
+                                <li>{{ $item->title }}</li>
+                            </a>
+                            @endforeach
                         </ul>
                     </div>
                 </div>
