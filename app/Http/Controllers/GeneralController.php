@@ -7,6 +7,7 @@ use App\Models\Article;
 use App\Models\Brosur;
 use App\Models\Certificate;
 use App\Models\Client;
+use App\Models\Contact;
 use App\Models\Mission;
 use App\Models\Service;
 use App\Models\Product;
@@ -26,6 +27,7 @@ class GeneralController extends Controller
         $mobile_news = Article::inRandomOrder()->where('status', 'active')->latest()->limit(5)->get();
         $client = Client::inRandomOrder()->latest()->limit(5)->get();
         $banner = About::where('type', 'banner')->first();
+        // $contacts = Contact::limit(3)->get();
         return view('landing-page.index', compact('products', 'main_news', 'news_left', 'news_right', 'mobile_news','client', 'banner'));
     }
 

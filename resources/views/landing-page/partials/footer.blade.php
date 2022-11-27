@@ -80,17 +80,19 @@
                             <li>Jl. Lavionda Raya 31 Sektor 1.7 Blok 1.5, Kota Tangerang Selatan, Banten</li>
                             <br>
                             <li>Hunting :</li>
-                            <li>Gito Dwirmawan</li>
-                            <li>Hp: 0811689140</li>
-                            <li>Email: dwirmawan.gito@gmail.com</li>
-                            <br>
-                            <li>Budi Darmawan, ST</li>
+                            @foreach ($contacts as $item)
+                                <li>{{ $item->name }}</li>
+                                <li>Hp: {{ $item->phone }}</li>
+                                <li>Email: {{ $item->email }}</li>
+                                <br>
+                            @endforeach
+                            {{-- <li>Budi Darmawan, ST</li>
                             <li>Hp: 08111589141</li>
                             <li>Email: bdarmawan.ssb@gmail.com</li>
                             <br>
                             <li>Safira Khalisa</li>
                             <li>Hp: 08111379142</li>
-                            <li>Email: kasafira@gmail.com</li>
+                            <li>Email: kasafira@gmail.com</li> --}}
                         </ul>
                     </div>
                     {{-- <div class="menu">
