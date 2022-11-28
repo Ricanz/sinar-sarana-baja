@@ -309,26 +309,26 @@
                             <img src="{{ asset('custom/landing-page/images/icons/ic_email.png') }}" alt="">
                             <p class="item"><strong>Email</strong></p>    
                         </div>
-                        <span>marketing@sinergybaja.com</span>
+                        <span>{{ $primary_contact->email }}</span>
                     </div>
                     <div class="contact">
                         <div class="contact-head mb-10">
                             <img src="{{ asset('custom/landing-page/images/icons/ic_mobile.png') }}" alt="">
                             <p class="item"><strong>Telepon</strong></p>    
                         </div>
-                        <span>+62 811 689 140</span>
+                        <span>{{ $primary_contact->phone }}</span>
                     </div>
                     <div class="contact">
                         <div class="contact-head mb-10">
                             <img src="{{ asset('custom/landing-page/images/icons/ic_pin.png') }}" alt="">
                             <p class="item"><strong>Alamat</strong></p>    
                         </div>
-                        <span>Jl. Lavionda Raya 31 Sektor 1.7 Blok 1.5, Kota Tangerang Selatan, Banten</span>
+                        <span>{{ $primary_contact->name }}</span>
                     </div>
                 </div>
             </div>
             <div class="col-7 contact-map dekstop-map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4060928.851578041!2d102.46042170000003!3d-6.296439199999989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fbb4dcc3f5cb%3A0x3b9f0302bb5fc11a!2sPT.%20Sinergy%20Sarana%20Baja!5e0!3m2!1sid!2sid!4v1662302979075!5m2!1sid!2sid" style="border:0; border-radius: 16px;" width="665px" height="500px"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                {!! $map->description !!}
                 {{-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15924.475091023463!2d98.68546621852086!3d3.784324316961146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3036ce77adb6ced7%3A0xe1b6fd7218b0c050!2sBelawan%2C%20Belawan%20I%2C%20Medan%20Kota%20Belawan%2C%20Medan%20City%2C%20North%20Sumatra!5e0!3m2!1sen!2sid!4v1659264745013!5m2!1sen!2sid" style="border:0; border-radius: 16px;" width="665px" height="500px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> --}}
             </div>
             <div class="col-7 contact-map mobile-map">

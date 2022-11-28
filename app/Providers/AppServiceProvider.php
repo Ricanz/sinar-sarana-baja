@@ -33,7 +33,7 @@ class AppServiceProvider extends ServiceProvider
         View::share('services', Service::where('status', 'active')->get());
         View::share('products', Product::with('details')->where('status', 'active')->get());
         View::share('tab_products', ProductDetail::where('status', 'active')->where('is_product', 'y')->get());
-        View::share('contacts', Contact::limit(3)->get());
+        View::share('contacts', Contact::where('status', 'active')->limit(3)->get());
         View::share('brosur', Brosur::get());
         View::share('footer_desc', About::where('type', 'footer')->first());
     }

@@ -78,5 +78,55 @@ class ContactController extends Controller
         return redirect()->route('footer')
                 ->with('success', 'Footer Berhasil Diperbarui');
     }
+
+    public function footer_maps(){
+        $now = Carbon::now();
+        $map = About::where('type', 'maps')->first();
+        if(!$map){
+            $map = About::create([
+                'description' => '',
+                'type' => 'maps',
+                'created_at' =>  $now,
+                'updated_at' => $now
+            ]);
+        }
+
+        $contact = Contact::where('status', 'inactive')->first();
+        if(!$contact){
+            $contact = Contact::create([
+                'name' => '',
+                'email' => '',
+                'phone' => '',
+                'status' => 'inactive',
+                'created_at' =>  $now,
+                'updated_at' => $now
+            ]);
+        }
+        
+        return view('admin.contact.maps', compact('map', 'contact'));
+    }
+
+    public function footer_maps_submit(Request $request){
+        $now = Carbon::now();
+        $contact = Contact::where('status', 'inactive')->first();
+        $map = About::where('type', 'maps')->first();
+        if($contact){
+            $contact->name = $request->name;
+            $contact->email = $request->email;
+            $contact->phone = $request->phone;
+            $contact->updated_at = $now;
+            $contact->save();
+        }
+
+        if($map){
+            $map->description = $request->maps;
+            $map->updated_at = $now;
+            $map->save();
+        }
+
+        
+        return redirect()->route('footer_maps')
+                ->with('success', 'Contact & Map Berhasil Diperbarui');
+    }
 }
 

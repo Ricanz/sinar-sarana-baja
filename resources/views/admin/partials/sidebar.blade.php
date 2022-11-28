@@ -43,6 +43,11 @@
             <span>Homepage Banner</span></a>
     </li>
     <li class="nav-item">
+        <a class="nav-link" href="{{ url('admin/footer-maps') }}">
+            <i class="fas fa-fw fa-edit"></i>
+            <span>Contact & Maps</span></a>
+    </li>
+    <li class="nav-item">
         <a class="nav-link" href="{{ url('admin/footer-description') }}">
             <i class="fas fa-fw fa-edit"></i>
             <span>Footer Description</span></a>
@@ -51,7 +56,7 @@
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseContact"
             aria-expanded="true" aria-controls="collapseContact">
             <i class="fas fa-fw fa-phone"></i>
-            <span>Contacts</span>
+            <span>Footer Contacts</span>
         </a>
         <div id="collapseContact" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">

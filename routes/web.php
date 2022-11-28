@@ -126,7 +126,11 @@ Route::middleware('auth')->group(function () {
     Route::get('admin/banner', [BannerController::class, 'index'])->name('banner');
     Route::post('admin/banner/submit', [BannerController::class, 'submit'])->name('addBanner');
 
-    // Contact
+    // Contacts
+    Route::get('admin/footer-maps', [ContactController::class, 'footer_maps'])->name('footer_maps');
+    Route::post('admin/footer-maps', [ContactController::class, 'footer_maps_submit'])->name('addMaps');
+
+    // Footer Contact
     Route::get('admin/contact', [ContactController::class, 'index'])->name('contact');
     Route::get('admin/contact/create', [ContactController::class, 'create']);
     Route::post('admin/contact/submit', [ContactController::class, 'submit'])->name('addContact');
