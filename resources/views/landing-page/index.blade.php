@@ -176,9 +176,9 @@
         <div class="news-content">
             <div class="news-header">
                 <div class="col-5 news-header-mob">
-                    <h2 class="mb-20">Latest New</h2>
+                    <h2 class="mb-20">{{ $article_description->vission }}</h2>
                     <p>
-                        Informasi mengenai kegiatan terkini dan pengetahuan seputar produk dan jasa kami.
+                        {!! $article_description->description !!}
                     </p>
                 </div>
                 <div class="col-7 item">

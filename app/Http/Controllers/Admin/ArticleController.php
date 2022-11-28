@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\About;
 use App\Models\Article;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
@@ -87,5 +88,30 @@ class ArticleController extends Controller
         $article->delete();
         return redirect()->route('articles')
             ->with('delete', 'Article Berhasil Dihapus');
+    }
+
+    public function article_description(){
+        $description = About::where('type', 'article')->first();
+        if(!$description){
+            $description = About::create([
+                'vission' => '',
+                'description' => '',
+                'type' => 'article'
+            ]);
+        }
+        return view('admin.news.description', compact('description'));
+    }
+
+    public function article_description_submit(Request $request){
+        $description = About::where('type', 'article')->first();
+        
+        if($description){
+            $description->vission = $request->title;
+            $description->description = $request->description;
+            $description->save();
+            
+            return redirect()->route('article_description')
+            ->with('delete', 'Article Berhasil Dihapus');
+        }
     }
 }

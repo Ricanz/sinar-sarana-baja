@@ -29,8 +29,9 @@ class GeneralController extends Controller
         $banner = About::where('type', 'banner')->first();
         $primary_contact = Contact::where('status', 'inactive')->first();
         $map = About::where('type', 'maps')->first();
+        $article_description = About::where('type', 'article')->first();
         // $contacts = Contact::limit(3)->get();
-        return view('landing-page.index', compact('products', 'main_news', 'news_left', 'news_right', 'mobile_news','client', 'banner', 'primary_contact', 'map'));
+        return view('landing-page.index', compact('products', 'main_news', 'news_left', 'news_right', 'mobile_news','client', 'banner', 'primary_contact', 'map', 'article_description'));
     }
 
     public function about() {

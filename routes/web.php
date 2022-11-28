@@ -110,6 +110,8 @@ Route::middleware('auth')->group(function () {
     Route::get('admin/article/edit/{id}', [ArticleController::class, 'edit_view']);
     Route::post('admin/article/update', [ArticleController::class, 'update'])->name('updateArticle');
     Route::post('admin/article/delete', [ArticleController::class, 'destroy'])->name('deleteArticle');
+    Route::get('admin/article-description', [ArticleController::class, 'article_description'])->name('article_description');
+    Route::post('admin/article_description_submit', [ArticleController::class, 'article_description_submit'])->name('addArticleDesc');
 
     // Galleries
     Route::get('admin/product/galleries', [GalleryController::class, 'product'])->name('productGallery');
