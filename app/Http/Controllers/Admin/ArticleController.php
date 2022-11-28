@@ -109,9 +109,9 @@ class ArticleController extends Controller
             $description->vission = $request->title;
             $description->description = $request->description;
             $description->save();
-            
+
             return redirect()->route('article_description')
-            ->with('delete', 'Article Berhasil Dihapus');
+            ->with('delete', 'Article Description Berhasil Diubah');
         }
     }
 }

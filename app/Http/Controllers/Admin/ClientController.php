@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\About;
 use App\Models\Client;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
@@ -52,5 +53,30 @@ class ClientController extends Controller
         $client->delete();
         return redirect()->route('clients')
             ->with('delete', 'Klien Berhasil Dihapus');
+    }
+
+    public function client_description(){
+        $description = About::where('type', 'client')->first();
+        if(!$description){
+            $description = About::create([
+                'vission' => '',
+                'description' => '',
+                'type' => 'client'
+            ]);
+        }
+        return view('admin.clients.description', compact('description'));
+    }
+
+    public function client_description_submit(Request $request){
+        $description = About::where('type', 'client')->first();
+        
+        if($description){
+            $description->vission = $request->title;
+            $description->description = $request->description;
+            $description->save();
+            
+            return redirect()->route('client_description')
+            ->with('delete', 'Client Description Berhasil Disimpan');
+        }
     }
 }

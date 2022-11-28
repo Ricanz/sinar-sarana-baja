@@ -255,9 +255,9 @@
     {{-- Clients --}}
     <div class="section-6">
         <div class="card-title">
-            <h2 class="mb-20">Klien</h2>
+            <h2 class="mb-20">{{ $client_description->vission }}</h2>
             <div class="med-text-desc mb-20">
-                <p>Partner kerja sama PT. Sinergy Sarana Baja</p>
+                <p>{!! $client_description->description !!}</p>
             </div>
         </div>
         <div class="clients">

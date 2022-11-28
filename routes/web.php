@@ -96,6 +96,8 @@ Route::middleware('auth')->group(function () {
     Route::get('admin/client/create', [ClientController::class, 'create_view']);
     Route::post('admin/client/submit', [ClientController::class, 'submit'])->name('addClient');
     Route::post('admin/client/delete', [ClientController::class, 'destroy'])->name('deleteClient');
+    Route::get('admin/client-description', [ClientController::class, 'client_description'])->name('client_description');
+    Route::post('admin/client-description', [ClientController::class, 'client_description_submit'])->name('addClientDesc');
 
     // Certificates
     Route::get('admin/certificates', [CertificateController::class, 'index'])->name('certificates');

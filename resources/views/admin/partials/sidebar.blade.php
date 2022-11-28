@@ -48,6 +48,11 @@
             <span>Article Description</span></a>
     </li>
     <li class="nav-item">
+        <a class="nav-link" href="{{ url('admin/client-description') }}">
+            <i class="fas fa-fw fa-edit"></i>
+            <span>Client Description</span></a>
+    </li>
+    <li class="nav-item">
         <a class="nav-link" href="{{ url('admin/footer-maps') }}">
             <i class="fas fa-fw fa-edit"></i>
             <span>Contact & Maps</span></a>
