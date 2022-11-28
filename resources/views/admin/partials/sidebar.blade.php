@@ -37,44 +37,6 @@
             <i class="fas fa-fw fa-wrench"></i>
             <span>Mission</span></a>
     </li>
-    <li class="nav-item">
-        <a class="nav-link" href="{{ url('admin/banner') }}">
-            <i class="fas fa-fw fa-edit"></i>
-            <span>Homepage Banner</span></a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="{{ url('admin/article-description') }}">
-            <i class="fas fa-fw fa-edit"></i>
-            <span>Article Description</span></a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="{{ url('admin/client-description') }}">
-            <i class="fas fa-fw fa-edit"></i>
-            <span>Client Description</span></a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="{{ url('admin/footer-maps') }}">
-            <i class="fas fa-fw fa-edit"></i>
-            <span>Contact & Maps</span></a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="{{ url('admin/footer-description') }}">
-            <i class="fas fa-fw fa-edit"></i>
-            <span>Footer Description</span></a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseContact"
-            aria-expanded="true" aria-controls="collapseContact">
-            <i class="fas fa-fw fa-phone"></i>
-            <span>Footer Contacts</span>
-        </a>
-        <div id="collapseContact" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-            <div class="bg-white py-2 collapse-inner rounded">
-                <a class="collapse-item" href="{{ url('admin/contact') }}">Contact Data</a>
-                <a class="collapse-item" href="{{ url('admin/contact/create') }}">Add Contact</a>
-            </div>
-        </div>
-    </li>
 
     <!-- Divider -->
     <hr class="sidebar-divider">
@@ -201,6 +163,50 @@
             <div class="bg-white py-2 collapse-inner rounded">
                 <a class="collapse-item" href="{{ url('admin/articles') }}">Articles Data</a>
                 <a class="collapse-item" href="{{ url('admin/article/create') }}">Add Article</a>
+            </div>
+        </div>
+    </li>
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+    <!-- Heading -->
+    <div class="sidebar-heading">
+        Konten
+    </div>
+    <li class="nav-item">
+        <a class="nav-link" href="{{ url('admin/banner') }}">
+            <i class="fas fa-fw fa-edit"></i>
+            <span>Homepage Banner</span></a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{{ url('admin/article-description') }}">
+            <i class="fas fa-fw fa-edit"></i>
+            <span>Article Description</span></a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{{ url('admin/client-description') }}">
+            <i class="fas fa-fw fa-edit"></i>
+            <span>Client Description</span></a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{{ url('admin/footer-maps') }}">
+            <i class="fas fa-fw fa-edit"></i>
+            <span>Contact & Maps</span></a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{{ url('admin/footer-description') }}">
+            <i class="fas fa-fw fa-edit"></i>
+            <span>Footer Description</span></a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseContact"
+            aria-expanded="true" aria-controls="collapseContact">
+            <i class="fas fa-fw fa-phone"></i>
+            <span>Footer Contacts</span>
+        </a>
+        <div id="collapseContact" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <a class="collapse-item" href="{{ url('admin/contact') }}">Contact Data</a>
+                <a class="collapse-item" href="{{ url('admin/contact/create') }}">Add Contact</a>
             </div>
         </div>
     </li>
