@@ -178,6 +178,11 @@
             <span>Homepage Banner</span></a>
     </li>
     <li class="nav-item">
+        <a class="nav-link" href="{{ url('admin/banner/vission') }}">
+            <i class="fas fa-fw fa-edit"></i>
+            <span>Vission Image</span></a>
+    </li>
+    <li class="nav-item">
         <a class="nav-link" href="{{ url('admin/about-description') }}">
             <i class="fas fa-fw fa-edit"></i>
             <span>Homepage About Us</span></a>
@@ -201,6 +206,11 @@
         <a class="nav-link" href="{{ url('admin/footer-maps') }}">
             <i class="fas fa-fw fa-edit"></i>
             <span>Contact & Maps</span></a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{{ url('admin/banner') }}">
+            <i class="fas fa-fw fa-edit"></i>
+            <span>Fotter Banner</span></a>
     </li>
     <li class="nav-item">
         <a class="nav-link" href="{{ url('admin/footer-description') }}">

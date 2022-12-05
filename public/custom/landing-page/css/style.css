@@ -1455,7 +1455,7 @@ hr {
 }
 
 .container .section-vision .vision-bg {
-    background-image: url('../images/vision-bg.png');
+    /* background-image: url('../images/vision-bg.png'); */
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;

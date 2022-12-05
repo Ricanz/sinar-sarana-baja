@@ -19,7 +19,7 @@
         </div>
     </div>
     <div class="section-vision" id="vission-mission">
-        <div class="vision-bg">
+        <div class="vision-bg" style="background-image: url({{ asset($vission_banner->image) }})">
             <h3 class="item">Our Vision</h3>
             <center class="item">
                 <img class="btn-play-fill" src="{{ asset('custom/landing-page/images/icons/iconbase.png') }}" alt="">

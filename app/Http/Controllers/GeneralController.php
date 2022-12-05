@@ -48,7 +48,9 @@ class GeneralController extends Controller
         $mission2 = Mission::where('id', 2)->where('status', 'active')->first();
         $mission3 = Mission::where('id', 3)->where('status', 'active')->first();
         $mission4 = Mission::where('id', 4)->where('status', 'active')->first();
-        return view('landing-page.about.index', compact('profile', 'mission1', 'mission2', 'mission3', 'mission4'));
+        $vission_banner = About::where('type', 'vis_banner')->first();
+        // dd($vission_banner);
+        return view('landing-page.about.index', compact('profile', 'mission1', 'mission2', 'mission3', 'mission4', 'vission_banner'));
     }
 
     public function news() {

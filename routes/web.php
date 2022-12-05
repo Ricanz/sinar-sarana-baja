@@ -137,6 +137,9 @@ Route::middleware('auth')->group(function () {
     // Banner
     Route::get('admin/banner', [BannerController::class, 'index'])->name('banner');
     Route::post('admin/banner/submit', [BannerController::class, 'submit'])->name('addBanner');
+    Route::get('admin/banner/vission', [BannerController::class, 'vission'])->name('vission_banner');
+    Route::post('admin/banner/vission/submit', [BannerController::class, 'vission_update'])->name('vission_update');
+
 
     // Contacts
     Route::get('admin/footer-maps', [ContactController::class, 'footer_maps'])->name('footer_maps');
