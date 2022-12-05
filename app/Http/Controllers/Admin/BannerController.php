@@ -71,4 +71,37 @@ class BannerController extends Controller
         return redirect()->route('vission_banner')
                 ->with('success', 'Banner Berhasil Diperbarui');
     }
+
+    public function footer_banner(){
+        $footer = About::where('type', 'fot_banner')->first();
+        if(!$footer){
+            About::create([
+                'type' => 'fot_banner',
+                'vission' => '',
+                'description' => '',
+                'image' => 'custom/landing-page/images/newsletter-bg.png'
+            ]);
+        }
+        return view('admin.banner.footer', compact('footer'));
+    }
+
+    public function footer_update(Request $request){
+        $footer = About::where('type', 'fot_banner')->first();
+        if($footer){
+            if ($request->image != null) {
+                $extention = $request->image->extension();
+                $file_name = time() . '.' . $extention;
+                $txt = "storage/about/" . $file_name;
+                $request->image->storeAs('public/about', $file_name);
+            } else{
+                $txt = $footer->image;
+            }
+            $footer->vission = $request->title;
+            $footer->description = $request->description;
+            $footer->image = $txt;
+            $footer->save();
+        }
+        return redirect()->route('footer_banner')
+                ->with('success', 'Banner Berhasil Diperbarui');
+    }
 }

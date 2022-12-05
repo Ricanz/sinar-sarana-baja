@@ -93,7 +93,8 @@ class GeneralController extends Controller
 
     public function certificates() {
         $certificates = Certificate::where('status', 'active')->get();
-        return view('landing-page.certificates.index', compact('certificates'));
+        $newsletter = About::where('type', 'fot_banner')->first();
+        return view('landing-page.certificates.index', compact('certificates', 'newsletter'));
     }
 
     public function test() {

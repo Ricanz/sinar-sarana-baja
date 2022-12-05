@@ -208,7 +208,7 @@
             <span>Contact & Maps</span></a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="{{ url('admin/banner') }}">
+        <a class="nav-link" href="{{ url('admin/banner/footer') }}">
             <i class="fas fa-fw fa-edit"></i>
             <span>Fotter Banner</span></a>
     </li>
