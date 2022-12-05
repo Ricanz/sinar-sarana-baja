@@ -3,7 +3,9 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\About;
 use App\Models\Service;
+use App\Models\ServiceIcon;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 
@@ -63,5 +65,60 @@ class ServicesController extends Controller
         $service->delete();
         return redirect()->route('services')
             ->with('delete', 'Service Berhasil Dihapus');
+    }
+
+    public function homepage(){
+        $service_desc = About::where('type', 'service')->first();
+        $now = Carbon::now();
+        if(!$service_desc){
+            About::create([
+                'type' => 'service',
+                'vission' => 'Jasa',
+                'description' => '',
+                'created_at' => $now,
+                'updated_at' => $now
+            ]);
+        }
+        $icons = ServiceIcon::orderBy('id')->get();
+
+        return view('admin.services.desc', compact('service_desc', 'icons'));
+    }
+
+    public function homepage_update(Request $request){
+        $service_desc = About::where('type', 'service')->first();
+        if($service_desc){
+            $service_desc->vission = $request->title;
+            $service_desc->description = $request->description;
+            $service_desc->save();
+        }
+        return redirect()->route('homepage_service')
+                ->with('success', 'Service Berhasil Diubah');
+    }
+
+    public function icon_edit($id){
+        $icon = ServiceIcon::findOrFail($id);
+        return view('admin.services.icon', compact('icon'));
+    }
+
+    public function icon_update(Request $request){
+        $icon = ServiceIcon::findOrFail($request->id);
+
+        if($icon){
+            if ($request->image != null) {
+                $extention = $request->image->extension();
+                $file_name = time() . '.' . $extention;
+                $txt = "storage/products/" . $file_name;
+                $request->image->storeAs('public/products', $file_name);
+                $image = $txt;
+            } else {
+                $image = $icon->image;
+            }
+            $icon->title = $request->title;
+            $icon->description = $request->description;
+            $icon->image = $image;
+            $icon->save();
+        }
+        return redirect()->route('homepage_service')
+                ->with('success', 'Service Berhasil Diubah');
     }
 }

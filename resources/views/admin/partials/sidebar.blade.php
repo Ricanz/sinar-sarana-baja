@@ -182,7 +182,11 @@
             <i class="fas fa-fw fa-edit"></i>
             <span>Homepage About Us</span></a>
     </li>
-    
+    <li class="nav-item">
+        <a class="nav-link" href="{{ url('admin/services/homepage') }}">
+            <i class="fas fa-fw fa-edit"></i>
+            <span>Homepage Jasa</span></a>
+    </li>
     <li class="nav-item">
         <a class="nav-link" href="{{ url('admin/article-description') }}">
             <i class="fas fa-fw fa-edit"></i>

@@ -109,57 +109,26 @@
     <div class="section-4">
         <div class="service-desc mb-80">
             <div class="col-6">
-                <h3>Jasa</h3>
+                <h3>{{ $service_desc->vission }}</h3>
             </div>
             <div class="col-6 med-text-desc mob-desc">
-                <p>PT. Sinergy Sarana Baja berkomitmen untuk terus memberikan produk baja berkualitas dan berkelanjutan dalam berinovasi sesuai dengan perkembangan pasar.</p>
+                <p>{!! $service_desc->description !!}</p>
             </div>
         </div>
         <div class="services">
-            <div class="col-4 service-box">
-                <img src="{{ asset('custom/landing-page/images/services/ic_3D_curve_auto_colon.png') }}" alt="">
-                <div class="bold-med-text">
-                    <p><strong>Berintegritas</strong></p>
+            @foreach ($service_icon as $item)
+                <div class="col-4 service-box">
+                    <img src="{{ asset($item->image) }}" alt="">
+                    <div class="bold-med-text">
+                        <p><strong>{{ $item->title }}</strong></p>
+                    </div>
+                    <div class="med-text-desc">
+                        <p>
+                            {!! $item->description !!}
+                        </p>
+                    </div>
                 </div>
-                <div class="med-text-desc">
-                    <p>
-                        Integritas dalam pembuatan produk san service ke pelanggan
-                    </p>
-                </div>
-            </div>
-            <div class="col-4 service-box">
-                <img src="{{ asset('custom/landing-page/images/services/ic_chat_bot.png') }}" alt="">
-                <div class="bold-med-text">
-                    <p><strong>Kepuasan Pelanggan</strong></p>
-                </div>
-                <div class="med-text-desc">
-                    <p>
-                        Aktif 24/7 untuk melayani hingga menuju kepuasan pelanggan yang baik.
-                    </p>
-                </div>
-            </div>
-            <div class="col-4 service-box">
-                <img src="{{ asset('custom/landing-page/images/services/ic_airport_location.png') }}" alt="">
-                <div class="bold-med-text">
-                    <p><strong>Berinovasi</strong></p>
-                </div>
-                <div class="med-text-desc">
-                    <p>
-                        Selalu meletakkan inovasi yang baik di tiap produk.
-                    </p>
-                </div>
-            </div>
-            <div class="col-4 service-box">
-                <img src="{{ asset('custom/landing-page/images/services/ic_event.png') }}" alt="">
-                <div class="bold-med-text">
-                    <p><strong>Berkembang</strong></p>
-                </div>
-                <div class="med-text-desc">
-                    <p>
-                        Perkembangan menjadi point utama dalam setiap persiapan kami.
-                    </p>
-                </div>
-            </div>
+            @endforeach
         </div>
     </div>
 

@@ -87,6 +87,11 @@ Route::middleware('auth')->group(function () {
     Route::get('admin/service/edit/{id}', [ServicesController::class, 'edit_view']);
     Route::post('admin/service/update', [ServicesController::class, 'update'])->name('updateService');
     Route::post('admin/service/delete', [ServicesController::class, 'destroy'])->name('deleteService');
+    Route::get('admin/services/homepage', [ServicesController::class, 'homepage'])->name('homepage_service');
+    Route::post('admin/service/homepage/update', [ServicesController::class, 'homepage_update'])->name('homepageUpdateService');
+    Route::get('admin/service/icon/{id}', [ServicesController::class, 'icon_edit'])->name('iconEdit');
+    Route::post('admin/service/icon/update', [ServicesController::class, 'icon_update'])->name('iconUpdate');
+
 
     // Brosur
     Route::get('admin/brochures', [BrosurController::class, 'index'])->name('brochures');
@@ -146,5 +151,7 @@ Route::middleware('auth')->group(function () {
     // Footer Desc
     Route::get('admin/footer-description', [ContactController::class, 'footer_desc'])->name('footer');
     Route::post('admin/footer-description/submit', [ContactController::class, 'footer_desc_submit'])->name('addFooterDesc');
+
+    
 });
 require __DIR__.'/auth.php';

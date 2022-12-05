@@ -12,6 +12,7 @@ use App\Models\Mission;
 use App\Models\Service;
 use App\Models\Product;
 use App\Models\ProductDetail;
+use App\Models\ServiceIcon;
 use Illuminate\Http\Request;
 
 class GeneralController extends Controller
@@ -35,8 +36,10 @@ class GeneralController extends Controller
         $short = About::where('type', 'short')->first();
         $left = About::where('type', 'left')->first();
         $right = About::where('type', 'right')->first();
+        $service_icon = ServiceIcon::orderBy('id')->get();
+        $service_desc = About::where('type', 'service')->first();
         // $contacts = Contact::limit(3)->get();
-        return view('landing-page.index', compact('products', 'main_news', 'news_left', 'news_right', 'mobile_news','client', 'banner', 'primary_contact', 'map', 'article_description', 'client_description', 'short', 'left', 'right'));
+        return view('landing-page.index', compact('products', 'main_news', 'news_left', 'news_right', 'mobile_news','client', 'banner', 'primary_contact', 'map', 'article_description', 'client_description', 'short', 'left', 'right', 'service_icon', 'service_desc'));
     }
 
     public function about() {
