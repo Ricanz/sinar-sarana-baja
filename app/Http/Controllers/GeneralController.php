@@ -55,40 +55,47 @@ class GeneralController extends Controller
 
     public function news() {
         $news = Article::where('status', 'active')->get();
-        return view('landing-page.news.index', compact('news'));
+        $newsletter = About::where('type', 'fot_banner')->first();
+        return view('landing-page.news.index', compact('news', 'newsletter'));
     }
 
     public function news_detail($slug) {
         $article = Article::where('slug', $slug)->first();
-        return view('landing-page.news.detail', compact('article'));
+        $newsletter = About::where('type', 'fot_banner')->first();
+        return view('landing-page.news.detail', compact('article','newsletter'));
     }
 
     public function service_detail($slug) {
         $data = Service::with('images')->where('slug', $slug)->where('status', 'active')->first();
-        return view('landing-page.services.detail', compact('data'));
+        $newsletter = About::where('type', 'fot_banner')->first();
+        return view('landing-page.services.detail', compact('data', 'newsletter'));
     }
 
     public function products() {
         $products = Product::where('products.status', 'active')
                     ->get();
-        return view('landing-page.products.index', compact('products'));
+        $newsletter = About::where('type', 'fot_banner')->first();
+        return view('landing-page.products.index', compact('products', 'newsletter'));
     }
 
     public function product_detail($slug) {
         $data = Product::where('slug', $slug)->where('status', 'active')->first();
         $details = ProductDetail::with('images')->where('product_id', $data->id)->where('slug', '!=', 'deskripsi')->where('status', 'active')->get();
         $primary_tab = ProductDetail::with('images')->where('product_id', $data->id)->where('slug', 'deskripsi')->where('status', 'active')->first();
-        return view('landing-page.products.detail', compact('data', 'details', 'primary_tab'));
+        $newsletter = About::where('type', 'fot_banner')->first();
+        return view('landing-page.products.detail', compact('data', 'details', 'primary_tab', 'newsletter'));
     }
 
     public function brochures() {
         $brochures = Brosur::all();
-        return view('landing-page.brochures.index', compact('brochures'));
+        $newsletter = About::where('type', 'fot_banner')->first();
+        return view('landing-page.brochures.index', compact('brochures', 'newsletter'));
     }
 
     public function clients() {
         $clients = Client::all();
-        return view('landing-page.clients.index', compact('clients'));
+        $newsletter = About::where('type', 'fot_banner')->first();
+        return view('landing-page.clients.index', compact('clients', 'newsletter'));
     }
 
     public function certificates() {
