@@ -236,7 +236,7 @@
     </div>
 
     {{-- Message --}}
-    <div class="section-7">
+    {{-- <div class="section-7">
         <div class="message-content">
             <div class="col-4 message-image message-dekstop">
                 <img src="{{ asset('custom/landing-page/images/illustration_contact.png') }}" alt="">
@@ -257,7 +257,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 
     {{-- Contact --}}
     <div class="section-8" id="contact">
