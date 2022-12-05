@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\About;
 use App\Models\Mission;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 class AboutController extends Controller
@@ -73,6 +74,60 @@ class AboutController extends Controller
         }
         return redirect()->route('mission')
                 ->with('success', 'Mission Berhasil Diperbarui');
+    }
+
+    public function about_short(){
+        $short = About::where('type', 'short')->first();
+        $left = About::where('type', 'left')->first();
+        $right = About::where('type', 'right')->first();
+        $now = Carbon::now();
+        if(!$short){
+            $short = About::create([
+                'type' => 'short',
+                'description' => '',
+                'vission' => '',
+                'created_at' => $now,
+                'updated_at' => $now
+            ]);
+        }
+        if(!$left){
+            $left = About::create([
+                'type' => 'left',
+                'description' => '',
+                'vission' => '',
+                'created_at' => $now,
+                'updated_at' => $now
+            ]);
+        }
+        if(!$right){
+            $right = About::create([
+                'type' => 'right',
+                'description' => '',
+                'vission' => '',
+                'created_at' => $now,
+                'updated_at' => $now
+            ]);
+        }
+        return view('admin.about.desc', compact('short', 'left', 'right'));
+    }
+
+    public function updateShortDesc(Request $request){
+        $short = About::where('type', 'short')->first();
+        $left = About::where('type', 'left')->first();
+        $right = About::where('type', 'right')->first();
+
+        $short->vission = $request->title;
+        $short->description = $request->description;
+        $short->save();
+
+        $left->description = $request->left;
+        $left->save();
+
+        $right->description = $request->right;
+        $right->save();
+        return redirect()->route('about_short')
+                ->with('success', 'Data Berhasil Diperbarui');
+        
     }
 
 }

@@ -55,12 +55,15 @@ Route::middleware('auth')->group(function () {
     // Profile
     Route::get('admin/about', [AboutController::class, 'index'])->name('about');
     Route::post('admin/submit', [AboutController::class, 'update'])->name('updateAbout');
+    Route::get('admin/about-description', [AboutController::class, 'about_short'])->name('about_short');
+    Route::post('admin/about-description/submit', [AboutController::class, 'updateShortDesc'])->name('updateShortDesc');
+
 
     // Mission
     Route::get('admin/mission', [AboutController::class, 'mission'])->name('mission');
     Route::get('admin/mission/edit/{id}', [AboutController::class, 'edit_mission']);
     Route::post('admin/mission/submit', [AboutController::class, 'update_mission'])->name('updateMission');
-
+    
     // Products
     Route::get('admin/products', [ProductController::class, 'index'])->name('products');
     Route::get('admin/product/create', [ProductController::class, 'create_view']);

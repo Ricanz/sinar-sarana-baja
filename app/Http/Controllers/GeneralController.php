@@ -31,8 +31,12 @@ class GeneralController extends Controller
         $map = About::where('type', 'maps')->first();
         $article_description = About::where('type', 'article')->first();
         $client_description = About::where('type', 'client')->first();
+        
+        $short = About::where('type', 'short')->first();
+        $left = About::where('type', 'left')->first();
+        $right = About::where('type', 'right')->first();
         // $contacts = Contact::limit(3)->get();
-        return view('landing-page.index', compact('products', 'main_news', 'news_left', 'news_right', 'mobile_news','client', 'banner', 'primary_contact', 'map', 'article_description', 'client_description'));
+        return view('landing-page.index', compact('products', 'main_news', 'news_left', 'news_right', 'mobile_news','client', 'banner', 'primary_contact', 'map', 'article_description', 'client_description', 'short', 'left', 'right'));
     }
 
     public function about() {

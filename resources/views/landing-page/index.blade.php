@@ -36,30 +36,22 @@
                     <img src="{{ asset('custom/landing-page/images/about.png') }}" alt="">
                 </div>
                 <div class="col-7 about-desc">
-                    <h2 class="mb-20">PT. Sinergy Sarana Baja</h2>
+                    <h2 class="mb-20">{{ $short->vission }}</h2>
                     <div class="med-text-desc">
-                        <p>
-                            Perusahaan nasional yang berdiri dengan dilatarbelakangi oleh pesatnya pertumbuhan proyek infrastruktur di Indonesia yang merupakan salah satu faktor penggerak ekonomi nasional khususnya pada proyek konstruksi baja.
-                            <br><br>
-                            PT. Sinergy Sarana Baja dengan SDM yang berkualitas dan berpengalaman di bidangnya.
-                        </p>
+                        {!! $short->description !!}
                     </div>
                     <div class="spc-50"></div>
                     <div class="row dekstop-box">
                         <div class="col-6 box-desc mr-20">
                             <img class="mb-20" src="{{ asset('custom/landing-page/images/hr.png') }}" alt="" width="24px" height="3px">
                             <div class="sml-text-desc">
-                                <p>
-                                    Memberikan solusi untuk menekan biaya serta peningkatakan efisiensi yang membuat end user mendapatkan produk yang berkualitas dengan harga yang lebih bersaing.
-                                </p>
+                                {!! $left->description !!}
                             </div>
                         </div>
                         <div class="col-6 box-desc pl-20 mr-20">
                             <img class="mb-20" src="{{ asset('custom/landing-page/images/hr.png') }}" alt="" width="24px" height="3px">
                             <div class="sml-text-desc">
-                                <p>
-                                    Produk yang PT. Sinergy Sarana Baja hasilkan dapat diterima, diminati dan diakui oleh para pelanggan di seluruh Indonesia.
-                                </p>
+                                {!! $right->description !!}
                             </div>
                         </div>
                     </div>
