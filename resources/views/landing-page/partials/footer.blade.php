@@ -78,7 +78,7 @@
                         <h5 class="mb-10" onclick="footerDropdown('kontak')">Kontak<i class="fa-solid fa-chevron-right mob-icon kontak"></i></h5>
                         <ul class="menu-dropdown-kontak">
                             <li>Lokasi</li>
-                            <li>Jl. Lavionda Raya 31 Sektor 1.7 Blok 1.5, Kota Tangerang Selatan, Banten</li>
+                            <li>{{ \App\Helpers\Utils::primary_address() }}</li>
                             <br>
                             <li>Hunting :</li>
                             @foreach ($contacts as $item)
