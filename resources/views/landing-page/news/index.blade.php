@@ -35,7 +35,7 @@
                         </div>
                     </div>
                     <div class="news-author">
-                        <img src="{{ asset('custom/landing-page/images/admins/admin.png') }}" alt="">
+                        <img src="{{ asset('custom/landing-page/images/admins/admin.png') }}" alt="" style="max-width: 30px; margin-right: 10px;">
                         <h5 class="selected">Admin SSB</h5>
                     </div>
                 </div>
