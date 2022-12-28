@@ -25,11 +25,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('landing-page.maintenance');
-});
+// Route::get('/', function () {
+//     return view('landing-page.maintenance');
+// });
 
-Route::get('/home', [GeneralController::class, 'index']);
+Route::get('/', [GeneralController::class, 'index']);
 
 Route::get('/about-us', [GeneralController::class, 'about']);
 Route::get('/news', [GeneralController::class, 'news']);
