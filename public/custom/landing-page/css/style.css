@@ -762,6 +762,7 @@ textarea {
 
 .container .section-2 .about .about-image img {
     width: 100%;
+    border-radius: 15px;
 }
 
 .container .section-2 .about .about-desc {
