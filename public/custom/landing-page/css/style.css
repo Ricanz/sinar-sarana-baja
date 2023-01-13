@@ -1692,6 +1692,7 @@ hr {
 
 .container .section-news .article .image-news img {
     width: 100%;
+    border-radius: 15px;
 }
 
 .container .section-news .article .image-news {

@@ -17,10 +17,10 @@
 
         @foreach ($news as $item)
             <div class="article">
-                <div class="col-8 image-news mr-20">
-                    <img src="{{ asset($item->image) }}" alt="" height="250px">
+                <div class="col-4 image-news mr-20">
+                    <img src="{{ asset($item->image) }}" alt="">
                 </div>
-                <div class="col-4 news-desc news-detail-mob">
+                <div class="col-8 news-desc news-detail-mob">
                     <div class="time mb-10 med-text-desc">
                         <p>{{ $item->created_at->format('d M Y') }} | {{\Carbon\Carbon::parse($item->created_at)->diffForHumans()}}</p>
                     </div>
