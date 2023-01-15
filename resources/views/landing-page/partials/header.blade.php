@@ -86,7 +86,11 @@
                                 @if ($item->details)
                                     <ul>
                                         @foreach ($item->details as $tab)
-                                            <li><a href="{{ url('product-detail/'.$item->slug) }}">{{ $tab->title }}</a></li>
+                                            @if ($tab->new_page == 'n')
+                                                <li><a href="{{ url('product-detail/'.$item->slug) }}">{{ $tab->title }}</a></li>
+                                            @else
+                                                <li><a href="{{ url('sub-detail/'.$tab->slug) }}">{{ $tab->title }}</a></li>
+                                            @endif
                                         @endforeach
                                     </ul>
                                 @endif

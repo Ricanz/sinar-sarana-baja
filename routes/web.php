@@ -37,6 +37,7 @@ Route::get('/news-detail/{slug}', [GeneralController::class, 'news_detail']);
 Route::get('/service/{slug}', [GeneralController::class, 'service_detail']);
 Route::get('/products', [GeneralController::class, 'products']);
 Route::get('/product-detail/{slug}', [GeneralController::class, 'product_detail']);
+Route::get('/sub-detail/{slug}', [GeneralController::class, 'sub_detail']);
 Route::get('/brochures', [GeneralController::class, 'brochures']);
 Route::get('/clients', [GeneralController::class, 'clients']);
 Route::get('/certificates', [GeneralController::class, 'certificates']);

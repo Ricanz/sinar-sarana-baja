@@ -131,6 +131,7 @@ class ProductController extends Controller
             'slug' => str_replace(' ', '-', strtolower($request->title)),
             'description' => $request->description,
             'is_product' => $request->is_product,
+            'new_page' => $request->new_page,
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
         ]);

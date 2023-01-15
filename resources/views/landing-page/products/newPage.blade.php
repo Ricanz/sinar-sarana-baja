@@ -27,7 +27,9 @@
                     </a>
                 </div>
 
-                <div class="tabset">
+                {!! $details->description !!}
+
+                {{-- <div class="tabset">
                     <!-- Tab 1 -->
                     
                     <input type="radio" name="tabset" id="{{ $primary_tab->slug }}" aria-controls="{{ $primary_tab->slug }}" checked>
@@ -58,7 +60,7 @@
                         @endforeach
                     </div>
 
-                </div>
+                </div> --}}
             </div>
         </div>
 

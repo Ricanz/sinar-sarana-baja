@@ -86,6 +86,13 @@ class GeneralController extends Controller
         return view('landing-page.products.detail', compact('data', 'details', 'primary_tab', 'newsletter'));
     }
 
+    public function sub_detail($slug) {
+        $details = ProductDetail::where('slug', $slug)->where('status', 'active')->where('is_product', 'y')->where('new_page', 'y')->first();
+        $data = Product::where('id', $details->product_id)->first();
+        $newsletter = About::where('type', 'fot_banner')->first();
+        return view('landing-page.products.newPage', compact('data', 'details', 'newsletter'));
+    }
+
     public function brochures() {
         $brochures = Brosur::all();
         $newsletter = About::where('type', 'fot_banner')->first();
