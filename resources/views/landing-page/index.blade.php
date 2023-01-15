@@ -33,7 +33,7 @@
         <div class="about">
             <div class="row">
                 <div class="col-5 about-image">
-                    <img src="{{ asset('custom/landing-page/images/about(1).jpg') }}" alt="">
+                    <img src="{{ $short->image == null ? asset('custom/landing-page/images/about(1).jpg') : $short->image }}" alt="">
                 </div>
                 <div class="col-7 about-desc">
                     <h2 class="mb-20">{{ $short->vission }}</h2>

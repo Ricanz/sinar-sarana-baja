@@ -6,6 +6,10 @@
     <form class="form-group" method="POST" action="{{ route('updateShortDesc') }}" enctype="multipart/form-data">
         @csrf
         <div class="form-group">
+            <label for="title">Image</label>
+            <input type="file" name="image" id="image" class="form-control">
+        </div>
+        <div class="form-group">
             <label for="title">Title</label>
             <input type="text" name="title" id="title" class="form-control" value="{{ $short->vission }}">
         </div>

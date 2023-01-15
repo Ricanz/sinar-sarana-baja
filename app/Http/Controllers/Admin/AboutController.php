@@ -116,8 +116,18 @@ class AboutController extends Controller
         $left = About::where('type', 'left')->first();
         $right = About::where('type', 'right')->first();
 
+        if($request->image){
+            $extention = $request->image->extension();
+            $file_name = time() . '.' . $extention;
+            $txt = "storage/about/" . $file_name;
+            $request->image->storeAs('public/about', $file_name);
+        } else {
+            $txt = $short->image;
+        }
+
         $short->vission = $request->title;
         $short->description = $request->description;
+        $short->image = $txt;
         $short->save();
 
         $left->description = $request->left;
