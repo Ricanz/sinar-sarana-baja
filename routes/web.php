@@ -81,6 +81,15 @@ Route::middleware('auth')->group(function () {
     Route::post('admin/product-tab/update', [ProductController::class, 'update_tab'])->name('updateTab');
     Route::post('admin/product-tab/delete', [ProductController::class, 'destroy_tab'])->name('deletTab');
 
+    // Menu
+    Route::get('admin/product-subs', [ProductController::class, 'subs'])->name('subs');
+    Route::get('admin/product-sub/create', [ProductController::class, 'create_sub']);
+    Route::post('admin/product-sub/submit', [ProductController::class, 'submit_sub'])->name('addSub');
+    Route::get('admin/product-sub/edit/{id}', [ProductController::class, 'edit_sub']);
+    Route::post('admin/product-sub/update', [ProductController::class, 'update_sub'])->name('updateSub');
+    Route::post('admin/product-sub/delete', [ProductController::class, 'destroy_sub'])->name('deletSub');
+
+
     // Services
     Route::get('admin/services', [ServicesController::class, 'index'])->name('services');
     Route::get('admin/services/create', [ServicesController::class, 'create_view']);

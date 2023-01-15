@@ -27,40 +27,29 @@
                     </a>
                 </div>
 
-                {!! $details->description !!}
+                {{-- {!! $details->description !!} --}}
 
-                {{-- <div class="tabset">
+                <div class="tabset">
                     <!-- Tab 1 -->
-                    
-                    <input type="radio" name="tabset" id="{{ $primary_tab->slug }}" aria-controls="{{ $primary_tab->slug }}" checked>
-                    <label for="{{ $primary_tab->slug }}">{{ $primary_tab->title }}</label>
-                    @foreach ($details as $detail)
+                    <input type="radio" name="tabset" id="{{ $details->slug }}" aria-controls="{{ $details->slug }}" checked>
+                    <label for="{{ $details->slug }}">{{ $details->title }}</label>
+                    @foreach ($subs as $detail)
                         <input type="radio" name="tabset" id="{{ $detail->slug }}" aria-controls="{{ $detail->slug }}">
                         <label for="{{ $detail->slug }}">{{ $detail->title }}</label>
                     @endforeach
 
                     <div class="tab-panels">
-                        <section id="{{ $primary_tab->slug }}" class="tab-panel">
-                            {!! $primary_tab->description !!}
-                            @if ($primary_tab->images)
-                                @foreach ($primary_tab->images as $data)
-                                    <img src="{{ asset($data->image) }}" alt="Images" class="mb-20 mt-20" width="40%">
-                                @endforeach
-                            @endif
+                        <section id="{{ $details->slug }}" class="tab-panel">
+                            {!! $details->description !!}
                         </section>
-                        @foreach($details as $item)
+                        @foreach($subs as $item)
                             <section id="{{ $item->slug }}" class="tab-panel">
                                 {!! $item->description !!}
-                                @if ($item->images)
-                                    @foreach ($item->images as $data)
-                                        <img src="{{ asset($data->image) }}" alt="Images" class="mb-20 mt-20" width="40%">
-                                    @endforeach
-                                @endif
                             </section>
                         @endforeach
                     </div>
 
-                </div> --}}
+                </div>
             </div>
         </div>
 

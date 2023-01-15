@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Product;
 use App\Models\ProductDetail;
 use App\Models\Service;
+use App\Models\SubDetail;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 
@@ -165,5 +166,71 @@ class ProductController extends Controller
         $tab->delete();
         return redirect()->route('tabs')
             ->with('delete', 'Tab Berhasil Dihapus');
+    }
+
+    public function subs(){
+        // $data = SubDetail::with('detail')->with('product')->orderByDesc('updated_at')->get();
+        $data = SubDetail::select('sub_details.id', 'products.name as product_name', 'product_details.title as product_detail', 'sub_details.updated_at', 'sub_details.title', 'sub_details.status')
+                    ->with('detail')
+                    ->leftJoin('product_details', 'sub_details.product_detail_id', 'product_details.id')
+                    ->leftJoin('products', 'product_details.product_id', 'products.id')
+                    ->orderByDesc('sub_details.updated_at')->get();
+        return view('admin.products.sub', compact('data'));
+    }
+
+    public function create_sub(){
+        $products = ProductDetail::with('product')->where('status', 'active')->where('is_product', 'y')->where('new_page', 'y')->get();
+        return view('admin.products.sub_create', compact('products'));
+    }
+
+    public function submit_sub(Request $request){
+        $request->validate([
+            'title' => 'required',
+            'description' => 'required',
+            'product_detail_id' => 'required'
+        ]);
+
+        $product_detail_id = (int)$request->product_detail_id;
+
+        $detail = SubDetail::create([
+            'product_detail_id' => $product_detail_id,
+            'title' => $request->title,
+            'slug' => str_replace(' ', '-', strtolower($request->title)),
+            'description' => $request->description,
+            'created_at' => Carbon::now(),
+            'updated_at' => Carbon::now()
+        ]);
+
+        if($detail) {
+            return redirect()->route('subs')
+                ->with('success', 'Sub Product Berhasil Ditambah');
+        }
+    }
+
+    public function edit_sub($id){
+        $sub = SubDetail::with('detail')->where('id', $id)->where('status', 'active')->first();
+        $details = ProductDetail::with('product')->where('status', 'active')->where('is_product', 'y')->where('new_page', 'y')->orderBy('title', 'asc')->get();
+        $selected_tab = ProductDetail::with('product')->where('id', $sub->product_detail_id)->first();
+
+        return view('admin.products.sub_edit', compact('sub', 'details', 'selected_tab'));
+    }
+
+    public function update_sub(Request $request){
+        $sub = SubDetail::findOrFail($request->id);
+        $sub->title = $request->title;
+        $sub->description = $request->description;
+        $sub->save();
+
+        if($sub) {
+            return redirect()->route('subs')
+                ->with('success', 'Sub Product Berhasil Diubah');
+        }
+    }
+
+    public function destroy_sub(Request $request) {
+        $tab = SubDetail::findOrFail($request->id);
+        $tab->delete();
+        return redirect()->route('subs')
+            ->with('delete', 'Sub Product Berhasil Dihapus');
     }
 }

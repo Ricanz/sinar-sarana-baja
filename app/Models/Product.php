@@ -17,4 +17,9 @@ class Product extends Model
     {
         return $this->hasMany(ProductDetail::class, 'product_id', 'id')->where('is_product', 'y');
     }
+
+    public function subs()
+    {
+        return $this->hasMany(ProductDetail::class, 'product_id', 'id')->where('is_product', 'y')->where('new_page', 'y');
+    }
 }

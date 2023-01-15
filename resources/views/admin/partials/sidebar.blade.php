@@ -57,6 +57,7 @@
                 <a class="collapse-item" href="{{ url('admin/products') }}">Products Data</a>
                 <a class="collapse-item" href="{{ url('admin/product/create') }}">Add Product</a>
                 <a class="collapse-item" href="{{ url('admin/product-tabs') }}">Manage Tabs</a>
+                <a class="collapse-item" href="{{ url('admin/product-subs') }}">Manage Subs</a>
             </div>
         </div>
     </li>
