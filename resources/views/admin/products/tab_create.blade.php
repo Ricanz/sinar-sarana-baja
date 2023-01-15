@@ -29,6 +29,13 @@
                 <option value="n" selected>No</option>
             </select>
         </div>
+        <div class="form-group">
+            <label for="description">New Page?</label>
+            <select name="new_page" id="new_page" class="form-control">
+                <option value="y" selected>Yes</option>
+                <option value="n" selected>No</option>
+            </select>
+        </div>
         <button class="btn btn-primary btn-user btn-block mt-4">Create</button>
     </form>
 </x-app-layout>
