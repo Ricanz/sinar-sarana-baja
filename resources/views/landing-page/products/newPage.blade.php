@@ -31,17 +31,17 @@
 
                 <div class="tabset">
                     <!-- Tab 1 -->
-                    <input type="radio" name="tabset" id="{{ $details->slug }}" aria-controls="{{ $details->slug }}" checked>
-                    <label for="{{ $details->slug }}">{{ $details->title }}</label>
+                    {{-- <input type="radio" name="tabset" id="{{ $details->slug }}" aria-controls="{{ $details->slug }}" checked>
+                    <label for="{{ $details->slug }}">{{ $details->title }}</label> --}}
                     @foreach ($subs as $detail)
-                        <input type="radio" name="tabset" id="{{ $detail->slug }}" aria-controls="{{ $detail->slug }}">
+                        <input type="radio" name="tabset" id="{{ $detail->slug }}" aria-controls="{{ $detail->slug }}" {{ $loop->iteration == 1 ? 'checked' : '' }}>
                         <label for="{{ $detail->slug }}">{{ $detail->title }}</label>
                     @endforeach
 
                     <div class="tab-panels">
-                        <section id="{{ $details->slug }}" class="tab-panel">
+                        {{-- <section id="{{ $details->slug }}" class="tab-panel">
                             {!! $details->description !!}
-                        </section>
+                        </section> --}}
                         @foreach($subs as $item)
                             <section id="{{ $item->slug }}" class="tab-panel">
                                 {!! $item->description !!}

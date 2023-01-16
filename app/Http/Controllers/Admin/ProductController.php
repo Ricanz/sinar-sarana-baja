@@ -137,6 +137,17 @@ class ProductController extends Controller
             'updated_at' => Carbon::now()
         ]);
 
+        if($request->new_page == 'y'){
+            SubDetail::create([
+                'product_detail_id' => $detail->id,
+                'title' => 'Penjelasan Umum',
+                'slug' => 'penjelasan-umum',
+                'description' => 'deskripsi sub product',
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now()
+            ]);
+        }
+
         if($detail) {
             return redirect()->route('tabs')
                 ->with('success', 'Tab Product Berhasil Ditambah');
@@ -169,7 +180,6 @@ class ProductController extends Controller
     }
 
     public function subs(){
-        // $data = SubDetail::with('detail')->with('product')->orderByDesc('updated_at')->get();
         $data = SubDetail::select('sub_details.id', 'products.name as product_name', 'product_details.title as product_detail', 'sub_details.updated_at', 'sub_details.title', 'sub_details.status')
                     ->with('detail')
                     ->leftJoin('product_details', 'sub_details.product_detail_id', 'product_details.id')
