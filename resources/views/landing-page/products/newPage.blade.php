@@ -23,7 +23,7 @@
                 </div>
                 <div class="news-title mb-10">
                     <a href="#" style="text-decoration: none">
-                        <h2><strong>{{ $data->name }}</strong></h2>
+                        <h2><strong>{{ $details->title }}</strong></h2>
                     </a>
                 </div>
 
