@@ -12,6 +12,25 @@
             $('.mob-icon.'+val).css('transform', 'rotate(90deg)');
             $( '.menu-dropdown-'+val ).addClass('dropdown-active');
         }
-
+    }
+    function tabDropdown(type, val) {
+        const check = $( "#tab-"+val ).hasClass( "dropdown-active" );
+        if (!check) {
+            $('#icon-tab-'+val).css('transform', 'rotate(90deg)');
+            $( '#tab-'+val ).addClass('dropdown-active');
+        } else {
+            $('#icon-tab-'+val).css('transform', 'rotate(0deg)');
+            $( '#tab-'+val ).removeClass('dropdown-active');
+        }
+    }
+    function subDropdown(type, val) {
+        const check = $( "#tab-"+val ).hasClass( "dropdown-active" );
+        if (!check) {
+            $('#icon-tab-'+val).css('transform', 'rotate(90deg)');
+            $( '#tab-'+val ).addClass('dropdown-active');
+        } else {
+            $('#icon-tab-'+val).css('transform', 'rotate(0deg)');
+            $( '#tab-'+val ).removeClass('dropdown-active');
+        }
     }
 </script>

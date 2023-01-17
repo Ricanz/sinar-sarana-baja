@@ -241,6 +241,10 @@ a.btn {
     width: 20px;
 }
 
+.text-grey{
+    color: #919EAB !important;
+}
+
 .med-text-desc p {
     font-size: 16px;
     color: #637381;
@@ -1318,6 +1322,7 @@ textarea {
     footer .content .mob-menu .menu-dropdown-brosur,
     footer .content .mob-menu .menu-dropdown-produk,
     footer .content .mob-menu .menu-dropdown-jasa,
+    footer .content .mob-menu .menu-dropdown-tab,
     footer .content .mob-menu .menu-dropdown-kontak,
     footer .content .mob-menu .menu-dropdown-klien {
         display: none;
@@ -1634,6 +1639,7 @@ hr {
     .modal .modal-content .nav-menu .mob-menu .menu-dropdown-brosur,
     .modal .modal-content .nav-menu .mob-menu .menu-dropdown-produk,
     .modal .modal-content .nav-menu .mob-menu .menu-dropdown-jasa,
+    .modal .modal-content .nav-menu .mob-menu .menu-dropdown-tab,
     .modal .modal-content .nav-menu .mob-menu .menu-dropdown-kontak,
     .modal .modal-content .nav-menu .mob-menu .menu-dropdown-klien {
         display: none;

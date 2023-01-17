@@ -7,69 +7,11 @@
                 </a>
             </center>
         </div>
-        {{-- <div class="nav-items">
-            <div class="dropdown">
-                <a class="nav-menu active" href="{{ url('/') }}">Home</a>
-            </div>
-            <div class="dropdown about">
-                <a class="nav-menu" href="#">About</a>
-                <div class="dropdown-content menu-about">
-                    <a href="{{ url('about-us') }}">Profile</a>
-                    <a href="{{ url('about-us#vission-mission') }}">Vision, Missiion & Values</a>
-                    <a href="#">Sertifikat/Legalitas</a>
-                </div>
-            </div>
-            <div class="dropdown product">
-                <a class="nav-menu" href="#">Product</a>
-                <div class="dropdown-content menu-product">
-                    <a href="#">Nestable Flange E-100</a>
-                    <a href="#">Multi Plate</a>
-                    <a href="#">Flex Beam Guardrail & Railing</a>
-                    <a href="#">Tiang PJU</a>
-                    <a href="#">Steel Bridge</a>
-                    <a href="#">Steel Pipe</a>
-                    <a href="#">Bronjong</a>
-                </div>
-            </div>
-            <div class="dropdown service">
-                <a class="nav-menu" href="#">Jasa</a>
-                <div class="dropdown-content menu-service">
-                    @foreach ($services as $item)
-                        <a href="{{ url('service/'.$item->slug) }}">{{ $item->title }}</a>
-                    @endforeach
-                </div>
-            </div>
-            <div class="dropdown brosur">
-                <a class="nav-menu" href="#">Brosur</a>
-                <div class="dropdown-content menu-brosur">
-                    <a href="#">Company Profile</a>
-                    <a href="#">Katalog Produk CSP</a>
-                    <a href="#">Katalog Produk Steel Bridge</a>
-                    <a href="#">Katalog Produk Perlengkapan Jalan</a>
-                    <a href="#">Katalog Steel Pipe</a>
-                    <a href="#">Katalog Bronjong</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <a class="nav-menu" href="{{ url('news') }}">News</a>
-            </div>
-            <div class="dropdown client">
-                <a class="nav-menu" href="#">Client</a>
-                <div class="dropdown-content menu-client">
-                    <a href="#">List Client</a>
-                    <a href="#">List Client</a>
-                    <a href="#">List Client</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <a class="nav-menu" href="/#contact">Contact Us</a>
-            </div>
-        </div> --}}
         <div class="nav-items">
             <ul>
 
                 <li><a href="{{ url('/') }}" style="color: #015291">Beranda</a></li>
-    
+
                 <li><a href="{{ url('about-us') }}">Tentang</a>
                     <ul>
                         <li><a href="{{ url('about-us') }}">Profile</a></li>
@@ -77,19 +19,23 @@
                         <li><a href="{{ url('certificates') }}">Sertifikat/Legalitas</a></li>
                     </ul>
                 </li>
-    
+
                 <li class="dropdown"><a href="{{ url('products') }}">Produk</a>
                     <ul>
                         @foreach ($products as $item)
                             <li>
-                                <a href="{{ url('product-detail/'.$item->slug) }}">{{ $item->name }}</a>
+                                <a href="{{ url('product-detail/' . $item->slug) }}">{{ $item->name }}</a>
                                 @if ($item->details)
                                     <ul>
                                         @foreach ($item->details as $tab)
                                             @if ($tab->new_page == 'n')
-                                                <li><a href="{{ url('product-detail/'.$item->slug) }}">{{ $tab->title }}</a></li>
+                                                <li><a
+                                                        href="{{ url('product-detail/' . $item->slug) }}">{{ $tab->title }}</a>
+                                                </li>
                                             @else
-                                                <li><a href="{{ url('sub-detail/'.$tab->slug) }}">{{ $tab->title }}</a></li>
+                                                <li><a
+                                                        href="{{ url('sub-detail/' . $tab->slug) }}">{{ $tab->title }}</a>
+                                                </li>
                                             @endif
                                         @endforeach
                                     </ul>
@@ -102,7 +48,7 @@
                 <li><a href="#">Jasa</a>
                     <ul>
                         @foreach ($services as $item)
-                            <li><a href="{{ url('service/'.$item->slug) }}">{{ $item->title }}</a></li>
+                            <li><a href="{{ url('service/' . $item->slug) }}">{{ $item->title }}</a></li>
                         @endforeach
                     </ul>
                 </li>
@@ -110,11 +56,11 @@
                 <li><a href="{{ url('/brochures') }}">Brosur</a></li>
 
                 <li><a href="{{ url('/news') }}">Berita</a></li>
-    
+
                 <li><a href="{{ url('/clients') }}">Klien</a></li>
 
                 <li><a href="{{ url('/#contact') }}">Kontak</a></li>
-    
+
             </ul>
         </div>
         <div class="search-box">
@@ -171,9 +117,29 @@
                             <div class="menu-dropdown-produk">
                                 <ul>
                                     @foreach ($products as $item)
-                                    <a href="{{ url('product-detail/'.$item->slug) }}">
-                                        <li>{{ $item->name }}</li>
-                                    </a>
+                                        @if (count($item->details) > 0)
+                                            <a class="text-grey mb-10" onclick="tabDropdown('tab', {{ $loop->iteration }})">{{ $item->name }}<i
+                                                id="icon-tab-{{ $loop->iteration }}" class="fa-solid fa-chevron-right mob-icon tab"></i></a>
+                                            <div class="menu-dropdown-tab" id="tab-{{ $loop->iteration }}">
+                                                <ul>
+                                                    @foreach ($item->details as $det)
+                                                        @if ($det->new_page == 'n')
+                                                            <a href="{{ url('product-detail/' . $item->slug) }}">
+                                                                <li>{{ $det->title }}</li>
+                                                            </a>
+                                                        @else
+                                                            <a href="{{ url('sub-detail/' . $det->slug) }}">
+                                                                <li>{{ $det->title }}</li>
+                                                            </a>
+                                                        @endif
+                                                    @endforeach
+                                                </ul>
+                                            </div>
+                                        @else
+                                            <a href="{{ url('product-detail/' . $item->slug) }}">
+                                                <li>{{ $item->name }}</li>
+                                            </a>
+                                        @endif
                                     @endforeach
                                 </ul>
                             </div>
@@ -184,9 +150,9 @@
                             <div class="menu-dropdown-jasa">
                                 <ul>
                                     @foreach ($services as $item)
-                                    <a href="{{ url('service/'.$item->slug) }}">
-                                        <li>{{ $item->title }}</li>
-                                    </a>
+                                        <a href="{{ url('service/' . $item->slug) }}">
+                                            <li>{{ $item->title }}</li>
+                                        </a>
                                     @endforeach
                                 </ul>
                             </div>
