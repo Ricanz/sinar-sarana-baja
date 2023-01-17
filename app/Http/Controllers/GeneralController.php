@@ -90,7 +90,7 @@ class GeneralController extends Controller
     public function sub_detail($slug) {
         $details = ProductDetail::where('slug', $slug)->where('status', 'active')->where('is_product', 'y')->where('new_page', 'y')->first();
         $data = Product::where('id', $details->product_id)->first();
-        $subs = SubDetail::where('product_detail_id', $details->id)->where('status', 'active')->get();
+        $subs = SubDetail::where('product_detail_id', $details->id)->where('status', 'active')->orderBy('id')->get();
         $newsletter = About::where('type', 'fot_banner')->first();
         return view('landing-page.products.newPage', compact('data', 'details', 'newsletter', 'subs'));
     }
