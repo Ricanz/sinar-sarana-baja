@@ -118,22 +118,24 @@
                                 <ul>
                                     @foreach ($products as $item)
                                         @if (count($item->details) > 0)
-                                            <a class="text-grey mb-10" onclick="tabDropdown('tab', {{ $loop->iteration }})">{{ $item->name }}<i
-                                                id="icon-tab-{{ $loop->iteration }}" class="fa-solid fa-chevron-right mob-icon tab"></i></a>
-                                            <div class="menu-dropdown-tab" id="tab-{{ $loop->iteration }}">
-                                                <ul>
-                                                    @foreach ($item->details as $det)
-                                                        @if ($det->new_page == 'n')
-                                                            <a href="{{ url('product-detail/' . $item->slug) }}">
-                                                                <li>{{ $det->title }}</li>
-                                                            </a>
-                                                        @else
-                                                            <a href="{{ url('sub-detail/' . $det->slug) }}">
-                                                                <li>{{ $det->title }}</li>
-                                                            </a>
-                                                        @endif
-                                                    @endforeach
-                                                </ul>
+                                            <div class="text-grey mb-10" style="margin: 0 0 10px 0;" onclick="tabDropdown('tab', {{ $loop->iteration }})">
+                                                {{ $item->name }}
+                                                <i id="icon-tab-{{ $loop->iteration }}" class="fa-solid fa-chevron-right mob-icon tab"></i>
+                                                <div class="menu-dropdown-tab" id="tab-{{ $loop->iteration }}">
+                                                    <ul style="position: relative">
+                                                        @foreach ($item->details as $det)
+                                                            @if ($det->new_page == 'n')
+                                                                <a href="{{ url('product-detail/' . $item->slug) }}">
+                                                                    <li class="mt-10">{{ $det->title }}</li>
+                                                                </a>
+                                                            @else
+                                                                <a href="{{ url('sub-detail/' . $det->slug) }}">
+                                                                    <li  class="mt-10">{{ $det->title }}</li>
+                                                                </a>
+                                                            @endif
+                                                        @endforeach
+                                                    </ul>
+                                                </div>
                                             </div>
                                         @else
                                             <a href="{{ url('product-detail/' . $item->slug) }}">
