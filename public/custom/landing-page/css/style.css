@@ -1778,9 +1778,9 @@ hr {
 }
 
 .container .section-news .news-detail .content .image img {
-    /* width: 65%; */
+    width: 65%;
     border-radius: 15px;
-    height: 400px;
+    /* height: 400px; */
 }
 
 @media only screen and (max-device-width: 560px) {
