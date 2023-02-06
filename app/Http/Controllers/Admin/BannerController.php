@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Helpers\Utils;
 use App\Http\Controllers\Controller;
 use App\Models\About;
+use App\Models\UploadImage;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 
@@ -103,5 +105,31 @@ class BannerController extends Controller
         }
         return redirect()->route('footer_banner')
                 ->with('success', 'Banner Berhasil Diperbarui');
+    }
+
+    public function uploads(){
+        $data = UploadImage::orderByDesc('id')->get();
+        return view('admin.uploads.index', compact('data'));
+    }
+
+    public function create_upload_image(){
+        return view('admin.uploads.create');
+    }
+
+    public function upload_image(Request $request){
+        if ($request->image != null) {
+            $txt = Utils::save_compress_image($request->image, 'compress');
+        } else{
+            $txt = null;
+        }
+        
+        UploadImage::create([
+            'link' => $txt,
+            'created_at' => Carbon::now(),
+            'updated_at' => Carbon::now()
+        ]);
+
+        return redirect()->route('uploads')
+                ->with('success', 'Berhasil Compress Image');
     }
 }

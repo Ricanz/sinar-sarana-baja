@@ -166,6 +166,12 @@ Route::middleware('auth')->group(function () {
     Route::get('admin/footer-description', [ContactController::class, 'footer_desc'])->name('footer');
     Route::post('admin/footer-description/submit', [ContactController::class, 'footer_desc_submit'])->name('addFooterDesc');
 
+    // Compress Image
+    Route::get('admin/uploads', [BannerController::class, 'uploads'])->name('uploads');
+    Route::post('admin/uploads', [BannerController::class, 'upload_image'])->name('submitImage');
+    Route::get('admin/upload/create', [BannerController::class, 'create_upload_image']);
+
+
     
 });
 require __DIR__.'/auth.php';
