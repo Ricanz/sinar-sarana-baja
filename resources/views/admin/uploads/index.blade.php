@@ -33,7 +33,7 @@
                                         <td>
                                             <img src="{{ asset($item->link) }}" alt="" width="150px">
                                         </td>
-                                        <td>{{ $item->link }}</td>
+                                        <td>{{ 'https://sinergybaja.com/'.$item->link }}</td>
                                         <td>{{ $item->created_at }}</td>
                                     </tr>
                                 @endforeach
